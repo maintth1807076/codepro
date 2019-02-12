@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>List product</h1>
+<div class="container ">
+    <div class="list-product row">
+        <%
+        for(var i = 0; i < listProduct.length; i++){
+        %>
+            <div class="item-product col-4">
+                <div>Id: <%= listProduct[i].productId%></div>
+                <div><%= listProduct[i].name%></div>
+                <img class="img-pd" src="<%= listProduct[i].thumbnail%>" alt="">
+                <div>Giá: <%= listProduct[i].price%></div>
+                <div>Mô tả: <%= listProduct[i].description%></div>
+                <div>Artist: <%= listProduct[i].artist%></div>
+            </div>
+        <%
+        };
+        %>
+        <!--<div class="item-product col-4">-->
+            <!--<div>Tên: Cafe truyền thống</div>-->
+            <!--<img class="img-pd" src="http://cdn.nhanh.vn/cdn/store/11291/art/article_1477620320_762.jpg" alt="">-->
+            <!--<div>Giá: 2000</div>-->
+            <!--<div>Mô tả: Cafe là thức uống phổ biến được yêu thích và lựa chọn nhiều nhất hiện nay. Cafe đen, cafe sữa được pha chế từ các loại hạt cafe nguyên chất trên mảnh đất Robusta, Arabica hay cafe chồn,…thì được coi là cafe truyền thống đậm vị. Tùy vào nhu cầu, sở thích mà thực khách có thể lựa chọn 1 ly cafe pha phin trực tiếp hoặc pha sẵn rồi uống nóng hoặc với đá. Những ai yêu thích cafe nguyên chất thường chọn 1 ly cafe đen không đường, hoặc có thể pha thêm 1 – 2 thìa đường. Còn những ai thích ngọt ngào, thơm béo thì sẽ yêu cầu 1 ly cafe sữa đậm đà, ngọt dịu.</div>-->
+        <!--</div>-->
+        <!--<div class="item-product col-4">-->
+            <!--<div>Tên: Espresso</div>-->
+            <!--<img class="img-pd" src="http://archcafe.net/data/image/Espresso-cup.jpg" alt="">-->
+            <!--<div>Giá: 2000</div>-->
+            <!--<div>Mô tả: Là loại cafe rất được ưa chuộng tại Ý và Tây Ban Nha; được pha bằng cách cho nước bị ép dưới áp suất cao chảy qua một lượng cafe được xay cực mịn. Kết quả sẽ cho ra 25 – 30ml thức uống với 1 lớp kem từ dầu cà phê có màu vàng nâu sẫm (người ta gọi đó là crema) dày 5mm trên bề mặt. Một ly Espresso chính hiệu sẽ có vị rất đậm và trên mặt có một lớp crema thơm mà không đắng. Cafe Espresso thường được uống bằng tách dày được làm nóng trước, có thể có hoặc không pha thêm đường và thường được phục vụ kèm theo 1 mẩu bánh quy cùng 1 ly nước.</div>-->
+        <!--</div>-->
+        <!--<div class="item-product col-4">-->
+            <!--<div>Tên: Latte Macchiato</div>-->
+            <!--<img class="img-pd" src="https://c1.staticflickr.com/1/41/84641136_53bfef3acf_b.jpg" alt="">-->
+            <!--<div>Giá: 2000</div>-->
+            <!--<div>Mô tả:  Latte Macchiato (Latte) là một loại cafe nóng gồm cafe Espresso và sữa. Về cơ bản, Latte giống như cafe sữa nhưng ngọt hơn. Một Latte Macchiato được pha đúng chuẩn phải gồm 3 tầng rõ rệt, được rót vào theo thứ tự quy định và không trộn lẫn vào nhau; bao gồm: sữa được rót vào cốc đầu tiên, ở đáy cốc, tạo nên tầng thấp nhất có màu trắng; sau đó là bột sữa ở tầng cao nhất; cuối cùng sẽ rót Espresso qua lớp bọt sữa để xuống tầng thứ 2. Rắc lên trên lớp bọt sữa một ít bột cacao, socola hoặc bột quế để trang trí là hoàn tất.</div>-->
+        <!--</div>-->
+    </div>
+
+</div>
+
+</body>
+</html>
