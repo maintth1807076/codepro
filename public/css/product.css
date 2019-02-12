@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+.img-pd {
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+}
+.item-product {
+    border: 1px solid rgba(13,23,20,0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+.item-product:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+h1 {
+    text-align: center;
+}
+
+
+.modal-header .close {
+    float: right;
+    margin: 0;
+}
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+.form-group .col-md-10 {
+    padding-left: 100px;
+
+}

@@ -1,0 +1,43 @@
+aside.left-panel {
+    background: #272c33;
+    display: table-cell;
+    height: 100vh;
+    min-height: 100%;
+    padding: 0 25px;
+    vertical-align: top;
+    width: 280px;
+    transition: width .3s ease;
+}
+
+.navbar {
+    background: #272c33;
+    border-radius: 0;
+    border: none;
+    display: block;
+    margin: 0;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+.navbar .navbar-header {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar .navbar-nav {
+    float: none;
+    position: relative;
+}
+
+.navbar .navbar-nav li {
+    width: 100%;
+}
+.navbar .navbar-nav li>a .menu-icon {
+    color: #8b939b;
+    float: left;
+    margin-top: 8px;
+    width: 55px;
+    text-align: left;
+    z-index: 9;
+}

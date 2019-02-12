@@ -1,0 +1,28 @@
+{
+  "name": "project-sem-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.4.11",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maintth1807076/codepro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maintth1807076/codepro/issues"
+  },
+  "homepage": "https://github.com/maintth1807076/codepro#readme",
+  "description": ""
+}
