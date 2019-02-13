@@ -18,15 +18,22 @@ exports.saveProduct = function (req, res) {
 
             });
     product.save();
-
-    res.send("Saved product success !");
+    res.redirect('/admin/product/list');
+    // res.send("Saved product success !");
 };
 
 exports.listProduct = function (req, res) {
     Product.find({}, function(err, products) {
-        console.log({"listProduct": products});
+        // console.log({"listProduct": products});
         res.render("admin/product/list.ejs", {
             "listProduct": products
         });
+    });
+};
+
+exports.detailProduct = function (req, res) {
+    Product.findById(req.params.id, function(err, result){
+        res.render("admin/product/details.ejs",{product: result});
+        console.log(result)
     });
 };
