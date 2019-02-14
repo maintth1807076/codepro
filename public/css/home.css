@@ -1,55 +1,25 @@
-*{
-    font-family: normal;
+body {
+    font-family: 'Boogaloo', cursive;
 }
-
-.carousel-item img {
-    height: 400px;
+.navbar {
+    box-shadow: 5px 5px 5px black;
 }
-
 .logo img {
-    width: 120px;
-    /*padding-left: 50px;*/
+    width: 200px;
+    padding-left: 100px;
 }
-
-
-/**/
-.nav a i {
-    padding-right: 8px;
+.nav-link {
+    color: white;
 }
-
-.navbar-brand i {
-    padding-right: 8px;
-    padding-left: 10px;
-}
-
 .title {
     height: 50px;
 }
-
-/**/
-
-.myNav{
-    background-color: #f8f9fa
-}
-
-
 .nav-item {
-    padding-right: 20px;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-a.register {
-    color: rgb(234, 97, 27) ;
-    border: 1px solid rgb(234, 97, 27);
-    border-radius: 3px;
-    font-weight: bold ;
-}
-a.login {
-    color: rgb(234, 97, 27) ;
-    border: 1px solid rgb(234, 97, 27);
-    text-align: center;
-    border-radius: 3px;
-    font-weight: bold ;
-}
-
 .item-menu {
     padding-left: 0;
     border: 5px;
@@ -68,8 +38,9 @@ a.login {
     color: black;
 }
 .menu ul li a:hover {
-    color: grey;
+    color: white;
     opacity: 0.8;
+    box-shadow: 5px 5px 5px darkviolet;
 }
 .menu ul li > .item-menu {
     display: none;
@@ -81,6 +52,28 @@ a.login {
 .menu ul li:hover .item-menu {
     display: block;
 }
+/*navbar*/
+.carousel-item img {
+    height: 400px;
+}
+.carousel {
+    padding-top: 100px;
+}
+/*banner*/
+
+/*a.register {*/
+    /*color: rgb(234, 97, 27) ;*/
+    /*border: 1px solid rgb(234, 97, 27);*/
+    /*border-radius: 3px;*/
+    /*font-weight: bold ;*/
+/*}*/
+/*a.login {*/
+    /*color: rgb(234, 97, 27) ;*/
+    /*border: 1px solid rgb(234, 97, 27);*/
+    /*text-align: center;*/
+    /*border-radius: 3px;*/
+    /*font-weight: bold ;*/
+/*}*/
 
 h2 {
     font-size: 32px;
@@ -104,138 +97,59 @@ hr {
     text-align: center;
 }
 
+/*.section-title {*/
+    /*margin-top: 20px;*/
+/*}*/
 
-.col-group {
-    /*background: #91b37c17;*/
-    background-color: #f8f9fa ;
-}
+/*.view-more {*/
+    /*padding-left: 10px;*/
+    /*font-size: 14px;*/
+/*}*/
+/*.item a img {*/
+    /*height: 150px;*/
+    /*width: 150px;*/
+/*}*/
 
+/*.item {*/
+    /*margin-top:20px ;*/
+    /*!*margin-left: 50px;*!*/
+    /*float: left;*/
+/*}*/
 
-footer .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
-    width: 23%;
-    display: inline-table;
-    padding-left: 8%;
-}
+/*.clear {*/
+    /*clear: both;*/
+/*}*/
 
-footer .footer-col-1 h4, .footer-col-2 h4, .footer-col-3 h4 {
-    color: black;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding-left: 10px;
-    margin-bottom: 16px;
-    /*text-align: justify-all;*/
-}
+/*.redd {*/
+    /*color: red;*/
+/*}*/
 
-footer .footer-col-1 li, .footer-col-2 li, .footer-col-3 li {
-    display: inline-table;
-    padding: 10px 0;
-    margin: 0;
-    width: 100%;
-    text-align: justify-all;
-    font-size: 16px;
-    line-height: 14px;
+/*.black-link{*/
+    /*color: black;*/
+    /*!*font-family: 'Oswald', Arial ;*!*/
+    /*display: inline-block;*/
+    /*text-transform: uppercase;*/
+    /*text-decoration: none;*/
+/*}*/
 
-}
+/*a:hover {*/
+     /*text-decoration: none!important;*/
+/*}*/
 
+/*.artist {*/
+    /*font-size: 10px;*/
+    /*display: inline-block;*/
 
+/*}*/
 
-.links ul li a{
-    color: black;
-}
+/*.add-to-cart {*/
+    /*color: #00e765;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
-.footer-col-2 ul li a {
-    color: black;
-}
-
-.footer-col-3 ul li a {
-    color: black;
-}
-.footer-col-3 h4{
-    padding-left: 45px;
-}
-.footer-col-2 h4{
-    padding-left: 40px;
-}
-
-.footer-col-4 img {
-    width: 200px;
-    padding-top: 80px ;
-}
-
-.footer p {
-    color: #363432;
-    /*font-family: 'Roboto', sans-serif;*/
-    font-weight: 300;
-    margin-left: 15px;
-    text-align: center;
-}
-
-.pull {
-   text-align: center;
-}
-
-
-
-
-.section-title {
-    margin-top: 20px;
-}
-
-.view-more {
-    padding-left: 10px;
-    font-size: 14px;
-}
-.item a img {
-    height: 150px;
-    width: 150px;
-}
-
-.item {
-    margin-top:20px ;
-    /*margin-left: 50px;*/
-    float: left;
-}
-
-.clear {
-    clear: both;
-}
-
-
-#selling-cart {
-    float: left;
-}
-
-.redd {
-    color: red;
-}
-
-.black-link{
-    color: black;
-    /*font-family: 'Oswald', Arial ;*/
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-a:hover {
-     text-decoration: none!important;
-}
-
-.artist {
-    font-size: 10px;
-    display: inline-block;
-
-}
-
-.add-to-cart {
-    color: #00e765;
-    text-transform: uppercase;
-}
-
-.sale {
-    color: grey;
-}
+/*.sale {*/
+    /*color: grey;*/
+/*}*/
 
 
 
@@ -251,7 +165,82 @@ a:hover {
 .form-inline label {
     padding-left: 5px;
 }
-
+/*content*/
+.content p {
+    padding-top: 7px;
+}
+.title-content {
+    text-align: left;
+    padding-bottom: 5px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+.hot-disk {
+    background-image: url("/img/background1.jpg");
+    background-position: left;
+    padding: 20px 0;
+}
+.hot-disk .mask p {
+    color: cyan;
+    font-size: 20px;
+}
+.name-disk {
+    padding-top: 2px;
+}
+.hot-disk .card {
+    margin: 5px;
+}
+.hot-ticket {
+    background-image: url("/img/background2.jpg");
+    padding: 20px 0;
+}
+.hot-ticket img {
+    height: 300px;
+}
+.hot-ticket .card {
+    margin: 10px;
+}
+.hot-ticket h2 {
+    color: white;
+}
+h2 a {
+    font-size: 20px;
+}
+.hot-contest {
+    background-image: url("/img/background3.jpg");
+    background-position: right;
+    padding: 20px 0;
+}
+.hot-contest img {
+    width: 100%;
+    box-shadow: 5px 5px 5px darkviolet;
+    border-radius: 10px;
+}
+/*footer*/
+#footer {
+    padding-top: 10px;
+}
+#footer img {
+    width: 200px;
+}
+#footer h4 {
+    color: white;
+    padding-top: 15px;
+}
+#footer li {
+    margin: 5px;
+}
+.pull {
+    padding: 15px 0 4px;
+    text-align: center;
+}
+.footer-top {
+    background-image: url("/img/background2.jpg");
+    background-position: bottom;
+}
+.pagetop i {
+    padding-right: 10px;
+}
+/*footer end*/
 /* Responsive */
 @media (max-width: 940px) {
     .container {
@@ -273,8 +262,11 @@ a:hover {
 }
 
 @media (max-width: 535px) {
-    .left-column img {
-        width: 220px;
-        top: -85px;
+    /*.left-column img {*/
+        /*width: 220px;*/
+        /*top: -85px;*/
+    /*}*/
+    img {
+        width: 50px;
     }
 }
