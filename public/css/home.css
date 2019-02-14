@@ -20,12 +20,20 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 }
+.nav-item  {
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .item-menu {
+
     padding-left: 0;
     border: 5px;
 }
 .item-menu li a{
     margin: 10px;
+
 }
 
 .menu ul li {
@@ -37,8 +45,11 @@ body {
     display: block;
     color: black;
 }
-.menu ul li a:hover {
-    color: white;
+.card p {
+    background-color: white;
+}
+.menu ul  li a:hover {
+    color:  #2e07f6;
     opacity: 0.8;
     box-shadow: 5px 5px 5px darkviolet;
 }
@@ -172,6 +183,8 @@ hr {
 .title-content {
     text-align: left;
     padding-bottom: 5px;
+    margin-bottom:30px;
+    margin-right:10px;
     font-family: 'Hammersmith One', sans-serif;
 }
 .hot-disk {
@@ -179,9 +192,8 @@ hr {
     background-position: left;
     padding: 20px 0;
 }
-.hot-disk .mask p {
+.hot-disk .mask h6 {
     color: cyan;
-    font-size: 20px;
 }
 .name-disk {
     padding-top: 2px;
@@ -192,6 +204,7 @@ hr {
 .hot-ticket {
     background-image: url("/img/background2.jpg");
     padding: 20px 0;
+    height: 500px;
 }
 .hot-ticket img {
     height: 300px;
@@ -269,4 +282,10 @@ h2 a {
     img {
         width: 50px;
     }
+}
+.list-hot-disk{
+
+}
+.card{
+    height: 220px;
 }
