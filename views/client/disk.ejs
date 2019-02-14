@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/mdb.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Hammersmith+One" rel="stylesheet">
-    <link rel="stylesheet" href="/css/home.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/disk.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body ng-app="myApp">
@@ -32,6 +31,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/client/disk" id="disk">Disk</a>
+                        <ul class="item-menu">
+                            <!--<li><a href="/client/CD">CD</a></li>-->
+                            <!--<li><a href="/client/DVD">DVD</a></li>-->
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
@@ -43,7 +46,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/client/book" id="book">Book</a>
-
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Contact</a>
@@ -106,9 +108,126 @@
 <div class="content">
     <div class="hot-disk">
         <div class="container">
-            <h2 class="title-content animated slideInLeft slow">Hot Album <a class=""
-                                                                             href="CD.ejs">View more<i
-                            class="fas fa-angle-double-right ml-2"></i></a>
+            <h2 class="title-content animated slideInLeft slow">CD
+                <a class="view-more" href="/client/CD">View more<i class="fas fa-angle-double-right ml-2"></i></a>
+            </h2>
+            <div class="list-hot-disk">
+                <div class="row text-center">
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="http://image.phimmoi.net/film/1018/poster.medium.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#" class="hidden-link">
+                                    TRANSFORMERS: AGE OF...
+                                </a>
+                            </div>
+                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/9/3/5/f/935f82d0a14506cbe42cde70aaf78cee.jpg"
+                                     alt="Purpose World">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#" class="hidden-link">
+                                    DDU-DU DDU-DU (JP Ver.)
+                                </a>
+                            </div>
+                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 15.00$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#" class="hidden-link">
+                                    Sorry
+                                </a>
+                            </div>
+                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-strong">
+                                <img class="card-img-top img-fluid"
+                                     src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#" class="hidden-link">
+                                    Alone remix
+                                </a>
+                            </div>
+                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="http://image.phimmoi.net/film/4325/poster.medium.jpg"
+                                     alt="Purpose World">
+                                <div class="mask flex-center waves-effect waves-light">
+
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#" class="hidden-link">
+                                    JOHN WICK: CHAPTER 2
+                                </a>
+                            </div>
+                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="http://image.phimmoi.net/film/2871/poster.medium.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#" class="hidden-link">
+                                    Steve Jobs
+                                </a>
+                            </div>
+                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--hot-disk-->
+    <div class="hot-disk">
+        <div class="container">
+            <h2 class="title-content animated slideInLeft slow">DVD
+                <a class="view-more" href="/client/DVD">View more<i class="fas fa-angle-double-right ml-2"></i></a>
             </h2>
             <div class="list-hot-disk">
                 <div class="row text-center">
@@ -119,7 +238,6 @@
                                      src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
                                      alt="Purpose World">
                                 <div class="mask flex-center waves-effect waves-light">
-                                    <p>Sorry</p>
                                 </div>
                             </div>
                             <div class="title">
@@ -173,7 +291,7 @@
                                      src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
                                      alt="Purpose World">
                                 <div class="mask flex-center waves-effect waves-light">
-                                    <p>Purpose World</p>
+
                                 </div>
                             </div>
                             <div class="title">
@@ -191,7 +309,7 @@
                                      src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"
                                      alt="Purpose World">
                                 <div class="mask flex-center waves-effect waves-light">
-                                    <p>Purpose World</p>
+
                                 </div>
                             </div>
                             <div class="title">
@@ -209,7 +327,7 @@
                                      src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"
                                      alt="Purpose World">
                                 <div class="mask flex-center waves-effect waves-light">
-                                    <p style="color: cyan;">Purpose World</p>
+
                                 </div>
                             </div>
                             <div class="title">
@@ -220,69 +338,6 @@
                             <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div> <!--hot-disk-->
-    <div class="hot-ticket">
-        <h2 class="wow slideInLeft slow">New Liveshow</h2>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
-                        <div class="card-img-overlay">
-                            <p style="color: white" class="card-text">Believe</p>
-                        </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
-                             alt="Card image">
-                        <div class="card-img-overlay">
-                            <p class="card-text"></p>
-                        </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
-                             alt="Card image">
-                        <div class="card-img-overlay">
-                            <p class="card-text"></p>
-                        </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
-                        <div class="card-img-overlay">
-                            <p class="card-text"></p>
-                        </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="hot-contest">
-        <h2 class="wow slideInDown slow">Famous Contest</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="wow slideInLeft slow" src="https://i.ytimg.com/vi/PHq-OEZM6Ww/maxresdefault.jpg" alt="">
-                </div>
-                <div class="col-sm-6">
-                    <h5 class="wow slideInRight slow">Award 5000000$</h5>
-                    <h5 class="wow slideInUp slow">You have chances to become the faumoused </h5>
                 </div>
             </div>
         </div>

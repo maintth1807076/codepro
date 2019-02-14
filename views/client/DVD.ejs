@@ -14,81 +14,64 @@
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="myNav navbar-right">
+    <div id="header">
+        <nav class="navbar navbar-expand-sm fixed-top purple-gradient">
+            <a class="navbar-brand logo" href="/client/home"><img src="/img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="menu">
+                    <ul class=" nav navbar-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/client/home"><i class="fas fa-home "></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/client/disk" id="disk">Disk</a>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a href="/client/home" class="logo">
-                    <img  src="/img/logo1.png" alt="">
-                </a>
-                <a class="navbar-brand" href="/client/home"><i class="fas fa-home"></i>Home</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="menu">
-                        <ul class=" nav  navbar-right">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/client/CD" id="CD">CD <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
 
-                                <ul class="item-menu">
-                                    <li><a href="">Just In</a></li>
-                                    <li><a href="">Best Seller</a></li>
-                                    <li><a href="">Clearance</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/client/DVD" id="dvd">DVD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/client/magazine" id="magazine">Magazine</a>
 
-                                <ul class="item-menu">
-                                    <li><a href="">Just In</a></li>
-                                    <li><a href="">Best Seller</a></li>
-                                    <li><a href="">Clearance</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/client/book" id="book">Book</a>
 
-                                <ul class="item-menu">
-                                    <li><a href="">Just In</a></li>
-                                    <li><a href="">Best Seller</a></li>
-                                    <li><a href="">Clearance</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="/client/magazine" id="magazine">Magazine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/client/book" id="book">Book</a>
 
-                                <ul class="item-menu">
-                                    <li><a href="">Just In</a></li>
-                                    <li><a href="">Best Seller</a></li>
-                                    <li><a href="">Clearance</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-
-                                <a href="#" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i>Selling Cart</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link" id="checkout">Checkout</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">
-                                    Sign In
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">
-                                    Sign Up
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="search"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/client/customer" id="customer"><i class="fas fa-user-circle"></i></a>
+                            <ul class="item-menu">
+                                <li><a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign
+                                        In</a></li>
+                                <li><a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign
+                                        Up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav> <!--nav end-->
     </div>
 
     <div class="main">
@@ -146,307 +129,122 @@
         </div>
         <hr>
         <div class="clear"></div>
-        <div class="content container">
-            <section class="collapsible">
-                <div class="overview row">
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="/client/detail-product.ejs" class="product-image">
-                                <img src="http://image.phimmoi.net/film/7064/poster.medium.jpg" alt="">
-                            </a>
+        <div class="hot-disk">
+            <div class="container">
+                <h2 class="title-content animated slideInLeft slow">DVD
+                    <a class="view-more" href="/client/DVD">View more<i class="fas fa-angle-double-right ml-2"></i></a>
+                </h2>
+                <div class="list-hot-disk">
+                    <div class="row text-center">
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="http://image.phimmoi.net/film/1018/poster.medium.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <a href="#" class="hidden-link">
+                                        TRANSFORMERS: AGE OF...
+                                    </a>
+                                </div>
+                                <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
+                            </div>
                         </div>
-                        <div class="title">
-                            <a href="/client/detail-product.ejs" class="black-link">
-                                NUN
-                            </a>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/9/3/5/f/935f82d0a14506cbe42cde70aaf78cee.jpg"
+                                         alt="Purpose World">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <a href="#" class="hidden-link">
+                                        DDU-DU DDU-DU (JP Ver.)
+                                    </a>
+                                </div>
+                                <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 15.00$</p>
+                            </div>
                         </div>
-                        <div class="price">
-                            <del class="sale">$12.99</del>
-                            <span class="redd">$10.00</span>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <a href="#" class="hidden-link">
+                                        Sorry
+                                    </a>
+                                </div>
+                                <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
+                            </div>
                         </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/6375/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/6375/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                INCREDIBLES 2
-                            </a>
-                        </div>
-                        <div class="price">
-                            <del class="sale">$7.99</del>
-                            <span class="redd">$4.00</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/7070/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/7070/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                PREDATOR
-                            </a>
-                        </div>
-                        <div class="price">
-                            <del class="sale">$7.99</del>
-                            <span class="redd">$4.00</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/3519/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/3519/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                CREED
-                            </a>
-                        </div>
-                        <div class="price">
-                            <del class="sale">$7.99</del>
-                            <span class="redd">$4.00</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/6938/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/6938/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                ANT-MAN AND THE WASP
-                            </a>
-                        </div>
-                        <div class="price">
-                            <del class="sale">$7.99</del>
-                            <span class="redd">$4.00</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/1878/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/1878/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                Harry Potter 7: Harry Potter...
-                            </a>
-                        </div>
-                        <div class="price">
-                            <del class="sale">$7.99</del>
-                            <span class="redd">$4.00</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/1894/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/1894/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                HOBBIT: THE DESOLATION...
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$8.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/1018/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/1018/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                TRANSFORMERS: AGE OF...
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$6.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/4325/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/4325/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                JOHN WICK: CHAPTER 2
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$19.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/6896/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/6896/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                DRAGON BALL SUPER: PART SIX
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$28.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/3336/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/3336/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                FINDING DORY
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$11.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/3999/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/3999/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                MONSTER TRUCKS
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$4.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/1444/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/1444/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                Family Man
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$2.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/7249/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/7249/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                LIFE [WIDESCREEN]
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$4.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/2871/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/2871/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                Steve Jobs
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$6.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/4877/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/4877/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                Man to Man
-                            </a>
-                        </div>
-                        <div class="price">
-                            <del class="sale">$4.99</del>
-                            <span class="redd">$2.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/5462/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/5462/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                The Water Horse: Legend Of ...
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$2.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="item col-lg-2">
-                        <div class="popup-container">
-                            <a href="http://image.phimmoi.net/film/4922/poster.medium.jpg" class="product-image">
-                                <img src="http://image.phimmoi.net/film/4922/poster.medium.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="black-link">
-                                SPLIT
-                            </a>
-                        </div>
-                        <div class="price">
-                            <span class="redd">$17.99</span>
-                        </div>
-                        <a href="#" class="add-to-cart">Add To Cart <i class="fas fa-plus"></i></a>
-                    </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-strong">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
 
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <a href="#" class="hidden-link">
+                                        Alone remix
+                                    </a>
+                                </div>
+                                <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="http://image.phimmoi.net/film/4325/poster.medium.jpg"
+                                         alt="Purpose World">
+                                    <div class="mask flex-center waves-effect waves-light">
+
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <a href="#" class="hidden-link">
+                                        JOHN WICK: CHAPTER 2
+                                    </a>
+                                </div>
+                                <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="http://image.phimmoi.net/film/2871/poster.medium.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <a href="#" class="hidden-link">
+                                        Steve Jobs
+                                    </a>
+                                </div>
+                                <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="box-bottom clearfix">
                     <div class="page-number">
                         <a href="#" class="button prev "><i class="fas fa-angle-double-left"></i></a>
@@ -464,8 +262,7 @@
                         <a href="#" class="button next"><i class="fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
-
-            </section>
+            </div>
         </div>
     </div>
     <div class="clear"></div>
@@ -593,89 +390,69 @@
         </div>
     </div>
 
-    <div class="main-footer">
-        <h2 style="margin-top: 60px;">It's that simple</h2>
-        <hr>
-        <div class="row" style="clear:both; margin-bottom: 30px;">
-            <div class="col-md-4" style="text-align: center;padding-top: 30px; ">
-                <p><span class="glyphicons cart_in steps"></span></p>
-                <h4>1. Enter items</h4>
-
-                <p>Take the items you want to sell and enter them into the search field in the upper part of the website. If you are interested in the sale you put the item into your selling cart.</p><p>If you want to sell several items use the bulk compare or our Barcode Scanner App.</p>
-
-            </div>
-            <div class="col-md-4" style="text-align: center; padding-top: 30px; ">
-                <p><span class="glyphicons certificate steps"></span></p>
-
-                <h4>2. Identify best buyers</h4>
-
-                <p>In the shopping cart view, you can see the best buyers, paying you the highest prices for your entire selling cart.</p><p>That's how you can easily yield 100%+ over the average offers.</p>
-
-            </div>
-            <div class="col-md-4" style="text-align: center; padding-top: 30px; ">
-                <p><span class="glyphicons cart_out steps"></span></p>
-
-                <h4>3. Sell items to vendors</h4>
-
-                <p>We guide you through the process of selling your items to the buyers.</p><p>Few days after having shipped the items, you will receive your money from the buyer.</p>
-
-            </div>
-        </div>
-        <h2 style="margin-top: 60px;">Sell used items and make easy money with Ryhm House</h2>
-        <hr>
-        <div class="footer-bottom">
-            <footer>
-                <div class="col-group">
-                    <div class="footer-col-1">
+    <div id="footer">
+        <a class="pagetop" href="#header" style="display: block; position: fixed; bottom: 10px;">
+            <i class="fas fa-arrow-circle-up fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
+            <i class="fas fa-phone fa-2x animated"></i>
+        </a>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
                         <h4>Connect With Us</h4>
+                        <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                         <div class="links">
-                            <ul>
-                                <li class="fb"><a class="d-flex align-items-center pl-0" href="#" target="_blank" title="Like Us on FB">
+                            <ul class="list-unstyled">
+                                <li class="fb"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
+                                                  title="Like Us on FB">
                                         <i class="fab fa-facebook fa-2x"></i><span class="ml-2">Facebook</span></a></li>
-                                <li class="inst"><a class="d-flex align-items-center pl-0" href="#" title="Follow Us on Inst" target="_blank">
+                                <li class="inst"><a class="d-flex align-items-center pl-0" href="#"
+                                                    title="Follow Us on Inst" target="_blank">
                                         <i class="fab fa-instagram fa-2x"></i><span class="ml-2">Instagram</span></a></li>
-                                <li class="ytb"><a class="d-flex align-items-center pl-0" href="#" target="_blank" title="Subcribe Us on YTB">
+                                <li class="ytb"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
+                                                   title="Subcribe Us on YTB">
                                         <i class="fab fa-youtube fa-2x"></i><span class="ml-2">Youtube</span></a></li>
-                                <li class="email"><a class="d-flex align-items-center pl-0" href="#" target="_blank" title=" ">
-                                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span class="ml-2">Email</span></a></li>
+                                <li class="email"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
+                                                     title=" ">
+                                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span
+                                                class="ml-2">Email</span></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="footer-col-2">
+                    <div class="col-sm-3">
                         <h4>Support</h4>
-                        <ul>
-                            <li ><a href="#">Help</a></li>
-                            <li><a href="#" >Contact Us</a></li>
-                            <li ><a href="#" >Leave Feedback</a></li>
+                        <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Leave Feedback</a></li>
                         </ul>
                     </div>
-                    <div class="footer-col-3">
+                    <div class="col-sm-3">
                         <h4>Privacy</h4>
-                        <ul>
-                            <li ><a href="#">Privacy Policy</a></li>
-                            <li><a href="#" >Terms Of Service</a></li>
-                            <li ><a href="#" >Supplier Code of Conduct</a></li>
+                        <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms Of Service</a></li>
+                            <li><a href="#">Supplier Code of Conduct</a></li>
                         </ul>
                     </div>
-                    <div class="footer-col-4">
-                        <img  src="/img/logo1.png" alt="">
+                    <div class="col-sm-3">
+                        <img src="/img/logo2.png" alt="">
                     </div>
                 </div>
-
-                <hr>
-                <div class="footer">
-                    <div class="pull">
-                        <p >Copyright © 2019 Ryhm House. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
-
+            </div>
+        </div>
+        <div class="pull purple-gradient">
+            <p style="color: white">Copyright © 2019 Rhythm House. All rights reserved.</p>
         </div>
     </div>
 
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/mdb.min.js"></script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>-->
 </body>
 </html>

@@ -4,12 +4,20 @@ exports.generateHome = function (req, res) {
     res.render("client/home.ejs");
 };
 
-exports.DVDpage = function (req, res) {
-    res.render("client/DVD.ejs");
+exports.generateDisk = function (req, res) {
+    res.render("client/disk.ejs");
 };
 
 exports.CDpage = function (req, res) {
     res.render("client/CD.ejs");
+};
+
+exports.DVDpage = function (req, res) {
+    res.render("client/DVD.ejs");
+};
+
+exports.liveshowPage = function (req, res) {
+    res.render("client/liveshow.ejs");
 };
 
 exports.Bookpage = function (req, res) {
