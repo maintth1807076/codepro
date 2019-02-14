@@ -20,12 +20,15 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .item-menu {
+
     padding-left: 0;
     border: 5px;
 }
 .item-menu li a{
     margin: 10px;
+
 }
 
 .menu ul li {
@@ -37,8 +40,11 @@ body {
     display: block;
     color: black;
 }
-.menu ul li a:hover {
-    color: white;
+.card1 p {
+    background-color: white;
+}
+.menu ul  li a:hover {
+    color:  #2e07f6;
     opacity: 0.8;
     box-shadow: 5px 5px 5px darkviolet;
 }
@@ -59,20 +65,21 @@ body {
 .carousel {
     padding-top: 100px;
 }
+
 /*banner*/
 
 /*a.register {*/
-    /*color: rgb(234, 97, 27) ;*/
-    /*border: 1px solid rgb(234, 97, 27);*/
-    /*border-radius: 3px;*/
-    /*font-weight: bold ;*/
+/*color: rgb(234, 97, 27) ;*/
+/*border: 1px solid rgb(234, 97, 27);*/
+/*border-radius: 3px;*/
+/*font-weight: bold ;*/
 /*}*/
 /*a.login {*/
-    /*color: rgb(234, 97, 27) ;*/
-    /*border: 1px solid rgb(234, 97, 27);*/
-    /*text-align: center;*/
-    /*border-radius: 3px;*/
-    /*font-weight: bold ;*/
+/*color: rgb(234, 97, 27) ;*/
+/*border: 1px solid rgb(234, 97, 27);*/
+/*text-align: center;*/
+/*border-radius: 3px;*/
+/*font-weight: bold ;*/
 /*}*/
 
 h2 {
@@ -98,57 +105,57 @@ hr {
 }
 
 /*.section-title {*/
-    /*margin-top: 20px;*/
+/*margin-top: 20px;*/
 /*}*/
 
 /*.view-more {*/
-    /*padding-left: 10px;*/
-    /*font-size: 14px;*/
+/*padding-left: 10px;*/
+/*font-size: 14px;*/
 /*}*/
 /*.item a img {*/
-    /*height: 150px;*/
-    /*width: 150px;*/
+/*height: 150px;*/
+/*width: 150px;*/
 /*}*/
 
 /*.item {*/
-    /*margin-top:20px ;*/
-    /*!*margin-left: 50px;*!*/
-    /*float: left;*/
+/*margin-top:20px ;*/
+/*!*margin-left: 50px;*!*/
+/*float: left;*/
 /*}*/
 
 /*.clear {*/
-    /*clear: both;*/
+/*clear: both;*/
 /*}*/
 
 /*.redd {*/
-    /*color: red;*/
+/*color: red;*/
 /*}*/
 
 /*.black-link{*/
-    /*color: black;*/
-    /*!*font-family: 'Oswald', Arial ;*!*/
-    /*display: inline-block;*/
-    /*text-transform: uppercase;*/
-    /*text-decoration: none;*/
+/*color: black;*/
+/*!*font-family: 'Oswald', Arial ;*!*/
+/*display: inline-block;*/
+/*text-transform: uppercase;*/
+/*text-decoration: none;*/
 /*}*/
 
 /*a:hover {*/
-     /*text-decoration: none!important;*/
+/*text-decoration: none!important;*/
 /*}*/
 
 /*.artist {*/
-    /*font-size: 10px;*/
-    /*display: inline-block;*/
+/*font-size: 10px;*/
+/*display: inline-block;*/
 
 /*}*/
 
 /*.add-to-cart {*/
-    /*color: #00e765;*/
-    /*text-transform: uppercase;*/
+/*color: #00e765;*/
+/*text-transform: uppercase;*/
 /*}*/
 
 /*.sale {*/
-    /*color: grey;*/
+/*color: grey;*/
 /*}*/
 
 
@@ -172,6 +179,8 @@ hr {
 .title-content {
     text-align: left;
     padding-bottom: 5px;
+    margin-bottom:30px;
+    margin-right:10px;
     font-family: 'Hammersmith One', sans-serif;
 }
 .hot-disk {
@@ -179,9 +188,8 @@ hr {
     background-position: left;
     padding: 20px 0;
 }
-.hot-disk .mask p {
+.hot-disk .mask h6 {
     color: cyan;
-    font-size: 20px;
 }
 .name-disk {
     padding-top: 2px;
@@ -192,6 +200,7 @@ hr {
 .hot-ticket {
     background-image: url("/img/background2.jpg");
     padding: 20px 0;
+    height: 500px;
 }
 .hot-ticket img {
     height: 300px;
@@ -263,10 +272,16 @@ h2 a {
 
 @media (max-width: 535px) {
     /*.left-column img {*/
-        /*width: 220px;*/
-        /*top: -85px;*/
+    /*width: 220px;*/
+    /*top: -85px;*/
     /*}*/
     img {
         width: 50px;
     }
+}
+.list-hot-disk{
+
+}
+.card{
+    height: 220px;
 }
