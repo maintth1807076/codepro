@@ -3,7 +3,12 @@
 exports.generateHome = function (req, res) {
     res.render("client/home.ejs");
 };
-
+exports.contact = function (req, res) {
+    res.render("client/contact.ejs");
+};
+exports.about = function (req, res) {
+    res.render("client/about.ejs");
+};
 exports.DVDpage = function (req, res) {
     res.render("client/DVD.ejs");
 };
