@@ -1,6 +1,9 @@
 body {
     font-family: 'Boogaloo', cursive;
 }
+#header {
+    padding-bottom: 100px;
+}
 .navbar {
     box-shadow: 5px 5px 5px black;
 }
@@ -51,6 +54,9 @@ body {
 }
 .menu ul li:hover .item-menu {
     display: block;
+}
+.item-menu li:hover {
+    color: darkviolet;
 }
 /*footer*/
 #footer {

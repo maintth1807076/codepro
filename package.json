@@ -9,6 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.0",
+    "chart.js": "^2.7.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "font-awesome": "^4.7.0",

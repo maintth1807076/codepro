@@ -1,0 +1,257 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+.navbar {
+    box-shadow: 5px 5px 5px black;
+}
+.logo img {
+    width: 200px;
+    padding-left: 100px;
+}
+.nav-link {
+    color: white;
+}
+/*.title {*/
+/*height: 50px;*/
+/*}*/
+.nav-item {
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.item-menu {
+    padding-left: 0;
+    border: 5px;
+}
+
+
+.menu ul li {
+    display: block;
+    position: relative;
+}
+.menu ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.menu ul li a:hover {
+    color: black;
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px darkviolet;
+}
+.menu ul li > .item-menu {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background: white;
+    width: 100px;
+}
+.menu ul li:hover .item-menu {
+    display: block;
+}
+/*navbar*/
+.carousel-item img {
+    height: 400px;
+}
+.carousel {
+    padding-top: 100px;
+}
+/*banner*/
+
+/*a.register {*/
+/*color: rgb(234, 97, 27) ;*/
+/*border: 1px solid rgb(234, 97, 27);*/
+/*border-radius: 3px;*/
+/*font-weight: bold ;*/
+/*}*/
+/*a.login {*/
+/*color: rgb(234, 97, 27) ;*/
+/*border: 1px solid rgb(234, 97, 27);*/
+/*text-align: center;*/
+/*border-radius: 3px;*/
+/*font-weight: bold ;*/
+/*}*/
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 300;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+
+.modal-footer button {
+    height: 40px;
+    color: black;
+    width: 130px;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+label{
+    padding-top: 5px;
+}
+
+.just-in-tab1 .filter-item {
+    display: inline-flex;
+    padding-left: 10px;
+    /*float: left;*/
+}
+
+
+.box-bottom {
+    margin-top: 10px;
+}
+.page-number {
+    float: right;
+}
+
+.page-number .prev {
+    margin-left: 10px;
+    width: 20px;
+
+}
+/*.item a img {*/
+/*height: 150px;*/
+/*width: 150px;*/
+/*}*/
+
+
+.hidden-link{
+    color: black;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+
+/*modal*/
+.form-inline  {
+    padding-bottom: 20px;
+}
+
+.form-inline label{
+    padding-right: 20px;
+}
+
+.form-inline label {
+    padding-left: 5px;
+}
+/*content*/
+.content p {
+    padding-top: 7px;
+}
+.title-content {
+    text-align: left;
+    padding-bottom: 5px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+.hot-disk {
+    background-image: url("/img/background1.jpg");
+    background-position: left;
+    padding: 20px 0;
+}
+.hot-disk .mask p {
+    color: cyan;
+    font-size: 20px;
+}
+.name-disk {
+    padding-top: 2px;
+}
+.hot-disk .card {
+    margin: 5px;
+}
+.hot-ticket {
+    background-image: url("/img/background2.jpg");
+    padding: 20px 0;
+}
+.hot-ticket img {
+    height: 300px;
+}
+.hot-ticket .card {
+    margin: 10px;
+}
+.hot-ticket h2 {
+    color: white;
+}
+h2 a {
+    font-size: 20px;
+}
+.hot-contest {
+    background-image: url("/img/background3.jpg");
+    background-position: right;
+    padding: 20px 0;
+}
+.hot-contest img {
+    width: 100%;
+    box-shadow: 5px 5px 5px darkviolet;
+    border-radius: 10px;
+}
+/*footer*/
+#footer {
+    padding-top: 10px;
+}
+#footer img {
+    width: 200px;
+}
+#footer h4 {
+    color: white;
+    padding-top: 15px;
+}
+#footer li {
+    margin: 5px;
+}
+.pull {
+    padding: 15px 0 4px;
+    text-align: center;
+}
+.footer-top {
+    background-image: url("/img/background2.jpg");
+    background-position: bottom;
+}
+.pagetop i {
+    padding-right: 10px;
+}
+/*footer end*/
+/* Responsive */
+@media (max-width: 940px) {
+    .container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .left-column img {
+        width: 300px;
+        right: 0;
+        top: -65px;
+        left: initial;
+    }
+}
+
+@media (max-width: 535px) {
+    /*.left-column img {*/
+    /*width: 220px;*/
+    /*top: -85px;*/
+    /*}*/
+    img {
+        width: 50px;
+    }
+}

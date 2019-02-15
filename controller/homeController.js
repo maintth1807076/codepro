@@ -9,12 +9,19 @@ exports.contact = function (req, res) {
 exports.about = function (req, res) {
     res.render("client/about.ejs");
 };
+exports.generateDisk = function (req, res) {
+    res.render("client/disk.ejs");
+};
+
 exports.DVDpage = function (req, res) {
     res.render("client/DVD.ejs");
 };
 
 exports.CDpage = function (req, res) {
     res.render("client/CD.ejs");
+};
+exports.Liveshowpage = function (req, res) {
+    res.render("client/liveshow.ejs");
 };
 
 exports.Bookpage = function (req, res) {

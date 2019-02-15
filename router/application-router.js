@@ -18,9 +18,11 @@ exports.routing = function (app) {
     app.get("/client/home", homeController.generateHome);
     app.get("/client/contact", homeController.contact);
     app.get("/client/about", homeController.about);
+    app.get("/client/disk", homeController.generateDisk);
     app.get("/client/DVD", homeController.DVDpage);
     app.get("/client/CD", homeController.CDpage);
     app.get("/client/book", homeController.Bookpage);
+    app.get("/client/ticket", homeController.Liveshowpage);
     app.get("/client/magazine", homeController.Magazinepage);
     app.get("/client/detail-product", homeController.detailProductPage);
 
