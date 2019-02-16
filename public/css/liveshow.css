@@ -26,10 +26,11 @@ body {
     border: 5px;
 }
 
+
 .main-clearfix .page-title {
     padding-top: 90px;
-}
 
+}
 .menu ul li {
     display: block;
     position: relative;
