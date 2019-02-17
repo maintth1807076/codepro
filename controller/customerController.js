@@ -15,16 +15,15 @@ exports.saveCustomer = function (req, res) {
         createdAt: req.body.createdAt,
         deletedAt: req.body.deletedAt,
         status: req.body.status,
-
     });
+
     customer.save();
-    res.send("Saved customer success !");
+    res.redirect('/admin/customer/list');
 };
 
 exports.listCustomer = function (req, res) {
     Customer.find({}, function(err, customers) {
-        console.log({"listCustomer": customers});
-        res.render("admin/customer/list.ejs", {
+        res.render("admin/customer/users.ejs", {
             "listCustomer": customers
         });
     });

@@ -21,15 +21,12 @@ exports.routing = function (app) {
     app.get("/client/about", homeController.about);
     app.get("/client/DVD", homeController.DVDpage);
     app.get("/client/CD", homeController.CDpage);
-    app.get("/client/DVD", homeController.DVDpage);
     app.get("/client/book", homeController.Bookpage);
     app.get("/client/ticket", homeController.liveshowPage);
     app.get("/client/magazine", homeController.Magazinepage);
     app.get("/client/detail-product", homeController.detailProductPage);
 
-    app.get("/admin/product/create", categoryController.generateForm);
-    app.get("/admin/product/list", categoryController.list);
-    app.post("/admin/product/save", categoryController.save);
+
 
     app.get("/admin/customer/create", customerController.generateCustomer);
     app.get("/admin/customer/list", customerController.listCustomer);
