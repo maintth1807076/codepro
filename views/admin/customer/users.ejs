@@ -50,7 +50,7 @@
                         <img  class="img-fluid" src="/img/logo.png" alt="Logo" />
                     </a>
                     <!--<a class="mobile-options">-->
-                    <!--<i class="feather icon-more-horizontal"></i>-->
+                        <!--<i class="feather icon-more-horizontal"></i>-->
                     <!--</a>-->
                 </div>
                 <div class="navbar-container container-fluid">
@@ -141,24 +141,22 @@
                                 <a href="javascript:void(0)">
                                     <span class="pcoded-micon"><i class="fas fa-table"></i></span>
                                     <span class="pcoded-mtext">Table</span>
-
                                 </a>
                                 <ul class="pcoded-submenu">
 
 
-                                    <li >
+                                    <li class="active">
                                         <a href="/admin/customer/list">
                                             <span><i class="fas fa-chevron-right"></i></span>
                                             <span class="pcoded-mtext">Customer Table</span>
                                         </a>
                                     </li>
-                                    <li class="active">
+                                    <li>
                                         <a href="/admin/product/list">
                                             <span><i class="fas fa-chevron-right"></i></span>
                                             <span class="pcoded-mtext">Product Table</span>
                                         </a>
                                     </li>
-
                                 </ul>
                             </li>
 
@@ -222,6 +220,11 @@
                             </li>
 
                         </ul>
+
+
+
+
+
                     </div>
                 </nav>
                 <div class="pcoded-content">
@@ -241,17 +244,17 @@
                                             </div>
                                         </div>
                                         <!--<div class="col-lg-4">-->
-                                        <!--<div class="page-header-breadcrumb">-->
-                                        <!--<ul class="breadcrumb-title">-->
-                                        <!--<li class="breadcrumb-item">-->
-                                        <!--<a href="index.html"> <i class="feather icon-home"></i> </a>-->
-                                        <!--</li>-->
-                                        <!--<li class="breadcrumb-item"><a href="#!">Bootstrap Table</a>-->
-                                        <!--</li>-->
-                                        <!--<li class="breadcrumb-item"><a href="#!">Border Table</a>-->
-                                        <!--</li>-->
-                                        <!--</ul>-->
-                                        <!--</div>-->
+                                            <!--<div class="page-header-breadcrumb">-->
+                                                <!--<ul class="breadcrumb-title">-->
+                                                    <!--<li class="breadcrumb-item">-->
+                                                        <!--<a href="index.html"> <i class="feather icon-home"></i> </a>-->
+                                                    <!--</li>-->
+                                                    <!--<li class="breadcrumb-item"><a href="#!">Bootstrap Table</a>-->
+                                                    <!--</li>-->
+                                                    <!--<li class="breadcrumb-item"><a href="#!">Border Table</a>-->
+                                                    <!--</li>-->
+                                                <!--</ul>-->
+                                            <!--</div>-->
                                         <!--</div>-->
                                     </div>
                                 </div>
@@ -261,7 +264,7 @@
 
                                     <div class="card">
                                         <div class="card-header">
-                                            <h5>Product Table</h5>
+                                            <h5>Customer Table</h5>
 
                                         </div>
                                         <div class="card-block table-border-style">
@@ -269,12 +272,12 @@
                                                 <table class="table table-bordered">
                                                     <thead>
                                                     <tr>
-                                                        <th>productId</th>
+                                                        <th>customerId</th>
                                                         <th>name</th>
-                                                        <th>thumbnail</th>
-                                                        <th>price</th>
-                                                        <th>description</th>
-                                                        <th>artist</th>
+                                                        <th>password</th>
+                                                        <th>address</th>
+                                                        <th>email</th>
+                                                        <th>phone</th>
                                                         <th>createdAt</th>
                                                         <th>deletedAt</th>
                                                         <th>status</th>
@@ -282,15 +285,15 @@
                                                     </thead>
                                                     <tbody>
                                                     <%
-                                                    for(var i = 0; i < listProduct.length; i++){
+                                                    for(var i = 0; i < listCustomer.length; i++){
                                                     %>
-                                                        <tr class="item-product">
-                                                            <td><%= listProduct[i]._id%></td>
-                                                            <td><%= listProduct[i].name%></td>
-                                                            <td> <%= listProduct[i].thumbnail%></td>
-                                                            <td> <%= listProduct[i].price%></td>
-                                                            <td> <%= listProduct[i].description%></td>
-                                                            <td><%= listProduct[i].artist%></td>
+                                                        <tr class="item-customer">
+                                                            <td><%= listCustomer[i]._id%></td>
+                                                            <td><%= listCustomer[i].name%></td>
+                                                            <td> <%= listCustomer[i].password%></td>
+                                                            <td> <%= listCustomer[i].address%></td>
+                                                            <td> <%= listCustomer[i].email%></td>
+                                                            <td><%= listCustomer[i].phone%></td>
 
                                                         </tr>
                                                     <%
