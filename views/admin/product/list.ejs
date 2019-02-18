@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
 
     <link rel="stylesheet" href="/bower_components/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
 
     <link rel="stylesheet" type="text/css" href="/assets/icon/themify-icons/themify-icons.css">
 
@@ -47,7 +49,7 @@
                         <i class="fas fa-toggle-off"></i>
                     </a>
                     <a href="index.html">
-                        <img  class="img-fluid" src="/img/logo.png" alt="Logo" />
+                        <!--<img  class="img-fluid" src="/img/logo.png" alt="Logo" />-->
                     </a>
                     <!--<a class="mobile-options">-->
                     <!--<i class="feather icon-more-horizontal"></i>-->
@@ -128,6 +130,7 @@
                 </div>
             </div>
         </nav>
+
         <div class="pcoded-main-container">
             <div class="pcoded-wrapper">
                 <nav class="pcoded-navbar">
@@ -152,12 +155,12 @@
                                             <span class="pcoded-mtext">Customer Table</span>
                                         </a>
                                     </li>
-                                    <li class="active">
-                                        <a href="/admin/product/list">
-                                            <span><i class="fas fa-chevron-right"></i></span>
-                                            <span class="pcoded-mtext">Product Table</span>
-                                        </a>
-                                    </li>
+                                    <!--<li class="active">-->
+                                    <!--<a href="/admin/product/list">-->
+                                    <!--<span><i class="fas fa-chevron-right"></i></span>-->
+                                    <!--<span class="pcoded-mtext">Product Table</span>-->
+                                    <!--</a>-->
+                                    <!--</li>-->
 
                                 </ul>
                             </li>
@@ -188,8 +191,8 @@
                                             <span class="pcoded-mtext">Product</span>
                                         </a>
                                     </li>
-                                    <li class="">
-                                        <a href="product-list.html">
+                                    <li class="active">
+                                        <a href="/admin/product/list">
                                             <span><i class="fas fa-chevron-right"></i></span>
                                             <span class="pcoded-mtext">Product List</span>
                                         </a>
@@ -224,6 +227,7 @@
                         </ul>
                     </div>
                 </nav>
+
                 <div class="pcoded-content">
                     <div class="pcoded-inner-content">
 
@@ -235,78 +239,142 @@
                                         <div class="col-lg-8">
                                             <div class="page-header-title">
                                                 <div class="d-inline">
-
-
+                                                    <h4>Product List</h4>
+                                                    <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--<div class="col-lg-4">-->
-                                        <!--<div class="page-header-breadcrumb">-->
-                                        <!--<ul class="breadcrumb-title">-->
-                                        <!--<li class="breadcrumb-item">-->
-                                        <!--<a href="index.html"> <i class="feather icon-home"></i> </a>-->
-                                        <!--</li>-->
-                                        <!--<li class="breadcrumb-item"><a href="#!">Bootstrap Table</a>-->
-                                        <!--</li>-->
-                                        <!--<li class="breadcrumb-item"><a href="#!">Border Table</a>-->
-                                        <!--</li>-->
-                                        <!--</ul>-->
-                                        <!--</div>-->
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-
-
-                                <div class="page-body">
-
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h5>Product Table</h5>
-
-                                        </div>
-                                        <div class="card-block table-border-style">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>productId</th>
-                                                        <th>name</th>
-                                                        <th>thumbnail</th>
-                                                        <th>price</th>
-                                                        <th>description</th>
-                                                        <th>artist</th>
-                                                        <th>createdAt</th>
-                                                        <th>deletedAt</th>
-                                                        <th>status</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <%
-                                                    for(var i = 0; i < listProduct.length; i++){
-                                                    %>
-                                                        <tr class="item-product">
-                                                            <td><%= listProduct[i]._id%></td>
-                                                            <td><%= listProduct[i].name%></td>
-                                                            <td> <%= listProduct[i].thumbnail%></td>
-                                                            <td> <%= listProduct[i].price%></td>
-                                                            <td> <%= listProduct[i].description%></td>
-                                                            <td><%= listProduct[i].artist%></td>
-
-                                                        </tr>
-                                                    <%
-                                                    };
-                                                    %>
-                                                    </tbody>
-                                                </table>
+                                        <div class="col-lg-4">
+                                            <div class="page-header-breadcrumb">
+                                                <ul class="breadcrumb-title">
+                                                    <li class="breadcrumb-item">
+                                                        <a href="index.html"> <i class="feather icon-home"></i> </a>
+                                                    </li>
+                                                    <li class="breadcrumb-item"><a href="#!">E-Commerce</a>
+                                                    </li>
+                                                    <li class="breadcrumb-item"><a href="#!">Product List</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+
+                                <div class="md-modal md-effect-13 addcontact" id="modal-13">
+                                    <div class="md-content">
+                                        <h3 class="f-26">Add Product</h3>
+                                        <form action="/admin/product/save" method="post">
+                                            <div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="icofont icofont-user"></i></span>
+                                                    <input type="text" name="name" class="form-control pname" placeholder="Prodcut Name">
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="text" name="thumbnail" class="form-control pthumbnail" placeholder="Product Image">
+                                                    <span class="input-group-addon btn btn-primary">Chooese File</span>
+                                                </div>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="icofont icofont-user"></i></span>
+                                                    <input type="text" name="price" class="form-control pprice" placeholder="Price">
+                                                </div>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="icofont icofont-user"></i></span>
+                                                    <input type="text" name="description" class="form-control pdescription" placeholder="Description">
+                                                </div>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="icofont icofont-user"></i></span>
+                                                    <input type="text" name="artist" class="form-control pid" placeholder="Artist">
+                                                </div>
+                                                <div class="input-group">
+                                                    <select id="hello-single" name="status" class="form-control stock">
+                                                        <option value="">---- Select Stock ----</option>
+                                                        <option value="married">In Stock</option>
+                                                        <option value="unmarried">Out of Stock</option>
+                                                        <option value="unmarried">Law Stock</option>
+                                                    </select>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button class="btn btn-primary waves-effect m-r-20 f-w-600 d-inline-block save_btn">Save</button>
+                                                    <button type="button" class="btn btn-primary waves-effect m-r-20 f-w-600 md-close d-inline-block close_btn">Close</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                                <div class="page-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h5>Product List</h5>
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="table-responsive">
+                                                        <div class="table-content">
+                                                            <div class="project-table">
+                                                                <table id="e-product-list" class="table table-striped dt-responsive nowrap">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>productId</th>
+                                                                        <th>name</th>
+                                                                        <th>thumbnail</th>
+                                                                        <th>price</th>
+                                                                        <th>description</th>
+                                                                        <th>artist</th>
+                                                                        <th>createdAt</th>
+                                                                        <th>deletedAt</th>
+                                                                        <th>status</th>
+                                                                        <th>action</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    
+                                                                    <%
+                                                                    for(var i = 0; i < listProduct.length; i++){
+                                                                    %>
+                                                                        <tr class="item-product">
+                                                                            <td><%= listProduct[i]._id%></td>
+                                                                            <td><%= listProduct[i].name%></td>
+                                                                            <td><img width="50px"  src="<%= listProduct[i].thumbnail%>" alt=""></td>
+                                                                            <td> <%= listProduct[i].price%></td>
+                                                                            <td><span ><%= listProduct[i].description%></span> </td>
+                                                                            <td><%= listProduct[i].artist%></td>
+                                                                            <td><%= listProduct[i].createdAt%></td>
+                                                                            <td><%= listProduct[i].deletedAt%></td>
+                                                                            <td><%= listProduct[i].status%></td>
+                                                                            <td class="action-icon">
+                                                                                <a href="#!" class="m-r-15 text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="icofont icofont-ui-edit"></i></a>
+                                                                                <a href="#!" class="text-muted" id="btn-delete" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="icofont icofont-delete-alt"></i></a>
+                                                                            </td>
+
+                                                                        </tr>
+                                                                    <%
+                                                                    };
+                                                                    %>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="md-overlay"></div>
 
                                 </div>
 
                             </div>
                         </div>
 
+                        <!--<div id="styleSelector">-->
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
@@ -325,8 +393,16 @@
 <script type="text/javascript" src="/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
 
 <script type="text/javascript" src="/bower_components/modernizr/js/modernizr.js"></script>
-<!--<script type="text/javascript" src="/bower_components/modernizr/js/css-scrollbars.js"></script>-->
 
+<script src="/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+<script src="/assets/js/classie.js"></script>
+<script src="/assets/js/modalEffects.js"></script>
+
+<script type="text/javascript" src="/assets/pages/product-list/product-list.js"></script>
 <!--<script type="text/javascript" src="/bower_components/i18next/js/i18next.min.js"></script>-->
 <!--<script type="text/javascript" src="../files/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>-->
 <script type="text/javascript" src="/bower_components/i18next-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
