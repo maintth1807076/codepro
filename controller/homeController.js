@@ -40,3 +40,12 @@ exports.detailProductPage = function (req, res) {
     // var detailP = db.get('client').find({id: id}).value();
     res.render("client/detail-product.ejs");
 };
+exports.cartpage = function (req, res) {
+    res.render("client/cart.ejs");
+
+};
+exports.paypage = function (req, res) {
+    res.render("client/pay.ejs");
+
+};
+
