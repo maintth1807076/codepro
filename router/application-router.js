@@ -26,7 +26,9 @@ exports.routing = function (app) {
     app.get("/client/magazine", homeController.Magazinepage);
     app.get("/client/detail-product", homeController.detailProductPage);
 
-
+    app.get("/admin/product/create", categoryController.generateForm);
+    app.get("/admin/product/list", categoryController.list);
+    app.post("/admin/product/save", categoryController.save);
 
     app.get("/admin/customer/create", customerController.generateCustomer);
     app.get("/admin/customer/list", customerController.listCustomer);
