@@ -10,7 +10,7 @@ var productSchema = new Schema({
     artist: {type: String},
     createdAt: {type: Date},
     deletedAt: {type: Date},
-    status: {type: Number},
+    status: {type: String},
 });
 
 module.exports = mongoose.model("Product", productSchema);

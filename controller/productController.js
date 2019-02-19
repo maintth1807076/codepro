@@ -34,6 +34,6 @@ exports.listProduct = function (req, res) {
 exports.detailProduct = function (req, res) {
     Product.findById(req.params.id, function(err, result){
         res.render("admin/product/details.ejs",{product: result});
-        console.log(result)
+        // console.log(result)
     });
 };
