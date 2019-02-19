@@ -49,7 +49,7 @@
                         <i class="fas fa-toggle-off"></i>
                     </a>
                     <a href="index.html">
-                        <!--<img  class="img-fluid" src="/img/logo.png" alt="Logo" />-->
+                        <img  class="img-fluid" src="/img/logo.png" alt="Logo" />
                     </a>
                     <!--<a class="mobile-options">-->
                     <!--<i class="feather icon-more-horizontal"></i>-->
@@ -155,24 +155,24 @@
                                             <span class="pcoded-mtext">Customer Table</span>
                                         </a>
                                     </li>
-                                    <!--<li class="active">-->
-                                    <!--<a href="/admin/product/list">-->
-                                    <!--<span><i class="fas fa-chevron-right"></i></span>-->
-                                    <!--<span class="pcoded-mtext">Product Table</span>-->
-                                    <!--</a>-->
-                                    <!--</li>-->
+                                    <li >
+                                        <a href="/admin/orders/list">
+                                            <span><i class="fas fa-chevron-right"></i></span>
+                                            <span class="pcoded-mtext">Order Table</span>
+                                        </a>
+                                    </li>
 
                                 </ul>
                             </li>
 
 
 
-                            <li class="">
-                                <a href="editable-table.html">
-                                    <span class="pcoded-micon"><i class="fas fa-edit"></i></span>
-                                    <span class="pcoded-mtext">Editable Table</span>
-                                </a>
-                            </li>
+                            <!--<li class="">-->
+                                <!--<a href="editable-table.html">-->
+                                    <!--<span class="pcoded-micon"><i class="fas fa-edit"></i></span>-->
+                                    <!--<span class="pcoded-mtext">Editable Table</span>-->
+                                <!--</a>-->
+                            <!--</li>-->
                         </ul>
 
                         <div class="pcoded-navigatio-lavel">Pages</div>
@@ -263,27 +263,28 @@
                                 <div class="md-modal md-effect-13 addcontact" id="modal-13">
                                     <div class="md-content">
                                         <h3 class="f-26">Add Product</h3>
-                                        <form action="/admin/product/save" method="post">
+                                        <form action="/admin/product/save" method="post" enctype="multipart/form-data">
                                             <div>
+                                                <div class="input-group">
+                                                    <!--<span class="input-group-addon btn btn-primary" >Chooese File</span>-->
+                                                    <input type="file" name="thumbnail" class="form-control pthumbnail " placeholder="Product Image">
+                                                </div>
 
                                                 <div class="input-group">
-                                                    <span class="input-group-addon"><i class="icofont icofont-user"></i></span>
-                                                    <input type="text" name="name" class="form-control pname" placeholder="Prodcut Name">
+                                                    <!--<span class="input-group-addon"><i class="icofont icofont-user"></i></span>-->
+                                                    <input type="text" name="name" class="form-control" placeholder="Prodcut Name">
                                                 </div>
                                                 <div class="input-group">
-                                                    <input type="text" name="thumbnail" class="form-control pthumbnail" placeholder="Product Image">
-                                                    <span class="input-group-addon btn btn-primary">Chooese File</span>
-                                                </div>
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="icofont icofont-user"></i></span>
+                                                    <!--<span class="input-group-addon"><i class="icofont icofont-user"></i></span>-->
                                                     <input type="text" name="price" class="form-control pprice" placeholder="Price">
                                                 </div>
+
                                                 <div class="input-group">
-                                                    <span class="input-group-addon"><i class="icofont icofont-user"></i></span>
+                                                    <!--<span class="input-group-addon"><i class="icofont icofont-user"></i></span>-->
                                                     <input type="text" name="description" class="form-control pdescription" placeholder="Description">
                                                 </div>
                                                 <div class="input-group">
-                                                    <span class="input-group-addon"><i class="icofont icofont-user"></i></span>
+                                                    <!--<span class="input-group-addon"><i class="icofont icofont-user"></i></span>-->
                                                     <input type="text" name="artist" class="form-control pid" placeholder="Artist">
                                                 </div>
                                                 <div class="input-group">
@@ -346,7 +347,7 @@
                                                                             <td><%= listProduct[i].deletedAt%></td>
                                                                             <td><%= listProduct[i].status%></td>
                                                                             <td class="action-icon">
-                                                                                <a href="#!" class="m-r-15 text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="icofont icofont-ui-edit"></i></a>
+                                                                                <a href="/admin/product/<%= listProduct[i]._id%>" class="m-r-15 text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="icofont icofont-ui-edit"></i></a>
                                                                                 <a href="#!" class="text-muted" id="btn-delete" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="icofont icofont-delete-alt"></i></a>
                                                                             </td>
 
