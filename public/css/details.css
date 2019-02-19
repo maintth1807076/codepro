@@ -1,0 +1,13 @@
+.img-fluid {
+    height: 40px;
+}
+
+#small_banner img {
+    width: 160px;
+    height: 160px;
+}
+
+#big_banner img{
+    width: 450px;
+    height: 600px;
+}

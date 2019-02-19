@@ -151,23 +151,15 @@
                                             <span class="pcoded-mtext">Customer Table</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="/admin/product/list">
+                                    <li >
+                                        <a href="/admin/orders/list">
                                             <span><i class="fas fa-chevron-right"></i></span>
-                                            <span class="pcoded-mtext">Product Table</span>
+                                            <span class="pcoded-mtext">Order Table</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
 
-
-
-                            <li class="">
-                                <a href="editable-table.html">
-                                    <span class="pcoded-micon"><i class="fas fa-edit"></i></span>
-                                    <span class="pcoded-mtext">Editable Table</span>
-                                </a>
-                            </li>
                         </ul>
 
                         <div class="pcoded-navigatio-lavel">Pages</div>
@@ -177,7 +169,6 @@
                                 <a href="javascript:void(0)">
                                     <span class="pcoded-micon"><i class="fas fa-shopping-cart"></i></span>
                                     <span class="pcoded-mtext">E-Commerce</span>
-                                    <!--<span class="pcoded-badge label label-danger">NEW</span>-->
                                 </a>
                                 <ul class="pcoded-submenu">
                                     <li class="">
@@ -187,7 +178,7 @@
                                         </a>
                                     </li>
                                     <li class="">
-                                        <a href="product-list.html">
+                                        <a href="/admin/product/list">
                                             <span><i class="fas fa-chevron-right"></i></span>
                                             <span class="pcoded-mtext">Product List</span>
                                         </a>
@@ -198,8 +189,8 @@
                                             <span class="pcoded-mtext">Product Edit</span>
                                         </a>
                                     </li>
-                                    <li class="">
-                                        <a href="product-detail.html">
+                                    <li class="active">
+                                        <a href="/admin/product/:id">
                                             <span><i class="fas fa-chevron-right"></i></span>
                                             <span class="pcoded-mtext">Product Detail</span>
                                         </a>
@@ -221,10 +212,6 @@
 
                         </ul>
 
-
-
-
-
                     </div>
                 </nav>
                 <div class="pcoded-content">
@@ -243,19 +230,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--<div class="col-lg-4">-->
-                                            <!--<div class="page-header-breadcrumb">-->
-                                                <!--<ul class="breadcrumb-title">-->
-                                                    <!--<li class="breadcrumb-item">-->
-                                                        <!--<a href="index.html"> <i class="feather icon-home"></i> </a>-->
-                                                    <!--</li>-->
-                                                    <!--<li class="breadcrumb-item"><a href="#!">Bootstrap Table</a>-->
-                                                    <!--</li>-->
-                                                    <!--<li class="breadcrumb-item"><a href="#!">Border Table</a>-->
-                                                    <!--</li>-->
-                                                <!--</ul>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
+                                        <div class="col-lg-4">
+                                            <div class="page-header-breadcrumb">
+                                                <ul class="breadcrumb-title">
+                                                    <li class="breadcrumb-item">
+                                                        <a href="index.html"> <i class="feather icon-home"></i> </a>
+                                                    </li>
+                                                    <li class="breadcrumb-item"><a href="#!"> Table</a>
+                                                    </li>
+                                                    <li class="breadcrumb-item"><a href="#!">Customer Table</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -341,12 +328,5 @@
 <script type="text/javascript" src="/assets/js/script.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){dataLayer.push(arguments);}
-    // gtag('js', new Date());
-    //
-    // gtag('config', 'UA-23581568-13');
-</script>
 </body>
 </html>

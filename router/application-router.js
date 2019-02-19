@@ -1,8 +1,10 @@
 var userController = require("../controller/userController");
 var productController = require("../controller/productController");
-var categoryController = require("../controller/categoryController.js");
+// var categoryController = require("../controller/categoryController.js");
 var homeController = require("../controller/homeController");
 var customerController = require("../controller/customerController");
+var cloudinary = require('cloudinary');
+
 exports.routing = function (app) {
 
     app.get("/register", userController.generateRegister);
@@ -14,9 +16,9 @@ exports.routing = function (app) {
     app.get("/admin/product/list", productController.listProduct);
     app.post("/admin/product/save", productController.saveProduct);
     app.get("/admin/product/:id", productController.detailProduct);
+    app.get("/admin/orders/list", productController.listOrder);
 
     app.get("/client/home", homeController.generateHome);
-
     app.get("/client/contact", homeController.contact);
     app.get("/client/about", homeController.about);
     app.get("/client/DVD", homeController.DVDpage);
