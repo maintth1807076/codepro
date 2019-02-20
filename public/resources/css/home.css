@@ -138,7 +138,7 @@ a:hover {
     font-family: 'Hammersmith One', sans-serif;
 }
 .hot-disk {
-    background-image: url("/img/background1.jpg");
+    background-image: url("/resources/img/background1.jpg");
     background-position: left;
     padding: 20px 0;
 }
@@ -153,7 +153,7 @@ a:hover {
     margin: 5px;
 }
 .hot-ticket {
-    background-image: url("/img/background2.jpg");
+    background-image: url("/resources/img/background2.jpg");
     padding: 20px 0;
 }
 .hot-ticket img {
@@ -169,7 +169,7 @@ h2 a {
     font-size: 20px;
 }
 .hot-contest {
-    background-image: url("/img/background3.jpg");
+    background-image: url("/resources/img/background3.jpg");
     background-position: right;
     padding: 20px 0;
 }
@@ -197,7 +197,7 @@ h2 a {
     text-align: center;
 }
 .footer-top {
-    background-image: url("/img/background2.jpg");
+    background-image: url("/resources/img/background2.jpg");
     background-position: bottom;
 }
 .pagetop i {
