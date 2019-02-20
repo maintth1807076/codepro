@@ -18,8 +18,8 @@ exports.CDpage = function (req, res) {
     res.render("client/CD.ejs");
 };
 
-exports.DVDpage = function (req, res) {
-    res.render("client/DVD.ejs");
+exports.diskPage = function (req, res) {
+    res.render("client/disk.ejs");
 };
 
 exports.liveshowPage = function (req, res) {

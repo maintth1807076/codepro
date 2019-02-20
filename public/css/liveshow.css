@@ -164,8 +164,8 @@ a:hover {
     font-family: 'Hammersmith One', sans-serif;
 }
 .hot-disk {
-    background-image: url("/img/background1.jpg");
-    background-position: left;
+    /*background-image: url("/img/background1.jpg");*/
+    /*background-position: left;*/
     padding: 20px 0;
 }
 .hot-disk .mask p {
@@ -205,6 +205,10 @@ h2 a {
     border-radius: 10px;
 }
 /*footer*/
+.footer-top a {
+    color: white;
+}
+
 #footer {
     padding-top: 10px;
 }
@@ -258,4 +262,9 @@ h2 a {
     img {
         width: 50px;
     }
+}
+
+.search {
+    width: 36px;
+    height: 33px;
 }

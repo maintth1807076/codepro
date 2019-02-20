@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/mdb.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link type="text/html" rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 </head>
 <body>
 <div id="header">
@@ -48,10 +48,10 @@
 
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="/client/contact" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About Us</a>
+                        <a href="/client/about" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link" id="search"><i class="fas fa-search"></i></a>
@@ -83,11 +83,10 @@
             <div class="just-in-box ">
                 <div class="just-in-tab1">
                     <div class="filter-item">
-                        <label>Sort by:</label>
+
                         <div class="select-container">
                             <select class="browser-default custom-select">
-                                <option selected>Search</option>
-                                <option value="3">Movies</option>
+                                <option selected>Hot</option>
                                 <option value="4">Band</option>
                                 <option value="5">Solo</option>
                                 <option value="6">Release year</option>
@@ -95,34 +94,24 @@
                         </div>
                     </div>
                     <div class="filter-item">
-                        <label>Price range:</label>
-                        <div class="select-container ">
-                            <select class="browser-default custom-select">
-                                <option selected>From</option>
-                                <option value="0.00">0.00</option>
-                                <option value="1.00">1.00</option>
-                                <option value="2.00">2.00</option>
-                                <option value="5.00">5.00</option>
-                                <option value="10.00">10.00</option>
-                            </select>
-                        </div>
+
+                        <select class="browser-default custom-select">
+                            <option selected>Price</option>
+                            <option value="1"> <200$ </option>
+                            <option value="2"> 200$ - 1000$</option>
+                            <option value="3"> >1000$ </option>
+                        </select>
                     </div>
+
                     <div class="filter-item">
-                        <label>&nbsp;</label>
-                        <div class="select-container x-small">
-                            <select class="browser-default custom-select">
-                                <option selected>To</option>
-                                <option value="0.99">0.99</option>
-                                <option value="1.99">1.99</option>
-                                <option value="2.99">2.99</option>
-                                <option value="5.99">5.99</option>
-                                <option value="10.99">10.99</option>
-                            </select>
-                        </div>
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
                     </div>
+
+
                     <div class="filter-item">
                         <label>&nbsp; </label>
-                        <input class="go" type="submit" value="Submit">
+
+                        <button class="search"><i class="fas fa-search"> </i></button>
                     </div>
                 </div>
             </div>
@@ -385,7 +374,7 @@
     </div>
 </div>
 
-<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/mdb.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

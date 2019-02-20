@@ -60,19 +60,19 @@ body {
 }
 /*banner*/
 
-a.register {
-    color: rgb(234, 97, 27) ;
-    border: 1px solid rgb(234, 97, 27);
-    border-radius: 3px;
-    font-weight: bold ;
-}
-a.login {
-    color: rgb(234, 97, 27) ;
-    border: 1px solid rgb(234, 97, 27);
-    text-align: center;
-    border-radius: 3px;
-    font-weight: bold ;
-}
+/*a.register {*/
+    /*color: rgb(234, 97, 27) ;*/
+    /*border: 1px solid rgb(234, 97, 27);*/
+    /*border-radius: 3px;*/
+    /*font-weight: bold ;*/
+/*}*/
+/*a.login {*/
+    /*color: rgb(234, 97, 27) ;*/
+    /*border: 1px solid rgb(234, 97, 27);*/
+    /*text-align: center;*/
+    /*border-radius: 3px;*/
+    /*font-weight: bold ;*/
+/*}*/
 
 h2 {
     font-size: 32px;
@@ -191,6 +191,10 @@ h2 a {
 }
 #footer li {
     margin: 5px;
+}
+
+.footer-top a {
+    color: white;
 }
 .pull {
     padding: 15px 0 4px;

@@ -26,6 +26,7 @@ exports.routing = function (app) {
     app.get("/client/book", homeController.Bookpage);
     app.get("/client/ticket", homeController.liveshowPage);
     app.get("/client/magazine", homeController.Magazinepage);
+    app.get("/client/disk", homeController.diskPage);
     app.get("/client/detail-product", homeController.detailProductPage);
     app.get("/client/cart", homeController.cartpage);
     app.get("/client/pay", homeController.paypage);
