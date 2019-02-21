@@ -12,10 +12,15 @@ body {
 .nav-link {
     color: white;
 }
+
+#customer {
+    color: white;
+}
 /*.title {*/
 /*height: 50px;*/
 /*}*/
 .nav-item {
+    font-size: 20px;
     text-transform: uppercase;
     padding-top: 12px;
     padding-left: 10px;
@@ -30,6 +35,13 @@ body {
 .main-clearfix .page-title {
     padding-top: 90px;
 
+}
+
+.menu ul li .register{
+    font-size: 16px;
+}
+.menu ul li .login{
+    font-size: 16px;
 }
 .menu ul li {
     display: block;
@@ -64,19 +76,18 @@ body {
 }
 /*banner*/
 
-/*a.register {*/
-/*color: rgb(234, 97, 27) ;*/
-/*border: 1px solid rgb(234, 97, 27);*/
-/*border-radius: 3px;*/
-/*font-weight: bold ;*/
-/*}*/
-/*a.login {*/
-/*color: rgb(234, 97, 27) ;*/
-/*border: 1px solid rgb(234, 97, 27);*/
-/*text-align: center;*/
-/*border-radius: 3px;*/
-/*font-weight: bold ;*/
-/*}*/
+.prod-info h4 {
+    font-size: 23px;
+    height: 50px;
+    color: #404e67;
+    margin-top: 10px;
+}
+
+.prod-info .prod-price {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
 h2 {
     font-size: 32px;
@@ -179,7 +190,7 @@ a:hover {
     margin: 5px;
 }
 .hot-ticket {
-    background-image: url("/img/background2.jpg");
+    background-image: url("/resources/img/background2.jpg");
     padding: 20px 0;
 }
 .hot-ticket img {
@@ -195,7 +206,7 @@ h2 a {
     font-size: 20px;
 }
 .hot-contest {
-    background-image: url("/img/background3.jpg");
+    background-image: url("/resources/img/background3.jpg");
     background-position: right;
     padding: 20px 0;
 }
@@ -227,7 +238,7 @@ h2 a {
     text-align: center;
 }
 .footer-top {
-    background-image: url("/img/background2.jpg");
+    background-image: url("/resources/img/background2.jpg");
     background-position: bottom;
 }
 .pagetop i {

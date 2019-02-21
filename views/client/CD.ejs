@@ -59,10 +59,10 @@
                         <a href="#" class="nav-link" id="search"><i class="fas fa-search"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
+                        <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/customer" id="customer"><i class="fas fa-user-circle"></i></a>
+                        <a class="nav-link"  id="customer"><i class="fas fa-user-circle"></i></a>
                         <ul class="item-menu">
                             <li><a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign
                                     In</a></li>
@@ -87,10 +87,13 @@
 
                         <div class="select-container">
                             <select class="browser-default custom-select">
-                                <option selected>Movies</option>
+                                <option selected>Sort by</option>
+                                <option value="8">Top Seller</option>
+                                <option value="9">New Releases</option>
+                                <option value="10">Clearance</option>
+                                <option value="7">Movies</option>
                                 <option value="4">Band</option>
                                 <option value="5">Solo</option>
-                                <option value="6">Release year</option>
                             </select>
                         </div>
                     </div>
@@ -109,7 +112,6 @@
                     </div>
                     <div class="filter-item">
                         <label>&nbsp; </label>
-
                         <button class="search"><i class="fas fa-search"> </i></button>
                     </div>
                 </div>
@@ -123,111 +125,178 @@
 
             <div class="list-hot-disk">
                 <div class="row text-center">
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="http://image.phimmoi.net/film/1018/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    TRANSFORMERS: AGE OF...
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>TRANSFORMERS: AGE OF...</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/9/3/5/f/935f82d0a14506cbe42cde70aaf78cee.jpg"
-                                     alt="Purpose World">
+                                     alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-                                    <p></p>
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    DDU-DU DDU-DU (JP Ver.)
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>DDU-DU DDU-DU (JP Ver.)</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 15.00$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-                                    <p></p>
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Sorry
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-strong">
                                 <img class="card-img-top img-fluid"
                                      src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Alone remix
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Alone remix</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="http://image.phimmoi.net/film/4325/poster.medium.jpg"
-                                     alt="Purpose World">
+                                     alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    JOHN WICK: CHAPTER 2
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>JOHN WICK: CHAPTER 2</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="http://image.phimmoi.net/film/2871/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Steve Jobs
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Steve Jobs</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
                         </div>
                     </div>
                 </div>

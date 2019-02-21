@@ -1,7 +1,12 @@
-
+var Product = require("../models/product.js");
 
 exports.generateHome = function (req, res) {
-    res.render("client/home.ejs");
+    Product.find({}, function(err, products) {
+        // console.log({"listProduct": products});
+        res.render("client/home.ejs", {
+            "listProduct": products
+        });
+    });
 };
 exports.contact = function (req, res) {
     res.render("client/contact.ejs");
@@ -11,7 +16,6 @@ exports.about = function (req, res) {
 };
 exports.DVDpage = function (req, res) {
     res.render("client/DVD.ejs");
-
 };
 
 exports.CDpage = function (req, res) {
@@ -35,11 +39,12 @@ exports.Magazinepage = function (req, res) {
 };
 
 exports.detailProductPage = function (req, res) {
-    // var id = parseInt(req.params.id);
-    //
-    // var detailP = db.get('client').find({id: id}).value();
-    res.render("client/detail-product.ejs");
+    Product.findById(req.params.id, function(err, result){
+        res.render("client/detail-product.ejs",{product: result});
+    });
 };
+
+
 exports.cartpage = function (req, res) {
     res.render("client/cart.ejs");
 
@@ -49,3 +54,42 @@ exports.paypage = function (req, res) {
 
 };
 
+exports.newReleasesDVD = function (req, res) {
+    res.render("client/new-releases-dvd.ejs");
+};
+exports.topSellerDVD = function (req, res) {
+    res.render("client/top-seller-dvd.ejs");
+};
+exports.clearanceDVD = function (req, res) {
+    res.render("client/clearance-dvd.ejs");
+};
+
+exports.newReleasesCD = function (req, res) {
+    res.render("client/new-releases-cd.ejs");
+};
+exports.topSellerCD = function (req, res) {
+    res.render("client/top-seller-cd.ejs");
+};
+exports.clearanceCD = function (req, res) {
+    res.render("client/clearance-cd.ejs");
+};
+
+exports.newReleasesBook = function (req, res) {
+    res.render("client/new-releases-book.ejs");
+};
+exports.topSellerBook = function (req, res) {
+    res.render("client/top-seller-book.ejs");
+};
+exports.clearanceBook = function (req, res) {
+    res.render("client/clearance-book.ejs");
+};
+
+exports.newReleasesMagazine = function (req, res) {
+    res.render("client/new-releases-magazine.ejs");
+};
+exports.topSellerMagazine = function (req, res) {
+    res.render("client/top-seller-magazine.ejs");
+};
+exports.clearanceMagazine = function (req, res) {
+    res.render("client/clearance-magazine.ejs");
+};
