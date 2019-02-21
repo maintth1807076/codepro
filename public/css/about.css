@@ -1,5 +1,4 @@
 .chart-week {
-    ;
     padding-bottom: 40px;
 }
 
@@ -92,10 +91,11 @@ body {
 }
 
 .footer-top {
-    background-image: url("/img/background2.jpg");
+    background-image: url("/resources/img/background2.jpg");
     background-position: bottom;
 }
 .pagetop i {
     padding-right: 10px;
 }
 /*footer end*/
+
