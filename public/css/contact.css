@@ -1,5 +1,10 @@
+.map {
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
 body {
-    font-family: 'Boogaloo', cursive;
+    font-family: Roboto, sans-serif;
 }
 .navbar {
     box-shadow: 5px 5px 5px black;
@@ -24,9 +29,6 @@ body {
     padding-left: 0;
     border: 5px;
 }
-.item-menu li a{
-    margin: 10px;
-}
 
 .menu ul li {
     display: block;
@@ -35,10 +37,10 @@ body {
 .menu ul li a {
     text-decoration: none;
     display: block;
-    color: black;
+    color: white;
 }
 .menu ul li a:hover {
-    color: white;
+    color: black;
     opacity: 0.8;
     box-shadow: 5px 5px 5px darkviolet;
 }
@@ -46,13 +48,32 @@ body {
     display: none;
     position: absolute;
     z-index: 999;
-    background: white;
+    background: #6f42c1;
     width: 100px;
 }
 .menu ul li:hover .item-menu {
     display: block;
 }
+
+/*a.register {*/
+    /*color: rgb(234, 97, 27) ;*/
+    /*border: 1px solid rgb(234, 97, 27);*/
+    /*border-radius: 3px;*/
+    /*font-weight: bold ;*/
+/*}*/
+/*a.login {*/
+    /*color: rgb(234, 97, 27) ;*/
+    /*border: 1px solid rgb(234, 97, 27);*/
+    /*text-align: center;*/
+    /*border-radius: 3px;*/
+    /*font-weight: bold ;*/
+/*}*/
 /*footer*/
+
+.footer-top a {
+    color: white;
+}
+
 #footer {
     padding-top: 10px;
 }
@@ -71,7 +92,7 @@ body {
     text-align: center;
 }
 .footer-top {
-    background-image: url("/resources/img/background2.jpg");
+    background-image: url("/img/background2.jpg");
     background-position: bottom;
 }
 .pagetop i {

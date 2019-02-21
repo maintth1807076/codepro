@@ -1,39 +1,5 @@
-.list-CD .card{
-    margin: 10px 10px;
-    text-align: center;
-}
-.list-CD p {
-    padding-top: 15px;
-
-}
-.select .nav {
-    padding-left: 70px;
-}
-.dropdown-toggle {
-    font-size: 25px;
-}
-
-#content {
-    background-image: url("/resources/img/background5.jpg");
-    padding-bottom: 20px;
-}
-.page-number {
-    float: right;
-    padding-right: 150px;
-
-}
-.nav-search {
-    padding: 15px 0;
-    padding-left: 20px;
-}
-/*select {*/
-    /*font-family: 'Boogaloo', cursive;*/
-/*}*/
-
-/**/
-
-.list-CD {
-    padding-top: 90px;
+.chart-week {
+    padding-bottom: 40px;
 }
 
 body {
@@ -50,7 +16,7 @@ body {
     color: white;
 }
 .title {
-    height: 50px;
+    padding-top: 100px;
 }
 .navbar .nav-item {
     text-transform: uppercase;
@@ -62,9 +28,7 @@ body {
     padding-left: 0;
     border: 5px;
 }
-.item-menu li a{
-    margin: 10px;
-}
+
 
 .menu ul li {
     display: block;
@@ -73,10 +37,10 @@ body {
 .menu ul li a {
     text-decoration: none;
     display: block;
-    color: black;
+    color: white;
 }
 .menu ul li a:hover {
-    color: white;
+    color: black;
     opacity: 0.8;
     box-shadow: 5px 5px 5px darkviolet;
 }
@@ -84,12 +48,26 @@ body {
     display: none;
     position: absolute;
     z-index: 999;
-    background: white;
+    background: #6f42c1;
     width: 100px;
 }
 .menu ul li:hover .item-menu {
     display: block;
 }
+
+/*a.register {*/
+    /*color: rgb(234, 97, 27) ;*/
+    /*border: 1px solid rgb(234, 97, 27);*/
+    /*border-radius: 3px;*/
+    /*font-weight: bold ;*/
+/*}*/
+/*a.login {*/
+    /*color: rgb(234, 97, 27) ;*/
+    /*border: 1px solid rgb(234, 97, 27);*/
+    /*text-align: center;*/
+    /*border-radius: 3px;*/
+    /*font-weight: bold ;*/
+/*}*/
 /*footer*/
 #footer {
     padding-top: 10px;
@@ -108,11 +86,16 @@ body {
     padding: 15px 0 4px;
     text-align: center;
 }
+.footer-top a {
+    color: white;
+}
+
 .footer-top {
-    background-image: url("/img/background2.jpg");
+    background-image: url("/resources/img/background2.jpg");
     background-position: bottom;
 }
 .pagetop i {
     padding-right: 10px;
 }
 /*footer end*/
+

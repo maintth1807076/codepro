@@ -12,9 +12,7 @@ body {
 .nav-link {
     color: white;
 }
-/*.title {*/
-    /*height: 50px;*/
-/*}*/
+
 .nav-item {
     text-transform: uppercase;
     padding-top: 12px;
@@ -25,6 +23,10 @@ body {
     padding-left: 0;
     border: 5px;
 }
+
+/*.item-menu li a{*/
+    /*margin: 10px;*/
+/*}*/
 
 
 .menu ul li {
@@ -37,7 +39,7 @@ body {
     color: white;
 }
 .menu ul li a:hover {
-    color: black;
+    color: white;
     opacity: 0.8;
     box-shadow: 5px 5px 5px darkviolet;
 }
@@ -58,27 +60,33 @@ body {
 .carousel {
     padding-top: 100px;
 }
-/*banner*/
 
-a.register {
-    color: rgb(234, 97, 27) ;
-    border: 1px solid rgb(234, 97, 27);
-    border-radius: 3px;
-    font-weight: bold ;
-}
-a.login {
-    color: rgb(234, 97, 27) ;
-    border: 1px solid rgb(234, 97, 27);
-    text-align: center;
-    border-radius: 3px;
-    font-weight: bold ;
+.view-more {
+    font-size: 15px;
 }
 
-h2 {
-    font-size: 32px;
-    text-align: center;
-    font-weight: 300;
+
+.card img{
+    width: 160px;
+    height: 160px;
 }
+
+.title {
+    height: 50px;
+}
+
+.hidden-link{
+    color: black;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+
 
 hr {
     margin-top: 20px;
@@ -96,27 +104,6 @@ hr {
     text-align: center;
 }
 
-
-
-/*.item a img {*/
-    /*height: 150px;*/
-    /*width: 150px;*/
-/*}*/
-
-
-.hidden-link{
-    color: black;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-a:hover {
-    text-decoration: none!important;
-}
-
-
-/*modal*/
 .form-inline  {
     padding-bottom: 20px;
 }
@@ -138,7 +125,7 @@ a:hover {
     font-family: 'Hammersmith One', sans-serif;
 }
 .hot-disk {
-    background-image: url("/resources/img/background1.jpg");
+    background-image: url("/img/background1.jpg");
     background-position: left;
     padding: 20px 0;
 }
@@ -152,33 +139,7 @@ a:hover {
 .hot-disk .card {
     margin: 5px;
 }
-.hot-ticket {
-    background-image: url("/resources/img/background2.jpg");
-    padding: 20px 0;
-}
-.hot-ticket img {
-    height: 300px;
-}
-.hot-ticket .card {
-    margin: 10px;
-}
-.hot-ticket h2 {
-    color: white;
-}
-h2 a {
-    font-size: 20px;
-}
-.hot-contest {
-    background-image: url("/resources/img/background3.jpg");
-    background-position: right;
-    padding: 20px 0;
-}
-.hot-contest img {
-    width: 100%;
-    box-shadow: 5px 5px 5px darkviolet;
-    border-radius: 10px;
-}
-/*footer*/
+
 #footer {
     padding-top: 10px;
 }
@@ -197,7 +158,7 @@ h2 a {
     text-align: center;
 }
 .footer-top {
-    background-image: url("/resources/img/background2.jpg");
+    background-image: url("/img/background2.jpg");
     background-position: bottom;
 }
 .pagetop i {
@@ -226,10 +187,18 @@ h2 a {
 
 @media (max-width: 535px) {
     /*.left-column img {*/
-        /*width: 220px;*/
-        /*top: -85px;*/
+    /*width: 220px;*/
+    /*top: -85px;*/
     /*}*/
     img {
         width: 50px;
     }
+}
+
+/*.align-items-center {*/
+    /*color: white;*/
+/*}*/
+
+.footer-top a {
+    color: white;
 }

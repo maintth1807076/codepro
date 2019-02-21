@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/vendor/css/font-awesome.min.css">
+
+    <link type="text/html" rel="stylesheet" href="/vendor/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" href="/resources/css/DVD.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="/css/DVD.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 
 </head>
 <body>
@@ -51,10 +52,10 @@
 
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
+                            <a href="/client/contact" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">About Us</a>
+                            <a href="/client/about" class="nav-link">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link" id="search"><i class="fas fa-search"></i></a>
@@ -80,16 +81,14 @@
     <div class="main">
         <div class="inner-page container">
             <section class="main-clearfix">
-                <h1 class="page-title">JUST IN</h1>
+                <h1 class="page-title">DVD</h1>
                 <hr>
                 <div class="just-in-box ">
                     <div class="just-in-tab1">
                         <div class="filter-item">
-                            <label>Sort by:</label>
                             <div class="select-container">
                                 <select class="browser-default custom-select">
-                                    <option selected>Search</option>
-                                    <option value="3">Movies</option>
+                                    <option selected>Movies</option>
                                     <option value="4">Band</option>
                                     <option value="5">Solo</option>
                                     <option value="6">Release year</option>
@@ -97,34 +96,35 @@
                             </div>
                         </div>
                         <div class="filter-item">
-                            <label>Price range:</label>
-                            <div class="select-container ">
-                                <select class="browser-default custom-select">
-                                    <option selected>From</option>
-                                    <option value="0.00">0.00</option>
-                                    <option value="1.00">1.00</option>
-                                    <option value="2.00">2.00</option>
-                                    <option value="5.00">5.00</option>
-                                    <option value="10.00">10.00</option>
-                                </select>
-                            </div>
+                            <!--<label>Price range:</label>-->
+                            <select class="browser-default custom-select">
+                                <option selected>Price</option>
+                                <option value="1"> <200$ </option>
+                                <option value="2"> 200$ - 1000$</option>
+                                <option value="3"> >1000$ </option>
+                            </select>
                         </div>
+                        <!--<div class="filter-item">-->
+                            <!--<label>&nbsp;</label>-->
+                            <!--<div class="select-container x-small">-->
+                                <!--<select class="browser-default custom-select">-->
+                                    <!--<option selected>To</option>-->
+                                    <!--<option value="0.99">0.99</option>-->
+                                    <!--<option value="1.99">1.99</option>-->
+                                    <!--<option value="2.99">2.99</option>-->
+                                    <!--<option value="5.99">5.99</option>-->
+                                    <!--<option value="10.99">10.99</option>-->
+                                <!--</select>-->
+                            <!--</div>-->
+                        <!--</div>-->
                         <div class="filter-item">
-                            <label>&nbsp;</label>
-                            <div class="select-container x-small">
-                                <select class="browser-default custom-select">
-                                    <option selected>To</option>
-                                    <option value="0.99">0.99</option>
-                                    <option value="1.99">1.99</option>
-                                    <option value="2.99">2.99</option>
-                                    <option value="5.99">5.99</option>
-                                    <option value="10.99">10.99</option>
-                                </select>
-                            </div>
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
                         </div>
+
                         <div class="filter-item">
                             <label>&nbsp; </label>
-                            <input class="go" type="submit" value="Submit">
+                            <!--<input class="go" type="submit" value="Search">-->
+                            <button class="search"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
                 </div>
@@ -134,9 +134,6 @@
         <div class="clear"></div>
         <div class="hot-disk">
             <div class="container">
-                <h2 class="title-content animated slideInLeft slow">DVD
-                    <a class="view-more" href="/client/DVD">View more<i class="fas fa-angle-double-right ml-2"></i></a>
-                </h2>
                 <div class="list-hot-disk">
                     <div class="row text-center">
                         <div class="col-sm-2">
@@ -452,9 +449,11 @@
         </div>
     </div>
 
+
     <script src="/vendor/js/jquery-3.3.1.min.js"></script>
     <script src="/vendor/js/bootstrap.min.js"></script>
     <script src="/vendor/js/mdb.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>-->
 </body>

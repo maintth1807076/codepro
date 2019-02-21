@@ -10,16 +10,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <!--<link href="../node_modules/bootstrap/dist/css/bootstrap.css/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
-    <link href="/vendor/css/fontawesome.min.css" rel="stylesheet">
+
+    <link type="text/html" href="/vendor/css/fontawesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Hammersmith+One" rel="stylesheet">
-    <link rel="stylesheet" href="/resources/css/index.css">
-    <link rel="stylesheet" href="/resources/css/about.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/about.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 </head>
 <body>
@@ -33,49 +30,33 @@
             <div class="menu">
                 <ul class=" nav navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/home"><i class="fas fa-home fa-2x"></i></a>
+                        <a class="nav-link" href="/client/home"><i class="fas fa-home "></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/disk" id="disk">Disk Music</a>
-                        <ul class="item-menu">
-                            <li><a href="">Just In</a></li>
-                            <li><a href="">Best Seller</a></li>
-                            <li><a href="">Clearance</a></li>
-                        </ul>
+                        <a class="nav-link" href="/client/disk" id="disk">Disk</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="/client/ticket" id="ticket">Ticket Liveshow</a>
-                        <ul class="item-menu">
-                            <li><a href="">Just In</a></li>
-                            <li><a href="">Best Seller</a></li>
-                            <li><a href="">Clearance</a></li>
-                        </ul>
+                        <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/client/magazine" id="magazine">Magazine</a>
 
-                        <ul class="item-menu">
-                            <li><a href="">Just In</a></li>
-                            <li><a href="">Best Seller</a></li>
-                            <li><a href="">Clearance</a></li>
-                        </ul>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/disk" id="contest">Contest Music</a>
-                        <ul class="item-menu">
-                            <li><a href="">Just In</a></li>
-                            <li><a href="">Best Seller</a></li>
-                            <li><a href="">Clearance</a></li>
-                        </ul>
+                        <a class="nav-link" href="/client/book" id="book">Book</a>
+
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="/client/contact" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About Us</a>
+                        <a href="/client/about" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="selling-cart"><i class="fas fa-search"></i></a>
+                        <a href="#" class="nav-link" id="search"><i class="fas fa-search"></i></a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
@@ -85,7 +66,8 @@
                         <ul class="item-menu">
                             <li><a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign
                                     In</a></li>
-                            <li><a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                            <li><a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign
+                                    Up</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -95,7 +77,11 @@
 </div> <!--header end-->
 <div class="content">
     <div class="container">
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
         <div class="row chart-week">
+
             <div class="col-sm-6">
                 <canvas id="densityChart" width="600" height="400"></canvas>
             </div>
@@ -193,8 +179,6 @@
 </div> <!--footer end-->
 <script src="/vendor/js/jquery-3.3.1.min.js"></script>
 <script src="/vendor/js/mdb.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>-->
-<!--<script src="/js/bootstrap.min.js"></script>-->
 <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>-->
 <script src="/vendor/js/Chart.bundle.min.js"></script>
 <script src="/vendor/js/Chart..min.js"></script>
@@ -202,5 +186,5 @@
 </body>
 
 
-feature#5-sua-giao-dien-contact-about
+
 

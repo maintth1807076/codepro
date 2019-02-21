@@ -8,16 +8,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CD</title>
 
+    <link rel="stylesheet" href="/css/DVD.css">
     <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/vendor/css/font-awesome.min.css">
+    <link type="text/html" rel="stylesheet" href="/vendor/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" href="/resources/css/book.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 
 </head>
 <body>
@@ -51,10 +53,10 @@
 
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="/client/contact" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About Us</a>
+                        <a href="/client/about" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link" id="search"><i class="fas fa-search"></i></a>
@@ -84,49 +86,30 @@
             <div class="just-in-box ">
                 <div class="just-in-tab1">
                     <div class="filter-item">
-                        <label>Sort by:</label>
-                        <div class="select-container ">
-                            <select class="browser-default custom-select">
-                                <option selected>Search</option>
-                                <option value="17">Just In</option>
-                                <option value="18">Best Seller</option>
-                                <option value="19">Clearance</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <label>Price range:</label>
-                        <div class="select-container ">
-                            <select class="browser-default custom-select">
-                                <option selected>From</option>
-                                <option value="0.00">0.00</option>
-                                <option value="1.00">1.00</option>
-                                <option value="2.00">2.00</option>
-                                <option value="5.00">5.00</option>
-                                <option value="10.00">10.00</option>
-                                <option value="20.00">20.00</option>
-                                <option value="30.00">30.00</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <label>&nbsp;</label>
                         <div class="select-container">
                             <select class="browser-default custom-select">
-                                <option selected>To</option>
-                                <option value="0.99">0.99</option>
-                                <option value="1.99">1.99</option>
-                                <option value="2.99">2.99</option>
-                                <option value="5.99">5.99</option>
-                                <option value="10.99">10.99</option>
-                                <option value="20.99">20.99</option>
-                                <option value="30.99">30.99</option>
+                                <option selected>Just In</option>
+                                <option value="4">Best Seller</option>
+                                <option value="5">Clearance</option>
                             </select>
                         </div>
                     </div>
                     <div class="filter-item">
+                        <select class="browser-default custom-select">
+                            <option selected>Price</option>
+                            <option value="1"> <200$ </option>
+                            <option value="2"> 200$ - 1000$</option>
+                            <option value="3"> >1000$ </option>
+                        </select>
+                    </div>
+
+                    <div class="filter-item">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+
+                    <div class="filter-item">
                         <label>&nbsp; </label>
-                        <input class="go" type="submit" value="Search">
+                        <button class="search"><i class="fas fa-search"> </i></button>
                     </div>
                 </div>
             </div>
@@ -135,111 +118,118 @@
     <hr>
     <div class="clear"></div>
     <div class="content container" >
-        <section class="collasible">
-            <div class="overview row">
-                <div class="item col-lg-2">
-                    <div class="view overlay zoom rgba-red-light">
-                        <a href="https://www.vinabook.com/images/thumbnails/product/240x/305689_p82765mbatrc.jpg" class="product-image">
-                            <img src="https://www.vinabook.com/images/thumbnails/product/240x/305689_p82765mbatrc.jpg" alt="">
-                        </a>
+
+        <div class="list-hot-disk">
+            <div class="row text-center">
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-fluid"
+                                 src="https://www.vinabook.com/images/thumbnails/product/240x/305689_p82765mbatrc.jpg"
+                                 alt="">
+                            <div class="mask flex-center waves-effect waves-light">
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#" class="hidden-link">
+                                Cách Mạng Công Nghệ 4.0
+                            </a>
+                        </div>
+                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                     </div>
-                    <div class="title">
-                        <a href="#" class="black-link">
-                            Cách Mạng Công Nghệ 4.0
-                        </a>
-                        <a href="#" class="artist">Nhiều Tác Giả</a>
-                    </div>
-                    <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                 </div>
-                <div class="item col-lg-2">
-                    <div class="view overlay zoom rgba-red-light">
-                        <a href="https://www.vinabook.com/images/thumbnails/product/240x/228637_p71032mbiatruoc.jpg" class="product-image">
-                            <img src="https://www.vinabook.com/images/thumbnails/product/240x/228637_p71032mbiatruoc.jpg" alt="">
-                        </a>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-fluid"
+                                 src="https://www.vinabook.com/images/thumbnails/product/240x/228637_p71032mbiatruoc.jpg"
+                                 alt="">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#" class="hidden-link">
+                                Đắc Nhân Tâm
+                            </a>
+                        </div>
+                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 15.00$</p>
                     </div>
-                    <div class="title">
-                        <a href="#" class="black-link">
-                            Đắc Nhân Tâm
-                        </a>
-                        <a href="#" class="artist">Dale Carnegie </a>
-                    </div>
-                    <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                 </div>
-                <div class="item col-lg-2">
-                    <div class="view overlay zoom rgba-red-light">
-                        <a href="https://www.vinabook.com/images/thumbnails/product/240x/272013_p77177mimg568.jpg" class="product-image">
-                            <img src="https://www.vinabook.com/images/thumbnails/product/240x/272013_p77177mimg568.jpg" alt="">
-                        </a>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-fluid"
+                                 src="https://www.vinabook.com/images/thumbnails/product/240x/272013_p77177mimg568.jpg"
+                                 alt="">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#" class="hidden-link">
+                                Nhà Giả Kim
+                            </a>
+                        </div>
+                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                     </div>
-                    <div class="title">
-                        <a href="#" class="black-link">
-                            Nhà Giả Kim
-                        </a>
-                        <a href="#" class="artist">Paulo Coelho </a>
-                    </div>
-                    <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                 </div>
-                <div class="item col-lg-2">
-                    <div class="view overlay zoom rgba-red-light">
-                        <a href="https://www.vinabook.com/images/thumbnails/product/240x/246166_p73565mbiatruoc.jpg" class="product-image">
-                            <img src="https://www.vinabook.com/images/thumbnails/product/240x/246166_p73565mbiatruoc.jpg" alt="">
-                        </a>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="view overlay zoom rgba-red-strong">
+                            <img class="card-img-top img-fluid"
+                                 src="https://www.vinabook.com/images/thumbnails/product/240x/246166_p73565mbiatruoc.jpg"
+                                 alt="">
+                            <div class="mask flex-center waves-effect waves-light">
+
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#" class="hidden-link">
+                                Lối Sống Tối Giản Của Người Nhật
+                            </a>
+                        </div>
+                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                     </div>
-                    <div class="title">
-                        <a href="#" class="black-link">
-                            Lối Sống Tối Giản Của Người Nhật
-                        </a>
-                        <a href="#" class="artist">Sasaki Fumio </a>
-                    </div>
-                    <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                 </div>
-                <div class="item col-lg-2">
-                    <div class="view overlay zoom rgba-red-light">
-                        <a href="https://www.vinabook.com/images/thumbnails/product/240x/278742_p77977mimg729.jpg" class="product-image">
-                            <img src="https://www.vinabook.com/images/thumbnails/product/240x/278742_p77977mimg729.jpg" alt="">
-                        </a>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-fluid"
+                                 src="https://www.vinabook.com/images/thumbnails/product/240x/278742_p77977mimg729.jpg"
+                                 alt="">
+                            <div class="mask flex-center waves-effect waves-light">
+
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#" class="hidden-link">
+                                Cà Phê Cùng Tony
+                            </a>
+                        </div>
+                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                     </div>
-                    <div class="title">
-                        <a href="#" class="black-link">
-                            Cà Phê Cùng Tony
-                        </a>
-                        <a href="#" class="artist">Tony Buổi Sáng</a>
-                    </div>
-                    <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                 </div>
-                <div class="item col-lg-2">
-                    <div class="view overlay zoom rgba-red-light">
-                        <a href="https://www.vinabook.com/images/thumbnails/product/240x/298996_p81405mbiatruoc.jpg" class="product-image">
-                            <img src="https://www.vinabook.com/images/thumbnails/product/240x/298996_p81405mbiatruoc.jpg" alt="">
-                        </a>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-fluid"
+                                 src="https://www.vinabook.com/images/thumbnails/product/240x/298996_p81405mbiatruoc.jpg"
+                                 alt="">
+                            <div class="mask flex-center waves-effect waves-light">
+
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#" class="hidden-link">
+                                Ôm Mỏ Neo Nằm Mộng Những ...
+                            </a>
+                        </div>
+                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                     </div>
-                    <div class="title">
-                        <a href="#" class="black-link">
-                            Ôm Mỏ Neo Nằm Mộng Những ...
-                        </a>
-                        <a href="#" class="artist">Nguyễn Thiên Ngân </a>
-                    </div>
-                    <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                 </div>
             </div>
-            <div class="box-bottom clearfix">
-                <div class="page-number">
-                    <a href="#" class="button prev "><i class="fas fa-angle-double-left"></i></a>
-                    &nbsp;
-                    <strong>1</strong>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">7</a>
-                    <a href="#">8</a>
-                    <a href="#">...</a>
-                    &nbsp;
-                    <a href="#" class="button next"><i class="fas fa-angle-double-right"></i></a>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
 </div>
 <div class="clear"></div>
