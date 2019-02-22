@@ -9,6 +9,13 @@ body {
 .navbar {
     box-shadow: 5px 5px 5px black;
 }
+
+.btn-search {
+    background: none;
+    color: white;
+    border: none;
+}
+
 .menu ul li .register{
     font-size: 16px;
 }
@@ -16,8 +23,8 @@ body {
     font-size: 16px;
 }
 .logo img {
-    width: 200px;
-    padding-left: 100px;
+    width: 220px;
+    padding-left: 80px;
 }
 .navbar .nav-link {
     color: white;
@@ -92,7 +99,7 @@ body {
     margin-right: 10px;
 }
 
-.form-inline button {
+.modal-body .form-inline button {
     margin-left: 65px;
     color: black;
 }

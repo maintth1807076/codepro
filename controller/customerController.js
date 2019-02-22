@@ -7,7 +7,7 @@ exports.generateCustomer = function (req, res) {
 exports.saveCustomer = function (req, res) {
     var customer = new Customer({
         customerId: req.body.customerId,
-        name: req.body.name,
+        name: req.body.username,
         password: req.body.password,
         address: req.body.address,
         email: req.body.email,
@@ -19,6 +19,7 @@ exports.saveCustomer = function (req, res) {
 
     customer.save();
     res.redirect('/admin/customer/list');
+    // res.redirect(req.get('referer'));
 };
 
 exports.listCustomer = function (req, res) {

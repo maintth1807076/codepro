@@ -6,8 +6,8 @@ body {
     box-shadow: 5px 5px 5px black;
 }
 .logo img {
-    width: 200px;
-    padding-left: 100px;
+    width: 220px;
+    padding-left: 80px;
 }
 .nav-link {
     color: white;
@@ -38,6 +38,12 @@ body {
 }
 .error {
     color: red;
+}
+
+.btn-search {
+    background: none;
+    color: white;
+    border: none;
 }
 
 .menu ul li .register{
@@ -157,7 +163,7 @@ a:hover {
     margin-right: 10px;
 }
 
-.form-inline button {
+.modal-body .form-inline button {
     margin-left: 65px;
     color: black;
 }

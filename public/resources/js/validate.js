@@ -48,7 +48,7 @@ $(document).ready(function () {
             },
             avatar: {
                 required: true,
-                url: true
+
             },
             address: {
                 required: true,
@@ -94,7 +94,7 @@ $(document).ready(function () {
             },
             avatar: {
                 required: 'PLease enter avatar.',
-                url: 'Please enter true URL'
+
             },
             address: {
                 required: 'Please enter address.',
