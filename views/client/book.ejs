@@ -62,10 +62,10 @@
                         <a href="#" class="nav-link" id="search"><i class="fas fa-search"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
+                        <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/customer" id="customer"><i class="fas fa-user-circle"></i></a>
+                        <a class="nav-link"  id="customer"><i class="fas fa-user-circle"></i></a>
                         <ul class="item-menu">
                             <li><a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign
                                     In</a></li>
@@ -88,8 +88,9 @@
                     <div class="filter-item">
                         <div class="select-container">
                             <select class="browser-default custom-select">
-                                <option selected>Just In</option>
-                                <option value="4">Best Seller</option>
+                                <option selected>Sort by</option>
+                                <option value="3">New Releases</option>
+                                <option value="4">Top Seller</option>
                                 <option value="5">Clearance</option>
                             </select>
                         </div>
@@ -118,114 +119,185 @@
     <hr>
     <div class="clear"></div>
     <div class="content container" >
+        <div class="hot-disk">
+            <div class=" container" >
 
-        <div class="list-hot-disk">
-            <div class="row text-center">
-                <div class="col-sm-2">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-fluid"
-                                 src="https://www.vinabook.com/images/thumbnails/product/240x/305689_p82765mbatrc.jpg"
-                                 alt="">
-                            <div class="mask flex-center waves-effect waves-light">
+                <div class="list-hot-disk">
+                    <div class="row text-center">
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://www.vinabook.com/images/thumbnails/product/240x/305689_p82765mbatrc.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Cách Mạng Công Nghệ 4.0</h4></a>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">3.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="title">
-                            <a href="#" class="hidden-link">
-                                Cách Mạng Công Nghệ 4.0
-                            </a>
-                        </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-fluid"
-                                 src="https://www.vinabook.com/images/thumbnails/product/240x/228637_p71032mbiatruoc.jpg"
-                                 alt="">
-                            <div class="mask flex-center waves-effect waves-light">
-                                <p></p>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://www.vinabook.com/images/thumbnails/product/240x/228637_p71032mbiatruoc.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Đắc Nhân Tâm</h4></a>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">3.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="title">
-                            <a href="#" class="hidden-link">
-                                Đắc Nhân Tâm
-                            </a>
-                        </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 15.00$</p>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-fluid"
-                                 src="https://www.vinabook.com/images/thumbnails/product/240x/272013_p77177mimg568.jpg"
-                                 alt="">
-                            <div class="mask flex-center waves-effect waves-light">
-                                <p></p>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://www.vinabook.com/images/thumbnails/product/240x/272013_p77177mimg568.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Nhà Giả Kim</h4></a>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">3.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="title">
-                            <a href="#" class="hidden-link">
-                                Nhà Giả Kim
-                            </a>
-                        </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-strong">
-                            <img class="card-img-top img-fluid"
-                                 src="https://www.vinabook.com/images/thumbnails/product/240x/246166_p73565mbiatruoc.jpg"
-                                 alt="">
-                            <div class="mask flex-center waves-effect waves-light">
-
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-strong">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://www.vinabook.com/images/thumbnails/product/240x/246166_p73565mbiatruoc.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Lối Sống Tối Giản Của Người Nhật</h4></a>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">3.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="title">
-                            <a href="#" class="hidden-link">
-                                Lối Sống Tối Giản Của Người Nhật
-                            </a>
-                        </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-fluid"
-                                 src="https://www.vinabook.com/images/thumbnails/product/240x/278742_p77977mimg729.jpg"
-                                 alt="">
-                            <div class="mask flex-center waves-effect waves-light">
-
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://www.vinabook.com/images/thumbnails/product/240x/278742_p77977mimg729.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Cà Phê Cùng Tony</h4></a>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">3.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="title">
-                            <a href="#" class="hidden-link">
-                                Cà Phê Cùng Tony
-                            </a>
-                        </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-fluid"
-                                 src="https://www.vinabook.com/images/thumbnails/product/240x/298996_p81405mbiatruoc.jpg"
-                                 alt="">
-                            <div class="mask flex-center waves-effect waves-light">
-
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://www.vinabook.com/images/thumbnails/product/240x/298996_p81405mbiatruoc.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Ôm Mỏ Neo Nằm Mộng Những ...</h4></a>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">3.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="title">
-                            <a href="#" class="hidden-link">
-                                Ôm Mỏ Neo Nằm Mộng Những ...
-                            </a>
-                        </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                     </div>
                 </div>
             </div>

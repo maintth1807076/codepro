@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Boogaloo|Hammersmith+One" rel="stylesheet">
-    <link rel="stylesheet" href="/resources/css/index.css">
+    <link rel="stylesheet" href="/css/DVD.css">
     <link rel="stylesheet" href="/resources/css/detail-product.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 </head>
@@ -100,12 +100,12 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <img class="animated flipInY slow card-img-top img-disk"
-                             src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"
-                             alt="Purpose World">
+                             src="<%= product.thumbnail%>"
+                             alt="">
                     </div>
                     <div class="col-sm-8">
-                        <h3>Purpose World</h3>
-                        <p>Price 1200$</p>
+                        <h3><%= product.name%></h3>
+                        <p>Price <%= product.price%>$</p>
                         <p>Quantity<input type="number"></p>
                         <button><i class="fas fa-shopping-cart"></i></button>
                         <span><button>Buy Now</button></span>
@@ -132,7 +132,7 @@
                         </div>
                         <div id="description" class="container tab-pane fade"><br>
                             <h3>Purpose World</h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p><%= product.description%></p>
                         </div>
                         <div id="more" class="container tab-pane fade"><br>
                             <h3>About singer</h3>

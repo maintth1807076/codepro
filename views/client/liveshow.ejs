@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CD</title>
-    <link rel="stylesheet" href="/css/liveshow.css">
+
     <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <!-- Font Awesome -->
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/liveshow.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 </head>
 <body>
@@ -58,10 +59,10 @@
                         <a href="#" class="nav-link" id="search"><i class="fas fa-search"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
+                        <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/customer" id="customer"><i class="fas fa-user-circle"></i></a>
+                        <a class="nav-link" id="customer"><i class="fas fa-user-circle"></i></a>
                         <ul class="item-menu">
                             <li><a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign
                                     In</a></li>
@@ -78,7 +79,7 @@
 <div class="main">
     <div class="inner-page container">
         <section class="main-clearfix">
-            <h1 class="page-title">Liveshow</h1>
+            <h1 class="page-title"></h1>
 
             <hr>
             <div class="just-in-box ">
@@ -90,7 +91,6 @@
                                 <option selected>Hot</option>
                                 <option value="4">Band</option>
                                 <option value="5">Solo</option>
-                                <option value="6">Release year</option>
                             </select>
                         </div>
                     </div>
@@ -123,49 +123,98 @@
     <div class="hot-disk">
         <div class="container">
             <div class="hot-ticket">
-                <h2 class="wow slideInLeft slow">New Liveshow</h2>
+                <h2 class="wow slideInLeft slow">Hot Liveshow</h2>
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="card">
-                                <img class="card-img-top img-thumbnail"
-                                     src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
-                                <div class="card-img-overlay">
-                                    <p style="color: white" class="card-text">Believe</p>
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-thumbnail"
+                                         src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                                <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Justin Bieber</h4></a>
+                                    <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="card">
-                                <img class="card-img-top img-thumbnail"
-                                     src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
-                                     alt="Card image">
-                                <div class="card-img-overlay">
-                                    <p class="card-text"></p>
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-thumbnail"
+                                         src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
+                                         alt="Card image">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                                <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
+                                    <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="card">
-                                <img class="card-img-top img-thumbnail"
-                                     src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
-                                     alt="Card image">
-                                <div class="card-img-overlay">
-                                    <p class="card-text"></p>
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-thumbnail"
+                                         src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
+                                         alt="Card image">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                                <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
+                                    <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="card">
-                                <img class="card-img-top img-thumbnail"
-                                     src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
-                                <div class="card-img-overlay">
-                                    <p class="card-text"></p>
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-thumbnail"
+                                         src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                                <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
+                                    <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>

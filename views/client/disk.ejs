@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rhythm House</title>
     <!--<link href="../node_modules/bootstrap/dist/css/bootstrap.css/bootstrap.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link href="/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+    <link href="/vendor/css/fontawesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/mdb.min.css">
+    <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="/css/disk.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
@@ -19,7 +19,7 @@
 <body ng-app="myApp">
 <div id="header">
     <nav class="navbar navbar-expand-sm fixed-top purple-gradient">
-        <a class="navbar-brand logo" href="/client/home"><img src="/img/logo.png" alt=""></a>
+        <a class="navbar-brand logo" href="/client/home"><img src="/resources/img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
         </button>
@@ -57,10 +57,10 @@
                         <a href="#" class="nav-link" id="search"><i class="fas fa-search"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
+                        <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/customer" id="customer"><i class="fas fa-user-circle"></i></a>
+                        <a class="nav-link" id="customer"><i class="fas fa-user-circle"></i></a>
                         <ul class="item-menu">
                             <li><a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign
                                     In</a></li>
@@ -111,113 +111,292 @@
             <h2 class="title-content animated slideInLeft slow">CD
                 <a class="view-more" href="/client/CD">View more<i class="fas fa-angle-double-right ml-2"></i></a>
             </h2>
+            <!--<div class="list-hot-disk">-->
+                <!--<div class="row text-center">-->
+                    <!--<div class="col-sm-2">-->
+                        <!--<div class="card">-->
+                            <!--<div class="view overlay zoom rgba-red-light">-->
+                                <!--<img class="card-img-top img-fluid"-->
+                                     <!--src="http://image.phimmoi.net/film/1018/poster.medium.jpg"-->
+                                     <!--alt="">-->
+                                <!--<div class="mask flex-center waves-effect waves-light">-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="title">-->
+                                <!--<a href="#" class="hidden-link">-->
+                                    <!--TRANSFORMERS: AGE OF...-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-2">-->
+                        <!--<div class="card">-->
+                            <!--<div class="view overlay zoom rgba-red-light">-->
+                                <!--<img class="card-img-top img-fluid"-->
+                                     <!--src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/9/3/5/f/935f82d0a14506cbe42cde70aaf78cee.jpg"-->
+                                     <!--alt="Purpose World">-->
+                                <!--<div class="mask flex-center waves-effect waves-light">-->
+                                    <!--<p></p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="title">-->
+                                <!--<a href="#" class="hidden-link">-->
+                                    <!--DDU-DU DDU-DU (JP Ver.)-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 15.00$</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-2">-->
+                        <!--<div class="card">-->
+                            <!--<div class="view overlay zoom rgba-red-light">-->
+                                <!--<img class="card-img-top img-fluid"-->
+                                     <!--src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"-->
+                                     <!--alt="">-->
+                                <!--<div class="mask flex-center waves-effect waves-light">-->
+                                    <!--<p></p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="title">-->
+                                <!--<a href="#" class="hidden-link">-->
+                                    <!--Sorry-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-2">-->
+                        <!--<div class="card">-->
+                            <!--<div class="view overlay zoom rgba-red-strong">-->
+                                <!--<img class="card-img-top img-fluid"-->
+                                     <!--src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"-->
+                                     <!--alt="">-->
+                                <!--<div class="mask flex-center waves-effect waves-light">-->
+
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="title">-->
+                                <!--<a href="#" class="hidden-link">-->
+                                    <!--Alone remix-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-2">-->
+                        <!--<div class="card">-->
+                            <!--<div class="view overlay zoom rgba-red-light">-->
+                                <!--<img class="card-img-top img-fluid"-->
+                                     <!--src="http://image.phimmoi.net/film/4325/poster.medium.jpg"-->
+                                     <!--alt="Purpose World">-->
+                                <!--<div class="mask flex-center waves-effect waves-light">-->
+
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="title">-->
+                                <!--<a href="#" class="hidden-link">-->
+                                    <!--JOHN WICK: CHAPTER 2-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-2">-->
+                        <!--<div class="card">-->
+                            <!--<div class="view overlay zoom rgba-red-light">-->
+                                <!--<img class="card-img-top img-fluid"-->
+                                     <!--src="http://image.phimmoi.net/film/2871/poster.medium.jpg"-->
+                                     <!--alt="">-->
+                                <!--<div class="mask flex-center waves-effect waves-light">-->
+
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="title">-->
+                                <!--<a href="#" class="hidden-link">-->
+                                    <!--Steve Jobs-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
             <div class="list-hot-disk">
                 <div class="row text-center">
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="http://image.phimmoi.net/film/1018/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    TRANSFORMERS: AGE OF...
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>TRANSFORMERS: AGE OF...</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/9/3/5/f/935f82d0a14506cbe42cde70aaf78cee.jpg"
-                                     alt="Purpose World">
+                                     alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-                                    <p></p>
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    DDU-DU DDU-DU (JP Ver.)
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>DDU-DU DDU-DU (JP Ver.)</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 15.00$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-                                    <p></p>
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Sorry
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-strong">
                                 <img class="card-img-top img-fluid"
                                      src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Alone remix
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Alone remix</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="http://image.phimmoi.net/film/4325/poster.medium.jpg"
-                                     alt="Purpose World">
+                                     alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    JOHN WICK: CHAPTER 2
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>JOHN WICK: CHAPTER 2</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 12.00$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="http://image.phimmoi.net/film/2871/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Steve Jobs
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Steve Jobs</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
                         </div>
                     </div>
                 </div>
@@ -231,111 +410,178 @@
             </h2>
             <div class="list-hot-disk">
                 <div class="row text-center">
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="http://image.phimmoi.net/film/1018/poster.medium.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>TRANSFORMERS: AGE OF...</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/9/3/5/f/935f82d0a14506cbe42cde70aaf78cee.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>DDU-DU DDU-DU (JP Ver.)</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
                                      src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
-                                     alt="Purpose World">
+                                     alt="">
                                 <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Purpose World
-                                </a>
-                            </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="https://f.ptcdn.info/970/023/000/1412026068-Maroon5VDe-o.png"
-                                     alt="Purpose World">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <p>V</p>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
                                 </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Purpose World
-                                </a>
-                            </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 150$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"
-                                     alt="Purpose World">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Purpose World
-                                </a>
-                            </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-strong">
                                 <img class="card-img-top img-fluid"
                                      src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
-                                     alt="Purpose World">
+                                     alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Purpose World
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Alone remix</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"
-                                     alt="Purpose World">
+                                     src="http://image.phimmoi.net/film/4325/poster.medium.jpg"
+                                     alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Purpose World
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>JOHN WICK: CHAPTER 2</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"
-                                     alt="Purpose World">
+                                     src="http://image.phimmoi.net/film/2871/poster.medium.jpg"
+                                     alt="">
                                 <div class="mask flex-center waves-effect waves-light">
-
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="title">
-                                <a href="#" class="hidden-link">
-                                    Purpose World
-                                </a>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Steve Jobs</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
                             </div>
-                            <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
                         </div>
                     </div>
                 </div>
@@ -392,7 +638,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <img src="/img/logo2.png" alt="">
+                    <img src="/resources/img/logo2.png" alt="">
                 </div>
             </div>
         </div>
@@ -401,9 +647,9 @@
         <p style="color: white">Copyright © 2019 Rhythm House. All rights reserved.</p>
     </div>
 </div> <!--footer end-->
-<script src="/js/jquery-3.3.1.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/mdb.min.js"></script>
+<script src="/vendor/js/jquery.min.js"></script>
+<script src="/vendor/js/bootstrap.min.js"></script>
+<script src="/vendor/js/mdb.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
 <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>-->
