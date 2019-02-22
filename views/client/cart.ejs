@@ -15,12 +15,7 @@
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 </head>
-<style>
-    p{
-        font-size: 16px;
-    }
 
-</style>
 <body>
 <div id="header">
     <nav class="navbar navbar-expand-sm fixed-top purple-gradient">
@@ -63,14 +58,14 @@
                     <li class="nav-item">
                         <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  id="customer"><i class="fas fa-user-circle"></i></a>
-                        <ul class="item-menu">
-                            <li><a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign
-                                    In</a></li>
-                            <li><a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign
-                                    Up</a></li>
-                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign In</a>
+                            <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign Up</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -143,6 +138,9 @@
 <script src="/vendor/js/jquery-3.3.1.min.js"></script>
 <script src="/vendor/js/bootstrap.min.js"></script>
 <script src="/vendor/js/mdb.min.js"></script>
+<script src="/vendor/js/jquery.validate.min.js"></script>
+<script src="/resources/js/validate.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 </body>
 </html>
