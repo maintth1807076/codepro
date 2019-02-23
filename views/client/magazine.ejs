@@ -41,14 +41,28 @@
                         <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/client/magazine" id="magazine">Magazine</a>
-
+                    <li class="nav-item dropdown">
+                        <a class=" dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Magazine
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/client/magazine" >All</a>
+                            <a class="dropdown-item" href="/client/top-seller-magazine" >Top seller</a>
+                            <a class="dropdown-item" href="/client/new-releases-magazine" >New releases</a>
+                            <a class="dropdown-item" href="/client/clearance-magazine" >Clearance</a>
+                        </div>
 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/client/book" id="book">Book</a>
-
+                    <li class="nav-item dropdown">
+                        <a class="  dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Book
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/client/book" >All</a>
+                            <a class="dropdown-item" href="/client/top-seller-book" >Top seller</a>
+                            <a class="dropdown-item" href="/client/new-releases-book" >New releases</a>
+                            <a class="dropdown-item" href="/client/clearance-book" >Clearance</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="/client/contact" class="nav-link">Contact</a>
@@ -372,7 +386,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="" id="registerForm" name="register-form">
+                <form action="/admin/customer/save" id="registerForm" name="register-form" method="post"  enctype="multipart/form-data">
                     <div class="form-inline">
                         <i class="fa fa-user prefix"></i>&nbsp;
                         <label for="registerInputusername">Username</label>
@@ -394,7 +408,7 @@
                     <div class="form-inline">
                         <i class="fas fa-address-card"></i>&nbsp;
                         <label for="registerInputAvatar">Avatar</label>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="text" name="avatar" class="form-control" id="registerInputAvatar"
+                        <input type="file" name="avatar" class="form-control" id="registerInputAvatar"
                                placeholder="Avatar">
                     </div>
                     <div class="form-inline">

@@ -3,10 +3,10 @@ var Order = require("../models/order.js");
 var OrderDetail = require("../models/order-detail.js");
 var cloudinary = require('cloudinary').v2;
 
-exports.generateProduct = function (req, res) {
-    res.render("admin/product/form.ejs");
-};
 
+// exports.generateProduct = function (req, res) {
+//     res.render("admin/product/form.ejs");
+// };
 exports.saveProduct = function (req, res) {
     var product = new Product({
                 productId: req.body.productId,

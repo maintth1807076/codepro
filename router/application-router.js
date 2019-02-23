@@ -12,7 +12,7 @@ exports.routing = function (app) {
     app.get("/login", userController.generateLoginForm);
     app.post("/login", userController.processLogin);
 
-    app.get("/admin/product/create", productController.generateProduct);
+    // app.get("/admin/product/create", productController.generateProduct);
     app.get("/admin/product/list", productController.listProduct);
     app.post("/admin/product/save", productController.saveProduct);
     app.get("/admin/product/:id", productController.detailProduct);
@@ -46,7 +46,7 @@ exports.routing = function (app) {
 
 
 
-    app.get("/admin/customer/create", customerController.generateCustomer);
+    // app.get("/admin/customer/create", customerController.generateCustomer);
     app.get("/admin/customer/list", customerController.listCustomer);
     app.post("/admin/customer/save", customerController.saveCustomer);
 };

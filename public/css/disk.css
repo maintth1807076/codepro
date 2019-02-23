@@ -20,9 +20,9 @@ body {
 .nav-item {
     text-transform: uppercase;
     font-size: 20px;
-    padding-top: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    /*padding-right: 10px;*/
 }
 .item-menu {
     padding-left: 0;
@@ -69,6 +69,26 @@ body {
 .menu ul li:hover .item-menu {
     display: block;
 }
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    color: white;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.menu ul li #dropdownMenuButton {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
 /*navbar*/
 .carousel-item img {
     height: 400px;

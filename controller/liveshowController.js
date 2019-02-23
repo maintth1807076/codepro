@@ -1,8 +1,8 @@
 var Liveshow = require("../models/liveshow.js");
 
-exports.generateLiveshow = function (req, res) {
-    res.render("admin/customer/form.ejs");
-};
+// exports.generateLiveshow = function (req, res) {
+//     res.render("admin/customer/form.ejs");
+// };
 
 exports.saveLiveshow = function (req, res) {
     var liveshow = new Liveshow({

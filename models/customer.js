@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 var customerSchema = new Schema({
     customerId: {type:String},
     name: {type: String},
+    avatar:{type: String},
     password: {type: String},
     address: {type: String},
     email: {type: String},

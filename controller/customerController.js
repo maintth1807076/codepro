@@ -1,13 +1,14 @@
 var Customer = require("../models/customer.js");
 
-exports.generateCustomer = function (req, res) {
-    res.render("admin/customer/form.ejs");
-};
+// exports.generateCustomer = function (req, res) {
+//     res.render("admin/customer/form.ejs");
+// };
 
 exports.saveCustomer = function (req, res) {
     var customer = new Customer({
         customerId: req.body.customerId,
         name: req.body.username,
+        thumbnail: req.body.avatar,
         password: req.body.password,
         address: req.body.address,
         email: req.body.email,
@@ -18,8 +19,8 @@ exports.saveCustomer = function (req, res) {
     });
 
     customer.save();
-    res.redirect('/admin/customer/list');
-    // res.redirect(req.get('referer'));
+    // res.redirect('/admin/customer/list');
+    res.redirect(req.get('referer'));
 };
 
 exports.listCustomer = function (req, res) {

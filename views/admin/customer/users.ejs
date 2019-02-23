@@ -261,6 +261,7 @@
                                                     <tr>
                                                         <th>customerId</th>
                                                         <th>name</th>
+                                                        <th>avatar</th>
                                                         <th>password</th>
                                                         <th>address</th>
                                                         <th>email</th>
@@ -277,6 +278,7 @@
                                                         <tr class="item-customer">
                                                             <td><%= listCustomer[i]._id%></td>
                                                             <td><%= listCustomer[i].name%></td>
+                                                            <td><img src="<%= listCustomer[i].avatar%>" alt=""></td>
                                                             <td> <%= listCustomer[i].password%></td>
                                                             <td> <%= listCustomer[i].address%></td>
                                                             <td> <%= listCustomer[i].email%></td>

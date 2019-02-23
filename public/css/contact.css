@@ -19,12 +19,12 @@ body {
 .title {
     height: 50px;
 }
-.navbar .nav-item {
-    font-size: 20px;
+.nav-item {
     text-transform: uppercase;
-    padding-top: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    /*padding-right: 10px;*/
 }
 
 #customer {
@@ -96,6 +96,25 @@ body {
 .menu ul li:hover .item-menu {
     display: block;
 }
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    color: white;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.menu ul li #dropdownMenuButton {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
 
 .wrap {
     max-width: 100%;
