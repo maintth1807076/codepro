@@ -143,223 +143,182 @@
             <div class="list-hot-disk">
                 <div class="row text-center">
 
-
-
-
-                    <% listProduct.forEach(function(product){%>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="view overlay zoom rgba-red-light">
-                                    <img class="card-img-top img-fluid"
-                                         src="<%= product.thumbnail%>"
-                                         alt="">
-                                    <div class="mask flex-center waves-effect waves-light">
-                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                            <i class="fas fa-shopping-cart"></i>
-                                        </button>
-                                        <a href="/client/detail-product/<%= product._id%>" type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                            <i class="fas fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="prod-info">
-                                    <a href="#!" class="txt-muted"><h4><%= product.name%></h4></a>
-                                    <div class="m-b-10">
-                                        <label class="label label-success">3.5
-                                            <i class="fa fa-star"></i>
-                                        </label>
-                                        <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
-                                    </div>
-                                    <span class="prod-price">
-                                        <i class="fas fa-dollar-sign"></i><%= product.price%>
-
-                                    </span>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
                         </div>
-
-                    <% }) %>
-
+                    </div>
 
 
-
-
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-
-
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://f.ptcdn.info/970/023/000/1412026068-Maroon5VDe-o.png"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-strong">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://f.ptcdn.info/970/023/000/1412026068-Maroon5VDe-o.png"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-strong">
+                                <img class="card-img-top img-fluid"
+                                     src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -380,227 +339,180 @@
             <div class="list-hot-disk">
                 <div class="row text-center">
 
-
-                    <% listProduct.forEach(function(product){%>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="view overlay zoom rgba-red-light">
-                                    <img class="card-img-top img-fluid"
-                                         src="<%= product.thumbnail%>"
-                                         alt="">
-                                    <div class="mask flex-center waves-effect waves-light">
-                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                            <i class="fas fa-shopping-cart"></i>
-                                        </button>
-                                        <a href="/client/detail-product/<%= product._id%>" type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                            <i class="fas fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="prod-info">
-                                    <a href="#!" class="txt-muted"><h4><%= product.name%></h4></a>
-                                    <div class="m-b-10">
-                                        <label class="label label-success">3.5
-                                            <i class="fa fa-star"></i>
-                                        </label>
-                                        <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
-                                    </div>
-                                    <span class="prod-price">
-                                        <i class="fas fa-dollar-sign"></i><%= product.price%>
-
-                                    </span>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
                                 </div>
                             </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
                         </div>
-
-                    <% }) %>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://f.ptcdn.info/970/023/000/1412026068-Maroon5VDe-o.png"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-strong">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://f.ptcdn.info/970/023/000/1412026068-Maroon5VDe-o.png"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-strong">
+                                <img class="card-img-top img-fluid"
+                                     src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -623,13 +535,11 @@
             <div class="list-hot-disk">
                 <div class="row text-center">
 
-
-                    <% listProduct.forEach(function(product){%>
                     <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="<%= product.thumbnail%>"
+                                     src="https://f.ptcdn.info/970/023/000/1412026068-Maroon5VDe-o.png"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -641,7 +551,7 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4><%= product.name%></h4></a>
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -649,7 +559,7 @@
                                     <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
                                 </div>
                                 <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i><%= product.price%>
+                                    <i class="fas fa-dollar-sign"></i>1250
                                     <small class="old-price">
                                         <i class="fas fa-dollar-sign"></i>1850
                                     </small>
@@ -657,175 +567,134 @@
                             </div>
                         </div>
                     </div>
-
-                    <% }) %>
-
-
-
-
-
-
-
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://f.ptcdn.info/970/023/000/1412026068-Maroon5VDe-o.png"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                    <!--<small class="old-price">-->
-                                        <!--<i class="fas fa-dollar-sign"></i>1850-->
-                                    <!--</small>-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                    <!--<small class="old-price">-->
-                                        <!--<i class="fas fa-dollar-sign"></i>1850-->
-                                    <!--</small>-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-strong">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                    <!--<small class="old-price">-->
-                                        <!--<i class="fas fa-dollar-sign"></i>1850-->
-                                    <!--</small>-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                    <!--<small class="old-price">-->
-                                        <!--<i class="fas fa-dollar-sign"></i>1850-->
-                                    <!--</small>-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-sm-3">-->
-                        <!--<div class="card">-->
-                            <!--<div class="view overlay zoom rgba-red-light">-->
-                                <!--<img class="card-img-top img-fluid"-->
-                                     <!--src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"-->
-                                     <!--alt="">-->
-                                <!--<div class="mask flex-center waves-effect waves-light">-->
-                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-shopping-cart"></i>-->
-                                    <!--</button>-->
-                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
-                                        <!--<i class="fas fa-eye"></i>-->
-                                    <!--</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="prod-info">-->
-                                <!--<a href="#!" class="txt-muted"><h4>Sorry</h4></a>-->
-                                <!--<div class="m-b-10">-->
-                                    <!--<label class="label label-success">3.5-->
-                                        <!--<i class="fa fa-star"></i>-->
-                                    <!--</label>-->
-                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
-                                <!--</div>-->
-                                <!--<span class="prod-price">-->
-                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
-                                    <!--<small class="old-price">-->
-                                        <!--<i class="fas fa-dollar-sign"></i>1850-->
-                                    <!--</small>-->
-                                <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                    <small class="old-price">
+                                        <i class="fas fa-dollar-sign"></i>1850
+                                    </small>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-strong">
+                                <img class="card-img-top img-fluid"
+                                     src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                    <small class="old-price">
+                                        <i class="fas fa-dollar-sign"></i>1850
+                                    </small>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                    <small class="old-price">
+                                        <i class="fas fa-dollar-sign"></i>1850
+                                    </small>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-fluid"
+                                     src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"
+                                     alt="">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <div class="m-b-10">
+                                    <label class="label label-success">3.5
+                                        <i class="fa fa-star"></i>
+                                    </label>
+                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                </div>
+                                <span class="prod-price">
+                                    <i class="fas fa-dollar-sign"></i>1250
+                                    <small class="old-price">
+                                        <i class="fas fa-dollar-sign"></i>1850
+                                    </small>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
