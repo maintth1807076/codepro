@@ -1,9 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-.navbar {
-    box-shadow: 5px 5px 5px black;
-}
+
 .logo img {
     width: 220px;
     padding-left: 80px;
@@ -30,9 +28,14 @@ body {
     border: 5px;
 }
 
-.card img{
-    height: 250px;
+.vieweye {
+    color: white;
 }
+
+
+/*.card img{*/
+    /*height: 250px;*/
+/*}*/
 
 .btn-search {
     background: none;
@@ -56,9 +59,9 @@ body {
     font-size: 16px;
 }
 .menu ul li a:hover {
-    color: black;
+    color: gainsboro;
     opacity: 0.8;
-    box-shadow: 5px 5px 5px darkviolet;
+    /*box-shadow: 5px 5px 5px darkviolet;*/
 }
 .menu ul li > .item-menu {
     display: none;
@@ -89,6 +92,10 @@ body {
     padding-top: 10px;
 }
 
+.navbar {
+    box-shadow: 5px 5px 5px black;
+    background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
+}
 
 /*navbar*/
 .carousel-item img {

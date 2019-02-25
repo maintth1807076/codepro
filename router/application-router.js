@@ -27,7 +27,8 @@ exports.routing = function (app) {
     app.get("/client/ticket", homeController.liveshowPage);
     app.get("/client/magazine", homeController.Magazinepage);
     app.get("/client/disk", homeController.diskPage);
-    app.get("/client/detail-product/:id", homeController.detailProductPage);
+    // app.get("/client/detail-product/:id", homeController.detailProductPage);
+    app.get("/client/detail-product", homeController.detailProductPage);
     app.get("/client/cart", homeController.cartpage);
     app.get("/client/pay", homeController.paypage);
     app.get("/client/top-seller-dvd", homeController.topSellerDVD);
@@ -43,6 +44,9 @@ exports.routing = function (app) {
     app.get("/client/new-releases-magazine", homeController.newReleasesMagazine);
     app.get("/client/clearance-magazine", homeController.clearanceMagazine);
     app.get("/client/search", homeController.clearanceMagazine);
+    app.get("/client/band", homeController.bandPage);
+    app.get("/client/movie", homeController.moviePage);
+    app.get("/client/soloperformer", homeController.soloPage);
 
 
 

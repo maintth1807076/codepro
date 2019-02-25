@@ -93,3 +93,14 @@ exports.topSellerMagazine = function (req, res) {
 exports.clearanceMagazine = function (req, res) {
     res.render("client/clearance-magazine.ejs");
 };
+
+
+exports.moviePage = function (req, res) {
+    res.render("client/movie.ejs");
+};
+exports.bandPage = function (req, res) {
+    res.render("client/band.ejs");
+};
+exports.soloPage = function (req, res) {
+    res.render("client/solo.ejs");
+};

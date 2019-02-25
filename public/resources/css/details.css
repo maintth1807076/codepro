@@ -35,6 +35,11 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.dropdown-toggle {
+    color: white!important;
+}
+
 #customer {
     color: white;
 }

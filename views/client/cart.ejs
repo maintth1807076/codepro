@@ -8,17 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CD</title>
 
+    <link rel="stylesheet" href="/css/cart.css">
     <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/vendor/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
-</head>
+    <link type="text/html" rel="stylesheet" href="/vendor/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
+
+</head>
 <body>
 <div id="header">
-    <nav class="navbar navbar-expand-sm fixed-top purple-gradient">
+    <nav class="navbar navbar-expand-sm fixed-top ">
         <a class="navbar-brand logo" href="/client/home"><img src="/resources/img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -30,21 +36,30 @@
                         <a class="nav-link" href="/client/home"><i class="fas fa-home "></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/disk" id="disk">Disk</a>
-
+                        <a class=" dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Disk
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/client/disk" >CD & DVD</a>
+                            <a class="dropdown-item" href="/client/movie" >Movie</a>
+                            <a class="dropdown-item" href="/client/band" >Band</a>
+                            <a class="dropdown-item" href="/client/soloperformer" >Solo</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/client/magazine" id="magazine">Magazine</a>
-
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/client/magazine">
+                            Magazine
+                        </a>
 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/client/book" id="book">Book</a>
-
+                    <li  class="nav-item dropdown">
+                        <a class="nav-link" href="/client/book">
+                            Book
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a href="/client/contact" class="nav-link">Contact</a>
@@ -56,12 +71,15 @@
                         <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="search">
-                            <div class="form-inline">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <!--<a href="#" class="nav-link" id="search">-->
+                        <div class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            <a href="#" class="nav-link" id="search">
                                 <button class="btn-search"><i class="fas fa-search"></i></button>
-                            </div>
-                        </a>
+                            </a>
+
+                        </div>
+                        <!--</a>-->
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,33 +95,36 @@
         </div>
     </nav> <!--nav end-->
 </div>
-<h2 class="text-center">Giỏ hàng</h2>
+
 <div class="container">
     <table id="cart" class="table table-hover table-condensed">
         <thead>
         <tr >
-            <th style="width:50%; font-size: 16px;">Tên sản phẩm</th>
-            <th style="width:10%; font-size: 16px;">Giá</th>
-            <th style="width:8%; font-size: 16px;">Số lượng</th>
-            <th style="width:22%; font-size: 16px;" class="text-center">Thành tiền</th>
-            <th style="width:10%; font-size: 16px;"> </th>
+            <th >Ảnh</th>
+            <th >Tên sản phẩm</th>
+            <th >Giá</th>
+            <th >Số lượng</th>
+            <th >Tổng tiền</th>
+            <th >Ghi chú</th>
         </tr>
         </thead>
-        <tbody><tr>
-            <td data-th="Product">
+        <tbody>
+        <tr>
+            <td data-th="Image">
                 <div class="row">
                     <div class="col-sm-2 hidden-xs"><img src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg" alt="Sản phẩm 1" class="img-responsive" width="100">
                     </div>
-                    <div class="col-sm-10">
-                        <h4 class="nomargin">Sản phẩm 1</h4>
-                        <p>Mô tả của sản phẩm 1</p>
-                    </div>
+                    <!--<div class="col-sm-10">-->
+                        <!--<h4 class="nomargin">Sản phẩm 1</h4>-->
+                        <!--<p>Mô tả của sản phẩm 1</p>-->
+                    <!--</div>-->
                 </div>
             </td>
+            <td data-th="Name">Justin Bieber DVD</td>
             <td data-th="Price" style="font-size: 16px;">200.000 đ</td>
             <td data-th="Quantity"><input class="form-control text-center" value="1" type="number" style="font-size: 16px;">
             </td>
-            <td data-th="Subtotal" class="text-center " style="font-size: 16px;">200.000 đ</td>
+            <td data-th="Subtotal" class="text-center " >200.000 đ</td>
 
         </tr>
         <tr>
@@ -111,34 +132,215 @@
                 <div class="row">
                     <div class="col-sm-2 hidden-xs"><img src="http://image.phimmoi.net/film/6375/poster.medium.jpg" alt="Sản phẩm 1" class="img-responsive" width="100">
                     </div>
-                    <div class="col-sm-10">
-                        <h4 class="nomargin">Sản phẩm 2</h4>
-                        <p>Mô tả của sản phẩm 2</p>
-                    </div>
+                    <!--<div class="col-sm-10">-->
+                        <!--<h4 class="nomargin">Sản phẩm 2</h4>-->
+                        <!--<p>Mô tả của sản phẩm 2</p>-->
+                    <!--</div>-->
                 </div>
             </td>
-            <td data-th="Price" style="font-size: 16px;">300.000 đ</td>
+            <td data-th="Name">Justin Bieber DVD</td>
+            <td data-th="Price" >300.000 đ</td>
             <td data-th="Quantity"><input class="form-control text-center" value="1" type="number" style="font-size: 16px;">
             </td>
-            <td data-th="Subtotal" class="text-center" style="font-size: 16px;">300.000 đ</td>
+            <td data-th="Subtotal" class="text-center">300.000 đ</td>
 
         </tr>
         </tbody><tfoot>
-        <tr class="visible-xs">
-            <td class="text-center"><strong style="font-size: 16px;">Tổng 200.000 đ</strong>
-            </td>
-        </tr>
+        <!--<tr class="visible-xs">-->
+            <!--<td class="text-center"><strong >Tổng 200.000 đ</strong>-->
+            <!--</td>-->
+        <!--</tr>-->
         <tr>
             <td><a href="/client/home" class="btn btn-primary"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
             </td>
             <td colspan="2" class="hidden-xs"> </td>
-            <td class="hidden-xs text-center"><strong style="font-size: 16px;">Tổng tiền 500.000 đ</strong>
+            <td class="hidden-xs text-center"><strong >Tổng tiền 500.000 đ</strong>
             </td>
             <td><a href="/client/pay" class="btn btn-primary btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
             </td>
         </tr>
         </tfoot>
     </table>
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="form-header blue-gradient">
+                    <h3 class="modal-title"><i class="fa fa-lock" id="loginModalLabel"></i> Login:</h3>
+                </div>
+
+                <button type="button" id="btn-show-modal" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" id="loginForm" name="login-form">
+                    <div class="form-inline">
+                        <i class="fa fa-envelope prefix"></i> &nbsp;
+                        <label for="loginInputEmail">Email address</label>
+                        <input type="text" name="email" class="form-control" id="loginInputEmail"
+                               aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.
+                        </small>
+                    </div>
+                    <div class="form-inline">
+                        <i class="fa fa-lock prefix"></i>&nbsp;
+                        <label for="loginInputPassword1">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="password" name="password" class="form-control" id="loginInputPassword1"
+                               placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="Check">
+                        <label class="form-check-label" for="Check">Remember me</label>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="options">
+                            <span class="grey-text">Not a member? </span><a href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
+                            <span class="grey-text">Forgot </span><a href="#">Password?</a>
+                        </div>
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="btn-submit" value="submit">Sign In</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -Modal register--->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="form-header blue-gradient ">
+                    <h3 class="modal-title"><i class="fa fa-user" id="registerModalLabel"></i> Register:</h3>
+                </div>
+                <button type="button" id="btn-show-modal2" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/admin/customer/save" id="registerForm" name="register-form" method="post"  enctype="multipart/form-data">
+                    <div class="form-inline">
+                        <i class="fa fa-user prefix"></i>&nbsp;
+                        <label for="registerInputusername">Username</label>
+                        <input type="text" name="userName" class="form-control" id="registerInputusername"
+                               aria-describedby="emailHelp" placeholder="Username">
+                    </div>
+
+                    <div class="form-inline">
+                        <i class="fas fa-phone-square"></i>&nbsp;
+                        <label for="registerInputPhone">Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="phone" class="form-control" id="registerInputPhone"
+                               placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-address-card"></i>&nbsp;
+                        <label for="registerInputAddress">Address</label>
+                        <textarea name="address" id="registerInputAddress" cols="50" rows="5"></textarea>
+                    </div>
+                    <div class="form-inline">
+                        <i class="fas fa-address-card"></i>&nbsp;
+                        <label for="registerInputAvatar">Avatar</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="file" name="avatar" class="form-control" id="registerInputAvatar"
+                               placeholder="Avatar">
+                    </div>
+                    <div class="form-inline">
+                        <i class="fa fa-envelope prefix"></i>&nbsp;
+                        <label for="InputEmail2">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="email" name="email" class="form-control" id="InputEmail2"
+                               aria-describedby="email2" placeholder="Enter email">
+                        <small id="email2" class="form-text text-muted">We'll never share your email with anyone
+                            else.
+                        </small>
+                    </div>
+                    <div class="form-inline">
+                        <i class="fa fa-lock prefix"></i>&nbsp;
+                        <label for="InputPassword2">Password</label>
+                        <input type="password" name="password" class="form-control" id="InputPassword2"
+                               placeholder="Password">
+                    </div>
+
+                    <div class="form-inline">
+                        <i class="far fa-calendar-alt"></i>&nbsp;
+                        <label for="inputBirthday">Birthday</label>&nbsp;&nbsp;&nbsp;
+                        <input type="date" class="form-group" id="inputBirthday" name="birthday">
+                    </div>
+
+                    <div class="form-inline">
+                        <label>&nbsp;</label>
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="btn-Submit" value="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <a class="pagetop" href="#header" style="display: block; position: fixed; bottom: 10px;">
+        <i class="fas fa-arrow-circle-up fa-2x"></i>
+        <i class="fas fa-envelope fa-2x"></i>
+        <i class="fas fa-phone fa-2x animated"></i>
+    </a>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4>Connect With Us</h4>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <div class="links">
+                        <ul class="list-unstyled">
+                            <li class="fb"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
+                                              title="Like Us on FB">
+                                    <i class="fab fa-facebook fa-2x"></i><span class="ml-2">Facebook</span></a></li>
+                            <li class="inst"><a class="d-flex align-items-center pl-0" href="#"
+                                                title="Follow Us on Inst" target="_blank">
+                                    <i class="fab fa-instagram fa-2x"></i><span class="ml-2">Instagram</span></a></li>
+                            <li class="ytb"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
+                                               title="Subcribe Us on YTB">
+                                    <i class="fab fa-youtube fa-2x"></i><span class="ml-2">Youtube</span></a></li>
+                            <li class="email"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
+                                                 title=" ">
+                                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span
+                                            class="ml-2">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Support</h4>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Leave Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Privacy</h4>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms Of Service</a></li>
+                        <li><a href="#">Supplier Code of Conduct</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <img src="/resources/img/logo2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pull purple-gradient">
+        <p style="color: white">Copyright © 2019 Rhythm House. All rights reserved.</p>
+    </div>
 </div>
 <script src="/vendor/js/jquery-3.3.1.min.js"></script>
 <script src="/vendor/js/bootstrap.min.js"></script>

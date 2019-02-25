@@ -21,7 +21,7 @@
 </head>
 <body>
 <div id="header">
-    <nav class="navbar navbar-expand-sm fixed-top purple-gradient">
+    <nav class="navbar navbar-expand-sm fixed-top ">
         <a class="navbar-brand logo" href="/client/home"><img src="/resources/img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -33,35 +33,30 @@
                         <a class="nav-link" href="/client/home"><i class="fas fa-home "></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/disk" id="disk">Disk</a>
-
+                        <a class=" dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Disk
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/client/disk" >CD & DVD</a>
+                            <a class="dropdown-item" href="/client/movie" >Movie</a>
+                            <a class="dropdown-item" href="/client/band" >Band</a>
+                            <a class="dropdown-item" href="/client/soloperformer" >Solo</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a class=" dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="/client/magazine" class="nav-link">
                             Magazine
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="/client/magazine" >All</a>
-                            <a class="dropdown-item" href="/client/top-seller-magazine" >Top seller</a>
-                            <a class="dropdown-item" href="/client/new-releases-magazine" >New releases</a>
-                            <a class="dropdown-item" href="/client/clearance-magazine" >Clearance</a>
-                        </div>
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="  dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="/client/book" class="nav-link">
                             Book
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="/client/book" >All</a>
-                            <a class="dropdown-item" href="/client/top-seller-book" >Top seller</a>
-                            <a class="dropdown-item" href="/client/new-releases-book" >New releases</a>
-                            <a class="dropdown-item" href="/client/clearance-book" >Clearance</a>
-                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="/client/contact" class="nav-link">Contact</a>
@@ -73,12 +68,15 @@
                         <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="search">
-                            <div class="form-inline">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <!--<a href="#" class="nav-link" id="search">-->
+                        <div class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            <a href="#" class="nav-link" id="search">
                                 <button class="btn-search"><i class="fas fa-search"></i></button>
-                            </div>
-                        </a>
+                            </a>
+
+                        </div>
+                        <!--</a>-->
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -109,7 +107,7 @@
                             <select class="browser-default custom-select">
                                 <option selected>Hot</option>
                                 <option value="4">Band</option>
-                                <option value="5">Solo</option>
+                                <option value="5">Solo performer</option>
                             </select>
                         </div>
                     </div>
@@ -117,9 +115,9 @@
 
                         <select class="browser-default custom-select">
                             <option selected>Price</option>
-                            <option value="1"> <200$ </option>
-                            <option value="2"> 200$ - 1000$</option>
-                            <option value="3"> >1000$ </option>
+                            <option value="1"> < 50.000 ₫ </option>
+                            <option value="2"> < 100.000 ₫</option>
+                            <option value="3"> > 100.000 ₫ </option>
                         </select>
                     </div>
 
@@ -163,7 +161,7 @@
                                 <div class="prod-info">
                                     <a href="#!" class="txt-muted"><h4>Justin Bieber</h4></a>
                                     <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
+                                        100.000 ₫
                                     </span>
                                 </div>
                             </div>
@@ -186,7 +184,7 @@
                                 <div class="prod-info">
                                     <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
                                     <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
+                                        70.000 ₫
                                     </span>
                                 </div>
                             </div>
@@ -207,9 +205,9 @@
                                     </div>
                                 </div>
                                 <div class="prod-info">
-                                    <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
+                                    <a href="#!" class="txt-muted"><h4>Dj Tay James</h4></a>
                                     <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
+                                        70.000 ₫
                                     </span>
                                 </div>
                             </div>
@@ -229,9 +227,9 @@
                                     </div>
                                 </div>
                                 <div class="prod-info">
-                                    <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
+                                    <a href="#!" class="txt-muted"><h4>BillBoard</h4></a>
                                     <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
+                                        120.000 ₫
                                     </span>
                                 </div>
                             </div>

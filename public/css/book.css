@@ -1,11 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
+    /*font-size: 20px;*/
 }
-
-.error {
-    color: red;
-}
-
 .navbar {
     box-shadow: 5px 5px 5px black;
     background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
@@ -18,21 +14,34 @@ body {
     color: white;
 }
 
+#customer {
+    color: white;
+}
+/*.title {*/
+    /*height: 70px;*/
+/*}*/
 .nav-item {
     text-transform: uppercase;
     font-size: 20px;
-    padding-top: 15px;
+    padding-top: 5px;
     padding-left: 15px;
     /*padding-right: 10px;*/
 }
+
 .item-menu {
     padding-left: 0;
     border: 5px;
 }
 
-/*.item-menu li a{*/
-    /*margin: 10px;*/
-/*}*/
+
+
+.card img{
+    height: 350px;
+}
+
+.error {
+    color: red;
+}
 
 .btn-search {
     background: none;
@@ -48,18 +57,24 @@ body {
     text-decoration: none;
     display: block;
     color: white;
+    padding-top: 22px;
 }
-.menu ul li a:hover {
-    color: gainsboro;
-    opacity: 0.8;
-    /*box-shadow: 5px 5px 5px darkviolet;*/
-}
+
 .menu ul li .register{
     font-size: 16px;
 }
 .menu ul li .login{
     font-size: 16px;
 }
+
+.menu ul li a:hover {
+    color: gainsboro;
+    opacity: 0.8;
+    /*box-shadow: 5px 5px 5px darkviolet;*/
+}
+
+
+
 .menu ul li > .item-menu {
     display: none;
     position: absolute;
@@ -68,8 +83,10 @@ body {
     width: 100px;
 }
 .menu ul li:hover .item-menu {
-    display: block;
-}
+     display: block;
+ }
+
+
 
 .dropdown:hover>.dropdown-menu {
     display: block;
@@ -86,38 +103,8 @@ body {
     display: block;
     color: white;
     font-size: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
-
-
-/*navbar*/
-.carousel-item img {
-    height: 400px;
-}
-.carousel {
-    padding-top: 100px;
-}
-
-.view-more {
-    font-size: 15px;
-}
-
-
-.card img{
-    height: 300px;
-}
-
-/*.title {*/
-    /*height: 50px;*/
-/*}*/
-#customer {
-    color: white;
-}
-
-a:hover {
-    text-decoration: none!important;
-}
-
 /*item*/
 .prod-info {
     background: #fff;
@@ -191,46 +178,6 @@ a:hover {
     transition: all ease-in .3s;
 }
 
-
-
-
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee;
-}
-
-
-.modal-footer button {
-    height: 40px;
-    color: black;
-    width: 130px;
-    font-size: 11px;
-    text-align: center;
-}
-
-.form-inline  {
-    padding-bottom: 20px;
-}
-
-.form-inline label {
-    margin-right: 10px;
-}
-
-.modal-body .form-inline button {
-    margin-left: 65px;
-    color: black;
-}
-/*content*/
-.content p {
-    padding-top: 7px;
-}
-.title-content {
-    text-align: left;
-    padding-bottom: 5px;
-    font-family: 'Hammersmith One', sans-serif;
-}
 .hot-disk {
     /*background-image: url("/resources/img/background1.jpg");*/
     /*background-position: left;*/
@@ -248,6 +195,7 @@ hr {
     margin-bottom: 30px;
 }
 
+
 #footer {
     padding-top: 10px;
 }
@@ -261,6 +209,10 @@ hr {
 #footer li {
     margin: 5px;
 }
+.footer-top a {
+    color: white;
+}
+
 .pull {
     padding: 15px 0 4px;
     text-align: center;
@@ -272,8 +224,101 @@ hr {
 .pagetop i {
     padding-right: 10px;
 }
-/*footer end*/
-/* Responsive */
+
+
+
+/**/
+.main-clearfix .page-title {
+    padding-top: 120px;
+}
+
+.nav a i {
+    padding-right: 8px;
+}
+
+.navbar-brand i {
+    padding-right: 8px;
+    padding-left: 10px;
+}
+
+
+label{
+    padding-top: 5px;
+}
+
+.just-in-tab1 .filter-item {
+    display: inline-flex;
+    padding-left: 10px;
+}
+
+
+.go{
+    background: #00e765;
+    color: white;
+    width: 100px;
+    height: 31px;
+    border-radius: 7px;
+}
+
+.view-more {
+    font-size: 15px;
+}
+
+.hidden-link{
+    color: black;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+
+
+
+.box-bottom {
+    margin-top: 10px;
+}
+.page-number {
+    float: right;
+}
+
+.page-number .prev {
+    margin-left: 10px;
+    width: 20px;
+}
+
+
+
+/*modal*/
+.form-inline  {
+    padding-bottom: 20px;
+}
+
+.form-inline label {
+    margin-right: 10px;
+}
+
+.modal-body .form-inline button {
+    margin-left: 65px;
+    color: black;
+}
+
+.modal-footer button {
+    height: 40px;
+    color: black;
+    width: 130px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.search {
+    width: 36px;
+    height: 33px;
+}
+
+/*Responsive*/
 [class*="col-"] {
     width: 100%;
 }
@@ -306,9 +351,4 @@ hr {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-}
-
-
-.footer-top a {
-    color: white;
 }

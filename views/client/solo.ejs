@@ -6,21 +6,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clearance CD</title>
+    <title>Solo performer CD</title>
 
+    <link rel="stylesheet" href="/css/DVD.css">
     <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <!-- Font Awesome -->
-
     <link type="text/html" rel="stylesheet" href="/vendor/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/DVD.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
-
 </head>
+
 <body>
 <div id="header">
     <nav class="navbar navbar-expand-sm fixed-top ">
@@ -50,13 +48,13 @@
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/client/magazine">
+                        <a href="/client/magazine" class="nav-link">
                             Magazine
                         </a>
 
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="/client/book">
+                    <li class="nav-item dropdown" >
+                        <a href="/client/book" class="nav-link">
                             Book
                         </a>
                     </li>
@@ -98,16 +96,18 @@
 <div class="main">
     <div class="inner-page container">
         <section class="main-clearfix">
-            <h1 class="page-title">CD</h1>
+            <h1 class="page-title">Solo performer</h1>
             <hr>
             <div class="just-in-box ">
                 <div class="just-in-tab1">
                     <div class="filter-item">
+
                         <div class="select-container">
                             <select class="browser-default custom-select">
-                                <option selected>Clearance</option>
-                                <option value="8">New Releases</option>
-                                <option value="10">Top Seller</option>
+                                <option selected>Sort by</option>
+                                <option value="8">Top Seller</option>
+                                <option value="9">New Releases</option>
+                                <option value="10">Clearance</option>
                                 <option value="7">Movies</option>
                                 <option value="4">Band</option>
                                 <option value="5">Solo</option>
@@ -115,23 +115,21 @@
                         </div>
                     </div>
                     <div class="filter-item">
-                        <!--<label>Price range:</label>-->
+
                         <select class="browser-default custom-select">
                             <option selected>Price</option>
-                            <option value="1"> <200$ </option>
-                            <option value="2"> 200$ - 1000$</option>
-                            <option value="3"> >1000$ </option>
+                            <option value="1"> < 50.000 ₫ </option>
+                            <option value="2"> < 100.000 ₫</option>
+                            <option value="3"> > 100.000 ₫ </option>
                         </select>
                     </div>
 
                     <div class="filter-item">
                         <input class="form-control" type="text" placeholder="Search" aria-label="Search">
                     </div>
-
                     <div class="filter-item">
                         <label>&nbsp; </label>
-                        <!--<input class="go" type="submit" value="Search">-->
-                        <button class="search"><i class="fas fa-search"></i></button>
+                        <button class="search"><i class="fas fa-search"> </i></button>
                     </div>
                 </div>
             </div>
@@ -141,13 +139,14 @@
     <div class="clear"></div>
     <div class="hot-disk">
         <div class="container">
+
             <div class="list-hot-disk">
                 <div class="row text-center">
                     <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="http://image.phimmoi.net/film/1018/poster.medium.jpg"
+                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/4/3/0/c/430c6fa6eb7452bdfe4a2dab957f16bd.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -159,7 +158,10 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>TRANSFORMERS: AGE OF...</h4></a>
+                                <a href="#!" class="txt-muted"><h4>Change</h4></a>
+                                <div class="artist">
+                                    <small>Charlie Puth</small>
+                                </div>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -168,9 +170,6 @@
                                 </div>
                                 <span class="prod-price">
                                     <i class="fas fa-dollar-sign"></i>1250
-                                    <small class="old-price">
-                                        <i class="fas fa-dollar-sign"></i>1850
-                                    </small>
                                 </span>
                             </div>
                         </div>
@@ -179,7 +178,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/9/3/5/f/935f82d0a14506cbe42cde70aaf78cee.jpg"
+                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/covers/2/9/29bc40786d1b937b379f0c3c60f7bfb5_1292900076.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -191,7 +190,10 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>DDU-DU DDU-DU (JP Ver.)</h4></a>
+                                <a href="#!" class="txt-muted"><h4>Heartbreaker</h4></a>
+                                <div class="artist">
+                                    <small>G-Dragon</small>
+                                </div>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -200,9 +202,6 @@
                                 </div>
                                 <span class="prod-price">
                                     <i class="fas fa-dollar-sign"></i>1250
-                                    <small class="old-price">
-                                        <i class="fas fa-dollar-sign"></i>1850
-                                    </small>
                                 </span>
                             </div>
                         </div>
@@ -211,7 +210,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
+                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/4/0/6/b/406b5324276ed23168cfc11822039372.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -223,7 +222,11 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>Đúng Người Đúng Thời Điểm
+                                        </h4></a>
+                                <div class="artist">
+                                    <small>Thanh Hưng</small>
+                                </div>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -232,9 +235,6 @@
                                 </div>
                                 <span class="prod-price">
                                     <i class="fas fa-dollar-sign"></i>1250
-                                    <small class="old-price">
-                                        <i class="fas fa-dollar-sign"></i>1850
-                                    </small>
                                 </span>
                             </div>
                         </div>
@@ -243,7 +243,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-strong">
                                 <img class="card-img-top img-fluid"
-                                     src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
+                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/2/0/a/e/20ae5611049d6da461dded359241ee20.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -255,7 +255,10 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Alone remix</h4></a>
+                                <a href="#!" class="txt-muted"><h4>SOLO </h4></a>
+                                <div class="artist">
+                                    <small>JENNIE</small>
+                                </div>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -264,77 +267,68 @@
                                 </div>
                                 <span class="prod-price">
                                     <i class="fas fa-dollar-sign"></i>1250
-                                    <small class="old-price">
-                                        <i class="fas fa-dollar-sign"></i>1850
-                                    </small>
                                 </span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="http://image.phimmoi.net/film/4325/poster.medium.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>JOHN WICK: CHAPTER 2</h4></a>
-                                <div class="m-b-10">
-                                    <label class="label label-success">3.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
-                                </div>
-                                <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
-                                    <small class="old-price">
-                                        <i class="fas fa-dollar-sign"></i>1850
-                                    </small>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="http://image.phimmoi.net/film/2871/poster.medium.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Steve Jobs</h4></a>
-                                <div class="m-b-10">
-                                    <label class="label label-success">3.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
-                                </div>
-                                <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
-                                    <small class="old-price">
-                                        <i class="fas fa-dollar-sign"></i>1850
-                                    </small>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    <!--<div class="col-sm-3">-->
+                        <!--<div class="card">-->
+                            <!--<div class="view overlay zoom rgba-red-light">-->
+                                <!--<img class="card-img-top img-fluid"-->
+                                     <!--src="http://image.phimmoi.net/film/4325/poster.medium.jpg"-->
+                                     <!--alt="">-->
+                                <!--<div class="mask flex-center waves-effect waves-light">-->
+                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
+                                        <!--<i class="fas fa-shopping-cart"></i>-->
+                                    <!--</button>-->
+                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
+                                        <!--<i class="fas fa-eye"></i>-->
+                                    <!--</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="prod-info">-->
+                                <!--<a href="#!" class="txt-muted"><h4>JOHN WICK: CHAPTER 2</h4></a>-->
+                                <!--<div class="m-b-10">-->
+                                    <!--<label class="label label-success">3.5-->
+                                        <!--<i class="fa fa-star"></i>-->
+                                    <!--</label>-->
+                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
+                                <!--</div>-->
+                                <!--<span class="prod-price">-->
+                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
+                                <!--</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-3">-->
+                        <!--<div class="card">-->
+                            <!--<div class="view overlay zoom rgba-red-light">-->
+                                <!--<img class="card-img-top img-fluid"-->
+                                     <!--src="http://image.phimmoi.net/film/2871/poster.medium.jpg"-->
+                                     <!--alt="">-->
+                                <!--<div class="mask flex-center waves-effect waves-light">-->
+                                    <!--<button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
+                                        <!--<i class="fas fa-shopping-cart"></i>-->
+                                    <!--</button>-->
+                                    <!--<button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">-->
+                                        <!--<i class="fas fa-eye"></i>-->
+                                    <!--</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="prod-info">-->
+                                <!--<a href="#!" class="txt-muted"><h4>Steve Jobs</h4></a>-->
+                                <!--<div class="m-b-10">-->
+                                    <!--<label class="label label-success">3.5-->
+                                        <!--<i class="fa fa-star"></i>-->
+                                    <!--</label>-->
+                                    <!--<a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>-->
+                                <!--</div>-->
+                                <!--<span class="prod-price">-->
+                                    <!--<i class="fas fa-dollar-sign"></i>1250-->
+                                <!--</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
                 </div>
             </div>
             <div class="box-bottom clearfix">
@@ -359,6 +353,7 @@
 </div>
 <div class="clear"></div>
 <!--&#45;&#45;Modal login&#45;&#45;-->
+
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -541,6 +536,7 @@
 </div>
 
 
+</div> <!--footer end-->
 <script src="/vendor/js/jquery-3.3.1.min.js"></script>
 <script src="/vendor/js/bootstrap.min.js"></script>
 <script src="/vendor/js/mdb.min.js"></script>
@@ -548,6 +544,6 @@
 <script src="/resources/js/validate.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>-->
+
 </body>
 </html>

@@ -4,6 +4,7 @@ body {
 }
 .navbar {
     box-shadow: 5px 5px 5px black;
+    background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
 }
 .logo img {
     width: 220px;
@@ -62,9 +63,9 @@ body {
     color: white;
 }
 .menu ul li a:hover {
-    color: black;
+    color: gainsboro;
     opacity: 0.8;
-    box-shadow: 5px 5px 5px darkviolet;
+    /*box-shadow: 5px 5px 5px darkviolet;*/
 }
 .menu ul li > .item-menu {
     display: none;
@@ -210,9 +211,9 @@ a:hover {
 .hot-disk .card {
     margin: 5px;
 }
-.card img {
-    height: 250px;
-}
+/*.card img {*/
+    /*height: 250px;*/
+/*}*/
 
 .hot-ticket {
     background-image: url("/resources/img/background2.jpg");
