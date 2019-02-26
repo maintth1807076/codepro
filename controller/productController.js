@@ -11,6 +11,7 @@ exports.saveProduct = function (req, res) {
     var product = new Product({
                 productId: req.body.productId,
                 name: req.body.name,
+                category: req.body.category,
                 price: req.body.price,
                 description: req.body.description,
                 artist: req.body.artist,

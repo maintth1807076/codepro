@@ -18,7 +18,7 @@
 </head>
 <body >
 <div id="header">
-    <nav class="navbar navbar-expand-sm fixed-top purple-gradient">
+    <nav class="navbar navbar-expand-sm fixed-top ">
         <a class="navbar-brand logo" href="/client/home"><img src="/resources/img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -30,35 +30,30 @@
                         <a class="nav-link" href="/client/home"><i class="fas fa-home "></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/disk" id="disk">Disk</a>
-
+                        <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Disk
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/client/disk" >CD & DVD</a>
+                            <a class="dropdown-item" href="/client/movie" >Movie</a>
+                            <a class="dropdown-item" href="/client/band" >Band</a>
+                            <a class="dropdown-item" href="/client/soloperformer" >Solo</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a class=" dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="/client/magazine">
                             Magazine
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="/client/magazine" >All</a>
-                            <a class="dropdown-item" href="/client/top-seller-magazine" >Top seller</a>
-                            <a class="dropdown-item" href="/client/new-releases-magazine" >New releases</a>
-                            <a class="dropdown-item" href="/client/clearance-magazine" >Clearance</a>
-                        </div>
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="  dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="/client/book">
                             Book
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="/client/book" >All</a>
-                            <a class="dropdown-item" href="/client/top-seller-book" >Top seller</a>
-                            <a class="dropdown-item" href="/client/new-releases-book" >New releases</a>
-                            <a class="dropdown-item" href="/client/clearance-book" >Clearance</a>
-                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="/client/contact" class="nav-link">Contact</a>
@@ -70,12 +65,15 @@
                         <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="search">
-                            <div class="form-inline">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <!--<a href="#" class="nav-link" id="search">-->
+                        <div class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            <a href="#" class="nav-link" id="search">
                                 <button class="btn-search"><i class="fas fa-search"></i></button>
-                            </div>
-                        </a>
+                            </a>
+
+                        </div>
+                        <!--</a>-->
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -91,38 +89,41 @@
         </div>
     </nav> <!--nav end-->
 </div> <!--header end-->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100"
-                 src="https://justinbiebergames.files.wordpress.com/2011/12/justinbiebergames.jpg"
-                 alt="First slide">
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100"
+                     src="/resources/img/slide11.png"
+                     alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                     src="/resources/img/slide12.png"
+                     alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                     src="/resources/img/slide_13.png"
+                     alt="Third slide">
+            </div>
         </div>
-        <div class="carousel-item">
-            <img class="d-block w-100"
-                 src="https://downtownelpaso.com/wp-content/uploads/2018/06/banner-downtown-crescendo-noclick.jpg"
-                 alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100"
-                 src="https://static.meraevents.com/content/eventbanner/165215/BANNER1542019010pXbOB.png"
-                 alt="Third slide">
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div> <!--banner end-->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div> <!--banner end-->
+</div>
+
 <div class="content">
     <div class="hot-disk">
         <div class="container">
@@ -132,34 +133,36 @@
             <hr>
             <div class="carousel-nav-container">
                 <nav class="carousel-nav">
-                    <a class="carousel-link btn-gradient-secondary" href="/client/top-seller-cd">CD</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/top-seller-dvd">DVD</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/top-seller-magazine">Magazine</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/top-seller-book">Book</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/ticket">Liveshow</a>
+                    <a class="carousel-link btn-gradient-secondary" href="/client/CD">CD</a>
+                    <a class="carousel-link btn-gradient-secondary" href="/client/DVD">DVD</a>
+                    <!--<a class="carousel-link btn-gradient-secondary" href="/client/top-seller-magazine">Magazine</a>-->
+                    <!--<a class="carousel-link btn-gradient-secondary" href="/client/top-seller-book">Book</a>-->
+                    <!--<a class="carousel-link btn-gradient-secondary" href="/client/ticket">Liveshow</a>-->
                 </nav>
                 <div class="clear"></div>
             </div>
             <div class="list-hot-disk">
                 <div class="row text-center">
 
+
+
                     <div class="col-sm-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
+                                     src="http://image.phimmoi.net/film/7020/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
                                     <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
+                                        <a class="vieweye" href="/client/detail-product/"><i href="/client/detail-product" class="far fa-eye"></i></a>
                                     </button>
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>NGƯỜI NHỆN:VŨ TRỤ MỚI</h4></a>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -178,7 +181,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="https://f.ptcdn.info/970/023/000/1412026068-Maroon5VDe-o.png"
+                                     src="http://image.phimmoi.net/film/8330/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -190,41 +193,12 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>LƯU LẠC ĐỊA CẦU</h4></a>
                                 <div class="m-b-10">
-                                    <label class="label label-success">3.5
+                                    <label class="label label-success">4.2
                                         <i class="fa fa-star"></i>
                                     </label>
-                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
-                                </div>
-                                <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
-                                <div class="m-b-10">
-                                    <label class="label label-success">3.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
+                                    <a class="text-muted f-w-600">12 Ratings &amp; 3 Reviews</a>
                                 </div>
                                 <span class="prod-price">
                                     <i class="fas fa-dollar-sign"></i>1250
@@ -236,7 +210,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-strong">
                                 <img class="card-img-top img-fluid"
-                                     src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
+                                     src="http://image.phimmoi.net/film/7931/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -248,9 +222,9 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>ẢNH</h4></a>
                                 <div class="m-b-10">
-                                    <label class="label label-success">3.5
+                                    <label class="label label-success">4.0
                                         <i class="fa fa-star"></i>
                                     </label>
                                     <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
@@ -265,7 +239,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"
+                                     src="http://image.phimmoi.net/film/7090/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -277,9 +251,9 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>AQUAMAN: ĐẾ VƯƠNG ATLANTIS</h4></a>
                                 <div class="m-b-10">
-                                    <label class="label label-success">3.5
+                                    <label class="label label-success">4.6
                                         <i class="fa fa-star"></i>
                                     </label>
                                     <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
@@ -290,35 +264,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
-                                <div class="m-b-10">
-                                    <label class="label label-success">3.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
-                                </div>
-                                <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
@@ -328,11 +274,9 @@
             <hr>
             <div class="carousel-nav-container">
                 <nav class="carousel-nav">
-                    <a class="carousel-link btn-gradient-secondary" href="/client/new-releases-cd">CD</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/new-releases-dvd">DVD</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/new-releases-magazine">Magazine</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/new-releases-book">Book</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/ticket">Liveshow</a>
+                    <a class="carousel-link btn-gradient-secondary" href="/client/CD">CD</a>
+                    <a class="carousel-link btn-gradient-secondary" href="/client/DVD">DVD</a>
+
                 </nav>
                 <div class="clear"></div>
             </div>
@@ -343,7 +287,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="https://pbs.twimg.com/media/Dp4ID1aU8AAtFel.jpg"
+                                     src="http://image.phimmoi.net/film/7845/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -355,7 +299,7 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>DIỆP VẤN NGOẠI TRUYỆN: TRƯƠNG... </h4></a>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -372,7 +316,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="https://f.ptcdn.info/970/023/000/1412026068-Maroon5VDe-o.png"
+                                     src="http://image.phimmoi.net/film/7294/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -384,7 +328,7 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>DỊ NHÂN THẾ HỆ MỚI</h4></a>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -401,7 +345,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"
+                                     src="http://image.phimmoi.net/film/7851/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -413,7 +357,7 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>ĐẲNG CẤP THÚ CƯNG 2</h4></a>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -430,7 +374,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-strong">
                                 <img class="card-img-top img-fluid"
-                                     src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
+                                     src="http://image.phimmoi.net/film/6906/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -442,7 +386,7 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>NGƯỜI NHỆN: XA NHÀ</h4></a>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -455,80 +399,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
-                                <div class="m-b-10">
-                                    <label class="label label-success">3.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
-                                </div>
-                                <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
-                                <div class="m-b-10">
-                                    <label class="label label-success">3.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
-                                </div>
-                                <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
             <h2 class="title-content animated slideInLeft slow">CLEARANCE
-                <!--<a class="" href="/client/CD">-->
-                <!--<i class="fas fa-angle-double-right ml-2"></i>-->
-                <!--</a>-->
+
             </h2>
             <hr>
             <div class="carousel-nav-container">
                 <nav class="carousel-nav">
                     <a class="carousel-link btn-gradient-secondary" href="/client/clearance-cd">CD</a>
                     <a class="carousel-link btn-gradient-secondary" href="/client/clearance-dvd">DVD</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/clearance-magazine">Magazine</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/clearance-book">Book</a>
-                    <a class="carousel-link btn-gradient-secondary" href="/client/ticket">Liveshow</a>
+                    <!--<a class="carousel-link btn-gradient-secondary" href="/client/clearance-magazine">Magazine</a>-->
+                    <!--<a class="carousel-link btn-gradient-secondary" href="/client/clearance-book">Book</a>-->
+                    <!--<a class="carousel-link btn-gradient-secondary" href="/client/ticket">Liveshow</a>-->
                 </nav>
                 <div class="clear"></div>
             </div>
@@ -539,7 +424,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="https://f.ptcdn.info/970/023/000/1412026068-Maroon5VDe-o.png"
+                                     src="http://image.phimmoi.net/film/8328/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -551,7 +436,7 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>TAY ĐẤM HUYỀN THOẠI 2</h4></a>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -571,7 +456,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="https://fanart.tv/fanart/music/301b45a4-b8b9-410e-8344-4b4eaf96691a/albumcover/silence-5c229658a3eb7.jpg"
+                                     src="http://image.phimmoi.net/film/7256/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -583,7 +468,7 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>KẸP HẠT DẺ VÀ BỐN VƯƠNG QUỐC</h4></a>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -603,7 +488,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-strong">
                                 <img class="card-img-top img-fluid"
-                                     src="https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/23935a003d5611e6934f63ca4434b432/258e8dc03d5611e6b5b241a819b52d27-Banner.png"
+                                     src="http://image.phimmoi.net/film/8307/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -615,7 +500,7 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>KẺ GIẢ MẠO</h4></a>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -635,7 +520,7 @@
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
-                                     src="http://dailytrojan.com/wp-content/uploads/2015/11/web-beiber.jpg"
+                                     src="http://image.phimmoi.net/film/7071/poster.medium.jpg"
                                      alt="">
                                 <div class="mask flex-center waves-effect waves-light">
                                     <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
@@ -647,7 +532,7 @@
                                 </div>
                             </div>
                             <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
+                                <a href="#!" class="txt-muted"><h4>KẺ CẮP GIÁNG SINH</h4></a>
                                 <div class="m-b-10">
                                     <label class="label label-success">3.5
                                         <i class="fa fa-star"></i>
@@ -663,86 +548,104 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="https://d3us2i0tqwa7m7.cloudfront.net/pulses/18765702693610000/1481497028993_res_original.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Sorry</h4></a>
-                                <div class="m-b-10">
-                                    <label class="label label-success">3.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">14 Ratings &amp; 3 Reviews</a>
-                                </div>
-                                <span class="prod-price">
-                                    <i class="fas fa-dollar-sign"></i>1250
-                                    <small class="old-price">
-                                        <i class="fas fa-dollar-sign"></i>1850
-                                    </small>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div> <!--hot-disk-->
     <div class="hot-ticket">
-        <h2 class="wow slideInLeft slow">New Liveshow</h2>
+        <h2 class="wow slideInLeft slow">LIVESHOW MỚI</h2>
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-3">
                     <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
-                        <div class="card-img-overlay">
-                            <p style="color: white" class="card-text">Believe</p>
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-thumbnail"
+                                 src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                   <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+
+                        <div class="prod-info">
+                            <a href="#!" class="txt-muted"><h4>Justin Bieber</h4></a>
+                            <span class="prod-price">
+                                        100.000 ₫
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
-                             alt="Card image">
-                        <div class="card-img-overlay">
-                            <p class="card-text"></p>
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-thumbnail"
+                                 src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
+                                 alt="Card image">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <a class="vieweye" href="/client/detail-liveshow"><i class="fas fa-eye"></i></a>
+                                </button>
+                            </div>
                         </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                        <div class="prod-info">
+                            <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
+                            <span class="prod-price">
+                                        70.000 ₫
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
-                             alt="Card image">
-                        <div class="card-img-overlay">
-                            <p class="card-text"></p>
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-thumbnail"
+                                 src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
+                                 alt="Card image">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                        <div class="prod-info">
+                            <a href="#!" class="txt-muted"><h4>Dj Tay James</h4></a>
+                            <span class="prod-price">
+                                        70.000 ₫
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
-                        <div class="card-img-overlay">
-                            <p class="card-text"></p>
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-thumbnail"
+                                 src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                        <div class="prod-info">
+                            <a href="#!" class="txt-muted"><h4>BillBoard</h4></a>
+                            <span class="prod-price">
+                                        120.000 ₫
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -818,7 +721,7 @@
                     <div class="form-inline">
                         <i class="fa fa-user prefix"></i>&nbsp;
                         <label for="registerInputusername">Username</label>
-                        <input type="text" name="username" class="form-control" id="registerInputusername"
+                        <input type="text" name="userName" class="form-control" id="registerInputusername"
                                aria-describedby="emailHelp" placeholder="Username">
                     </div>
 
@@ -908,8 +811,8 @@
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
                         <li><a href="#">Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Leave Feedback</a></li>
+                        <li><a href="/client/contact">Contact Us</a></li>
+                        <li><a href="/client/about">About us</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">

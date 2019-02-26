@@ -74,22 +74,33 @@ exports.clearanceCD = function (req, res) {
     res.render("client/clearance-cd.ejs");
 };
 
-exports.newReleasesBook = function (req, res) {
-    res.render("client/new-releases-book.ejs");
+exports.detailMagazine = function (req, res) {
+    res.render("client/magazine-detail.ejs");
 };
-exports.topSellerBook = function (req, res) {
-    res.render("client/top-seller-book.ejs");
+exports.detailBand = function (req, res) {
+    res.render("client/band-detail.ejs");
 };
-exports.clearanceBook = function (req, res) {
-    res.render("client/clearance-book.ejs");
+exports.detailLiveshow = function (req, res) {
+    res.render("client/detail-liveshow.ejs");
 };
 
-exports.newReleasesMagazine = function (req, res) {
-    res.render("client/new-releases-magazine.ejs");
+exports.detailDvd = function (req, res) {
+    res.render("client/dvd-detail.ejs");
 };
 exports.topSellerMagazine = function (req, res) {
     res.render("client/top-seller-magazine.ejs");
 };
-exports.clearanceMagazine = function (req, res) {
-    res.render("client/clearance-magazine.ejs");
+exports.detailBook = function (req, res) {
+    res.render("client/book-detail.ejs");
+};
+
+
+exports.moviePage = function (req, res) {
+    res.render("client/movie.ejs");
+};
+exports.bandPage = function (req, res) {
+    res.render("client/band.ejs");
+};
+exports.soloPage = function (req, res) {
+    res.render("client/solo.ejs");
 };

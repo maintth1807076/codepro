@@ -8,6 +8,7 @@ body {
 }
 .navbar {
     box-shadow: 5px 5px 5px black;
+    background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
 }
 
 .btn-search {
@@ -57,9 +58,9 @@ body {
     color: white;
 }
 .menu ul li a:hover {
-    color: black;
+    color: gainsboro;
     opacity: 0.8;
-    box-shadow: 5px 5px 5px darkviolet;
+    /*box-shadow: 5px 5px 5px darkviolet;*/
 }
 .menu ul li > .item-menu {
     display: none;
