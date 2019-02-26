@@ -30,7 +30,7 @@
                         <a class="nav-link" href="/client/home"><i class="fas fa-home "></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class=" dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Disk
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -40,19 +40,18 @@
                             <a class="dropdown-item" href="/client/soloperformer" >Solo</a>
                         </div>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="/client/magazine" class="nav-link">
+                        <a class="nav-link" href="/client/magazine">
                             Magazine
                         </a>
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="/client/book" class="nav-link">
+                        <a class="nav-link" href="/client/book">
                             Book
                         </a>
                     </li>
@@ -67,13 +66,13 @@
                     </li>
                     <li class="nav-item">
                         <!--<a href="#" class="nav-link" id="search">-->
-                            <div class="form-inline">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                                <a href="#" class="nav-link" id="search">
-                                    <button class="btn-search"><i class="fas fa-search"></i></button>
-                                </a>
+                        <div class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            <a href="#" class="nav-link" id="search">
+                                <button class="btn-search"><i class="fas fa-search"></i></button>
+                            </a>
 
-                            </div>
+                        </div>
                         <!--</a>-->
                     </li>
                     <li class="nav-item dropdown">
@@ -158,7 +157,7 @@
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
                                     <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <a class="vieweye" href="/client/detail-product"><i href="/client/detail-product" class="far fa-eye"></i></a>
+                                        <a class="vieweye" href="/client/detail-product/"><i href="/client/detail-product" class="far fa-eye"></i></a>
                                     </button>
                                 </div>
                             </div>
@@ -555,49 +554,98 @@
         </div>
     </div> <!--hot-disk-->
     <div class="hot-ticket">
-        <h2 class="wow slideInLeft slow">New Liveshow</h2>
+        <h2 class="wow slideInLeft slow">LIVESHOW MỚI</h2>
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-3">
                     <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
-                        <div class="card-img-overlay">
-                            <p style="color: white" class="card-text">Believe</p>
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-thumbnail"
+                                 src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                   <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+
+                        <div class="prod-info">
+                            <a href="#!" class="txt-muted"><h4>Justin Bieber</h4></a>
+                            <span class="prod-price">
+                                        100.000 ₫
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
-                             alt="Card image">
-                        <div class="card-img-overlay">
-                            <p class="card-text"></p>
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-thumbnail"
+                                 src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
+                                 alt="Card image">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <a class="vieweye" href="/client/detail-liveshow"><i class="fas fa-eye"></i></a>
+                                </button>
+                            </div>
                         </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                        <div class="prod-info">
+                            <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
+                            <span class="prod-price">
+                                        70.000 ₫
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
-                             alt="Card image">
-                        <div class="card-img-overlay">
-                            <p class="card-text"></p>
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-thumbnail"
+                                 src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
+                                 alt="Card image">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                        <div class="prod-info">
+                            <a href="#!" class="txt-muted"><h4>Dj Tay James</h4></a>
+                            <span class="prod-price">
+                                        70.000 ₫
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card">
-                        <img class="card-img-top img-thumbnail"
-                             src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
-                        <div class="card-img-overlay">
-                            <p class="card-text"></p>
+                        <div class="view overlay zoom rgba-red-light">
+                            <img class="card-img-top img-thumbnail"
+                                 src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p><a href="#" class=""><i class="fas fa-shopping-cart"></i></a> 120$</p>
+                        <div class="prod-info">
+                            <a href="#!" class="txt-muted"><h4>BillBoard</h4></a>
+                            <span class="prod-price">
+                                        120.000 ₫
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -673,7 +721,7 @@
                     <div class="form-inline">
                         <i class="fa fa-user prefix"></i>&nbsp;
                         <label for="registerInputusername">Username</label>
-                        <input type="text" name="username" class="form-control" id="registerInputusername"
+                        <input type="text" name="userName" class="form-control" id="registerInputusername"
                                aria-describedby="emailHelp" placeholder="Username">
                     </div>
 
@@ -763,8 +811,8 @@
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
                         <li><a href="#">Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Leave Feedback</a></li>
+                        <li><a href="/client/contact">Contact Us</a></li>
+                        <li><a href="/client/about">About us</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">

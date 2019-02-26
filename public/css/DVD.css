@@ -17,9 +17,11 @@ body {
 #customer {
     color: white;
 }
-/*.title {*/
-    /*height: 70px;*/
-/*}*/
+
+.vieweye {
+    color: white;
+}
+
 .nav-item {
     text-transform: uppercase;
     font-size: 20px;

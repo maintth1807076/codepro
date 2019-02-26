@@ -30,9 +30,9 @@ body {
     border: 5px;
 }
 
-/*.item-menu li a{*/
-    /*margin: 10px;*/
-/*}*/
+.vieweye {
+    color: white;
+}
 
 .btn-search {
     background: none;
@@ -211,7 +211,7 @@ hr {
 }
 
 .form-inline  {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .form-inline label {
