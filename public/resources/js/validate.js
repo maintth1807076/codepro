@@ -33,6 +33,42 @@ var validator = $('#loginForm').validate({
 
     }
 });
+
+var validator = $('#contact-form').validate({
+    rules: {
+        name: {
+            required: true,
+            minlength: 3,
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        comments: {
+            required: true,
+            minlength: 5
+        },
+
+    },
+    messages: {
+        name: {
+            required: 'Please enter Name.',
+            minlength: 'Name is too short , please enter minimum {0} characters .',
+
+        },
+        email: {
+            required: 'Please enter email.',
+            email: 'Please enter true email.'
+        },
+        comments: {
+            required: 'Please enter comments',
+            minlength: 'comments is too short , please enter minimum {0} characters .'
+        },
+
+
+    }
+});
+
 $(document).ready(function () {
     $('#registerForm').validate({
         rules: {

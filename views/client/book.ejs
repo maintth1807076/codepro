@@ -70,24 +70,14 @@
                     <li class="nav-item">
                         <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <!--<a href="#" class="nav-link" id="search">-->
-                        <div class="form-inline">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <a href="#" class="nav-link" id="search">
-                                <button class="btn-search"><i class="fas fa-search"></i></button>
-                            </a>
 
-                        </div>
-                        <!--</a>-->
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user-circle"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign In</a>
-                            <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign Up</a>
+                            <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
+                            <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
                         </div>
                     </li>
                 </ul>
@@ -95,6 +85,21 @@
         </div>
     </nav> <!--nav end-->
 </div>
+
+<div class="searchby">
+    <div class="input-group col-lg-offset-3 col-lg-offset-3 col-lg-6 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        <input class="bv-productsearch-inputfield form-control" type="text" placeholder="CD, DVD, Book, Liveshow,..." value="">
+        <span class="input-group-btn">
+            <button class="bv-productsearch-searchbutton btn ">
+                <div class="bv-productsearch-seachbutton-title">
+                    <i class="fas fa-search "></i>
+                    <span>Search</span>
+                </div>
+            </button>
+        </span>
+    </div>
+</div>
+
 <div class="main">
     <div class="inner-page container">
         <section class="main-clearfix">
@@ -567,8 +572,8 @@
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
                         <li><a href="#">Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Leave Feedback</a></li>
+                        <li><a href="/client/contact">Contact Us</a></li>
+                        <li><a href="/client/about">About us</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
