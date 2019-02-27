@@ -64,17 +64,17 @@
                     <li class="nav-item">
                         <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <!--<a href="#" class="nav-link" id="search">-->
-                        <div class="form-inline">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <a href="#" class="nav-link" id="search">
-                                <button class="btn-search"><i class="fas fa-search"></i></button>
-                            </a>
+                    <!--<li class="nav-item">-->
+                        <!--&lt;!&ndash;<a href="#" class="nav-link" id="search">&ndash;&gt;-->
+                        <!--<div class="form-inline">-->
+                            <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+                            <!--<a href="#" class="nav-link" id="search">-->
+                                <!--<button class="btn-search"><i class="fas fa-search"></i></button>-->
+                            <!--</a>-->
 
-                        </div>
-                        <!--</a>-->
-                    </li>
+                        <!--</div>-->
+                        <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                    <!--</li>-->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user-circle"></i>
@@ -261,13 +261,29 @@
         </div>
     </div>
 </div>
+<div id="boxchat">
+    <div  class="purple-gradient" id="chat-head">
+        Trò chuyện với chúng tôi.
+        <span id="closechat">&times;</span>
+    </div>
+    <div id="chat-message">
+        Chúng tôi sẽ trả lời ngay khi nhận được tin nhắn.
+    </div>
+    <div id="chat-area">
+        <form>
+            <input placeholder="Nhập tin nhắn" >
 
+            <img src="https://cdn2.iconfinder.com/data/icons/mini-icon-set-communication/91/Communication_10-512.png">
+        </form>
+    </div>
+</div>
 <div id="footer">
-    <a class="pagetop" href="#header" style="display: block; position: fixed; bottom: 10px;">
-        <i class="fas fa-arrow-circle-up fa-2x"></i>
-        <i class="fas fa-envelope fa-2x"></i>
-        <i class="fas fa-phone fa-2x animated"></i>
-    </a>
+    <div class="ontop">
+        <i class="far fa-arrow-alt-circle-up fa-2x"></i>
+    </div>
+    <div class="chatnow">
+        <div id="openchat"><i class="far fa-comment"></i> Chat online</div>
+    </div>
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -327,10 +343,7 @@
 <script src="/vendor/js/jquery.validate.min.js"></script>
 <script src="/resources/js/validate.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>-->
-<!--<script src="/vendor/js/Chart.bundle.min.js"></script>-->
-<!--<script src="/vendor/js/Chart..min.js"></script>-->
-<!--<script src="/resources/js/about.js"></script>-->
+<script src="/resources/js/myjs.js"></script>
 </body>
 
 

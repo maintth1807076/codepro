@@ -35,7 +35,7 @@ exports.routing = function (app) {
     app.get("/client/new-releases-dvd", homeController.newReleasesDVD);
     app.get("/client/clearance-dvd", homeController.clearanceDVD);
     app.get("/client/top-seller-cd", homeController.topSellerCD);
-    app.get("/client/new-releases-cd", homeController.newReleasesCD);
+    app.get("/client/new-releases-detail", homeController.newReleasesDetail);
     app.get("/client/clearance-cd", homeController.clearanceCD);
     app.get("/client/detail-band", homeController.detailBand);
     app.get("/client/detail-magazine", homeController.detailMagazine);

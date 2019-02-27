@@ -67,7 +67,7 @@ body {
     text-transform: uppercase;
     font-size: 20px;
     padding-top: 5px;
-    padding-left: 15px;
+    padding-left: 30px;
     /*padding-right: 10px;*/
 }
 
@@ -139,7 +139,8 @@ body {
 
 .navbar {
     box-shadow: 5px 5px 5px black;
-    height: 100px;
+    /*height: 100px;*/
+    width: 100%;
     background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
 }
 /*item*/
@@ -265,9 +266,7 @@ body {
 
 
 /**/
-.main-clearfix .page-title {
-    padding-top: 120px;
-}
+/**/
 
 .nav a i {
     padding-right: 8px;
@@ -317,16 +316,18 @@ a:hover {
 .box-bottom {
     margin-top: 10px;
 }
-.page-number {
+/*.page-number {*/
+    /*float: right;*/
+/*}*/
+
+/*.page-number .prev {*/
+    /*margin-left: 10px;*/
+    /*width: 20px;*/
+/*}*/
+
+.dataTables_paginate .pagination {
     float: right;
 }
-
-.page-number .prev {
-    margin-left: 10px;
-    width: 20px;
-}
-
-
 
 /*modal*/
 .form-inline  {
@@ -353,6 +354,71 @@ a:hover {
 .search {
     width: 36px;
     height: 33px;
+}
+
+/*boxchat*/
+.ontop {
+    display:none; bottom: 8%; right: 5px; cursor: pointer;  position: fixed; z-index: 1000;
+    color: #3dac9a;
+
+}
+.chatnow {
+    border: 1px solid ;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    right: 40px;
+    background-color: #3dac9a;
+    cursor: pointer;
+}
+#chat-head {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+#chat-message {
+    height: 150px;
+}
+#chat-area {
+    border-top: 1px solid black;
+    background-color: #ffeadb;
+}
+#chat-area input {
+    border: none;
+    width: 180px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+#chat-area img {
+    width: 50px;
+}
+
+#boxchat {
+    border: 2px solid white;
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 40px;
+    width: 250px;
+    overflow: auto;
+    background-color: white;
+}
+#closechat {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#closechat:hover,
+#closechat:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*Responsive*/

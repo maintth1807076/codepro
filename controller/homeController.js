@@ -64,9 +64,11 @@ exports.clearanceDVD = function (req, res) {
     res.render("client/clearance-dvd.ejs");
 };
 
-exports.newReleasesCD = function (req, res) {
-    res.render("client/new-releases-cd.ejs");
+exports.newReleasesDetail = function (req, res) {
+    res.render("client/new-releases-details.ejs");
 };
+
+
 exports.topSellerCD = function (req, res) {
     res.render("client/top-seller-cd.ejs");
 };
