@@ -14,6 +14,66 @@
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="/css/home.css">
+    <style>
+        .lentop {display:none; bottom: 10%; right: 10px; cursor: pointer;  position: fixed; z-index: 1000;}
+        .chatnow {
+            border: 1px solid white;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 0;
+            right: 35px;
+            background-color: white;
+        }
+        #chat-head {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 8px 0;
+            border-bottom: 1px solid black;
+        }
+        #chat-message {
+            height: 150px;
+        }
+        #chat-area {
+            border-top: 1px solid black;
+            background-color: #ffeadb;
+        }
+        #chat-area input {
+            border: none;
+            width: 180px;
+            padding-bottom: 5px;
+            margin-left: 10px;
+        }
+        #chat-area img {
+            width: 50px;
+        }
+
+        #boxchat {
+            border: 2px solid white;
+            border-radius: 5px;
+            display: none;
+            position: fixed;
+            z-index: 1;
+            bottom: 0;
+            right: 40px;
+            width: 250px;
+            overflow: auto;
+            background-color: white;
+        }
+        #closechat {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        #closechat:hover,
+        #closechat:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 </head>
 <body >
@@ -782,13 +842,30 @@
         </div>
     </div>
 </div>
-
+<div id="boxchat">
+    <div  class="purple-gradient" id="chat-head">
+        Chat with us now
+        <span id="closechat">&times;</span>
+    </div>
+    <div id="chat-message">
+        Chúng tôi sẽ trả lời ngay khi nhận được tin nhắn
+    </div>
+    <div id="chat-area">
+        <form>
+            <input placeholder="Nhập tin nhắn" >
+            </input>
+            <img src="https://cdn2.iconfinder.com/data/icons/mini-icon-set-communication/91/Communication_10-512.png">
+        </form>
+    </div>
+</div>
 <div id="footer">
-    <a class="pagetop" href="#header" style="display: block; position: fixed; bottom: 10px;">
+    <div class="lentop">
         <i class="fas fa-arrow-circle-up fa-2x"></i>
-        <i class="fas fa-envelope fa-2x"></i>
-        <i class="fas fa-phone fa-2x animated"></i>
-    </a>
+    </div>
+    <div class="chatnow">
+        <!--<i class="fas fa-envelope fa-3x" id="openchat"></i>-->
+        <div id="openchat"> Chat online</div>
+    </div>
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -848,7 +925,31 @@
 <script src="/vendor/js/jquery.validate.min.js"></script>
 <script src="/resources/js/validate.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
+<script>
+    $(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) $(".lentop").fadeIn();
+            else $(".lentop").fadeOut();
+        });
+        $(".lentop").click(function () {
+            $("body,html").animate({scrollTop: 0}, "slow");
+        });
+    });
+    var modal = document.getElementById('boxchat');
+    var btn = document.getElementById("openchat");
+    var span = document.getElementById("closechat");
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 </html>
