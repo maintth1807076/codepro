@@ -262,12 +262,30 @@
     </div>
 </div>
 
+<div id="boxchat">
+    <div   id="chat-head">
+        Chat with us now
+        <span id="closechat">&times;</span>
+    </div>
+    <div id="chat-message">
+
+    </div>
+    <div id="chat-area">
+        <form>
+            <input placeholder="Nhập tin nhắn" >
+            </input>
+            <img src="https://cdn2.iconfinder.com/data/icons/mini-icon-set-communication/91/Communication_10-512.png">
+        </form>
+    </div>
+</div>
 <div id="footer">
-    <a class="pagetop" href="#header" style="display: block; position: fixed; bottom: 10px;">
+    <div class="lentop">
         <i class="fas fa-arrow-circle-up fa-2x"></i>
-        <i class="fas fa-envelope fa-2x"></i>
-        <i class="fas fa-phone fa-2x animated"></i>
-    </a>
+    </div>
+    <div class="chatnow">
+        <!--<i class="fas fa-envelope fa-3x" id="openchat"></i>-->
+        <div id="openchat"><img src=" https://lh3.googleusercontent.com/TC96Trs_RUZ9fMkusLqJPyBZsfFawlR8HsbyRmcanOvv-y5Mnm4rH0fraGmNtk5n4Tw" alt="" style="width: 65px;"></div>
+    </div>
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -326,13 +344,34 @@
 <script src="/vendor/js/mdb.min.js"></script>
 <script src="/vendor/js/jquery.validate.min.js"></script>
 <script src="/resources/js/validate.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>-->
-<!--<script src="/vendor/js/Chart.bundle.min.js"></script>-->
-<!--<script src="/vendor/js/Chart..min.js"></script>-->
-<!--<script src="/resources/js/about.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script>
+    $(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) $(".lentop").fadeIn();
+            else $(".lentop").fadeOut();
+        });
+        $(".lentop").click(function () {
+            $("body,html").animate({scrollTop: 0}, "slow");
+        });
+    });
+    var modal = document.getElementById('boxchat');
+    var btn = document.getElementById("openchat");
+    var span = document.getElementById("closechat");
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
 </body>
-
-
+</html>
 
 
