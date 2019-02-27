@@ -200,6 +200,78 @@ a:hover {
     padding-right: 10px;
 }
 
+
+/*boxchat*/
+.chatnow {
+    border: 1px solid #9E9E9E;
+    border-radius: 35px;
+    position: fixed;
+    bottom: 8px;
+    right: 45px;
+    background-color: white;
+}
+#chat-head {
+    background-color:#31af91;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #9E9E9E;
+}
+#chat-message {
+    height: 150px;
+}
+#chat-area {
+    border-top: 1px solid #9E9E9E;
+    background-color: #78929238;
+}
+#chat-area input {
+    border: none;
+    width: 180px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+#chat-area img {
+    width: 50px;
+}
+
+#boxchat {
+    border: 2px solid #9E9E9E;
+    border-radius: 8px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 45px;
+    width: 270px;
+    overflow: auto;
+    background-color: white;
+
+}
+.ontop {
+    display: none;
+    bottom: 8%;
+    right: 5px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    color: #3dac9a;
+}
+#closechat {
+    color: #d9dfe0fa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right:10px;
+}
+
+#closechat:hover,
+#closechat:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 [class*="col-"] {
     width: 100%;
 }
