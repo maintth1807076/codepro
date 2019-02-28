@@ -1,40 +1,28 @@
-/*.img-fluid {*/
-    /*height: 40px;*/
-/*}*/
 
-/*#small_banner img {*/
-    /*width: 160px;*/
-    /*height: 160px;*/
-/*}*/
-
-/*#big_banner img{*/
-    /*width: 450px;*/
-    /*height: 600px;*/
-/*}*/
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 .navbar {
     box-shadow: 5px 5px 5px black;
+    width: 100%;
     background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
 }
 .logo img {
-    width: 220px;
+    width: 240px;
     padding-left: 80px;
 }
-.nav-link {
+.navbar .nav-link {
     color: white;
     font-size: 18px;
 }
 
 .nav-item {
-    font-size: 20px;
     text-transform: uppercase;
-    padding-top: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
+    /*font-size: 20px;*/
+    padding-top: 5px;
+    padding-left: 30px;
+    /*padding-right: 10px;*/
 }
 
 .dropdown-toggle {
@@ -67,37 +55,48 @@ body {
     opacity: 0.8;
     box-shadow: 5px 5px 5px #9e9e9e;
 }
-/*.menu ul li {*/
-    /*display: block;*/
-    /*position: relative;*/
-/*}*/
-/*.menu ul li a {*/
-    /*text-decoration: none;*/
-    /*display: block;*/
-    /*color: white;*/
-/*}*/
-/*.menu ul li .register{*/
-    /*font-size: 16px;*/
-/*}*/
-/*.menu ul li .login{*/
-    /*font-size: 16px;*/
-/*}*/
-/*.menu ul li a:hover {*/
-    /*color: black;*/
-    /*opacity: 0.8;*/
+.menu ul li {
+    display: block;
+    position: relative;
+}
+.menu ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.menu ul li a:hover {
+    color: gainsboro;
+    opacity: 0.8;
     /*box-shadow: 5px 5px 5px darkviolet;*/
-/*}*/
-/*.menu ul li > .item-menu {*/
-    /*display: none;*/
-    /*position: absolute;*/
-    /*z-index: 999;*/
-    /*background: #6f42c1;*/
-    /*width: 100px;*/
-/*}*/
-/*.menu ul li:hover .item-menu {*/
-    /*display: block;*/
-/*}*/
+}
+.menu ul li > .item-menu {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background: #6f42c1;
+    width: 100px;
+}
+.menu ul li:hover .item-menu {
+    display: block;
+}
 
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    color: white;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.menu ul li #dropdownMenuButton {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding-top: 7px;
+}
 
 
 
@@ -124,12 +123,12 @@ a:hover {
 
 
 /*modal*/
-.form-inline  {
-    padding-bottom: 20px;
-}
+/*.form-inline  {*/
+    /*padding-bottom: 20px;*/
+/*}*/
 
 .form-inline label {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .modal-body .form-inline button {
@@ -194,10 +193,83 @@ a:hover {
 }
 .footer-top {
     background-image: url("/resources/img/background2.jpg");
-    background-position: bottom;
+    /*background-position: bottom;*/
 }
 .pagetop i {
     padding-right: 10px;
+}
+
+
+/*boxchat*/
+
+.chatnow {
+    border: 1px solid #9E9E9E;
+    border-radius: 35px;
+    position: fixed;
+    bottom: 8px;
+    right: 45px;
+    background-color: white;
+}
+#chat-head {
+    background-color:#31af91;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #9E9E9E;
+}
+#chat-message {
+    height: 150px;
+}
+#chat-area {
+    border-top: 1px solid #9E9E9E;
+    background-color: #78929238;
+}
+#chat-area input {
+    border: none;
+    width: 180px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+#chat-area img {
+    width: 50px;
+}
+
+#boxchat {
+    border: 2px solid #9E9E9E;
+    border-radius: 8px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 45px;
+    width: 270px;
+    overflow: auto;
+    background-color: white;
+
+}
+.ontop {
+    display: none;
+    bottom: 8%;
+    right: 5px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    color: #3dac9a;
+}
+#closechat {
+    color: #d9dfe0fa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right:10px;
+}
+
+#closechat:hover,
+#closechat:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 [class*="col-"] {

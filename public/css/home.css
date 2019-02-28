@@ -19,7 +19,6 @@ body {
 .input-group {
     position: relative;
     display: table;
-
 }
 .input-group .form-control {
     position: relative;
@@ -58,8 +57,8 @@ body {
 .nav-item {
     text-transform: uppercase;
     font-size: 20px;
-    padding-top: 15px;
-    padding-left: 15px;
+    padding-top: 5px;
+    padding-left: 30px;
     /*padding-right: 10px;*/
 }
 #customer {
@@ -75,10 +74,6 @@ body {
     color: white;
 }
 
-
-/*.card img{*/
-/*height: 250px;*/
-/*}*/
 
 .btn-search {
     background: none;
@@ -138,18 +133,13 @@ body {
 
 .navbar {
     box-shadow: 5px 5px 5px black;
-    /*height: 100px;*/
+    width: 100%;
+    background: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
+
     background-image: url("/resources/img/background6.jpeg");
     background-size: cover;
-}
 
-/*navbar*/
-/*.carousel-item img {*/
-/*height: 400px;*/
-/*}*/
-/*.carousel {*/
-/*padding-top: 100px;*/
-/*}*/
+}
 /*banner*/
 
 .carousel-link {
@@ -162,7 +152,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     width: 100px;
-    color: black;
+    color: #FFFFFF;
 }
 
 .carousel-nav-container {
@@ -174,7 +164,7 @@ body {
 }
 .carousel-nav a:hover {
     background: #4CBE9F;
-    color: #FFFFFF;
+    color: black;
 }
 
 h2 {
@@ -183,7 +173,9 @@ h2 {
     font-weight: 300;
 }
 
-
+hr {
+    height: 2px;
+}
 
 
 .modal-footer button {
@@ -245,7 +237,7 @@ a:hover {
     margin-bottom: 30px;
 }
 .hot-ticket {
-
+    background-image: url("/resources/img/background2.jpg");
     padding: 20px 0;
 }
 .hot-ticket img {
@@ -255,11 +247,7 @@ a:hover {
     margin: 10px;
 }
 .hot-ticket h2 {
-    text-align: left;
-    padding-top: 10px;
-    font-weight: bold;
-    padding-left:30px;
-    text-transform: uppercase;
+    color: white;
 }
 h2 a {
     font-size: 20px;
@@ -276,6 +264,7 @@ h2 a {
     height: 50px;
     color: #404e67;
     margin-bottom: 10px;
+
 }
 
 .m-b-10 {
@@ -339,7 +328,7 @@ h2 a {
 
 .hot-contest {
     background-image: url("/resources/img/background3.jpg");
-    background-position: right;
+    /*background-position: right;*/
     padding: 20px 0;
 }
 .hot-contest img {
@@ -347,6 +336,37 @@ h2 a {
     box-shadow: 5px 5px 5px darkviolet;
     border-radius: 10px;
 }
+
+.p-new a {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    padding: 8px 13px;
+    line-height: 1;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 2px 0 0 2px;
+    background: #2dcee3;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.p-sale a {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    height: 40px;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    background-color: #ff5252;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 11px 4px;
+}
+
 /*footer*/
 #footer {
     padding-top: 10px;
@@ -368,54 +388,18 @@ h2 a {
 
 .footer-top {
     background-image: url("/resources/img/background2.jpg");
-    background-position: bottom;
+    /*background-position: bottom;*/
+    text-align: center;
 }
+
+
+
+
 .pagetop i {
     padding-right: 10px;
 }
-/*footer end*/
-/* Responsive */
 
-[class*="col-"] {
-    width: 100%;
-}
-.footer-bottom{
-    background-size: cover;
-    background-image: url("/resources/img/background6.jpeg");
-    padding: 15px 0 4px;
-    text-align: center;
-}
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-sm-1 {width: 8.33%;}
-    .col-sm-2 {width: 16.66%;}
-    .col-sm-3 {width: 25%;}
-    .col-sm-4 {width: 33.33%;}
-    .col-sm-5 {width: 41.66%;}
-    .col-sm-6 {width: 50%;}
-    .col-sm-7 {width: 58.33%;}
-    .col-sm-8 {width: 66.66%;}
-    .col-sm-9 {width: 75%;}
-    .col-sm-10 {width: 83.33%;}
-    .col-sm-11 {width: 91.66%;}
-    .col-sm-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
 
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
-.lentop {display:none; bottom: 10%; right: 10px; cursor: pointer;  position: fixed; z-index: 1000;}
 .chatnow {
     border: 1px solid #9E9E9E;
     border-radius: 35px;
@@ -485,3 +469,13 @@ h2 a {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+

@@ -29,45 +29,10 @@ var validator = $('#loginForm').validate({
             required: 'Please enter password',
             minlength: 'Password is too short , please enter minimum {0} characters .'
         },
-
-
     }
 });
 
-var validator = $('#contact-form').validate({
-    rules: {
-        name: {
-            required: true,
-            minlength: 3,
-        },
-        email: {
-            required: true,
-            email: true
-        },
-        comments: {
-            required: true,
-            minlength: 5
-        },
 
-    },
-    messages: {
-        name: {
-            required: 'Please enter Name.',
-            minlength: 'Name is too short , please enter minimum {0} characters .',
-
-        },
-        email: {
-            required: 'Please enter email.',
-            email: 'Please enter true email.'
-        },
-        comments: {
-            required: 'Please enter comments',
-            minlength: 'comments is too short , please enter minimum {0} characters .'
-        },
-
-
-    }
-});
 
 $(document).ready(function () {
     $('#registerForm').validate({
@@ -138,6 +103,48 @@ $(document).ready(function () {
             },
             birthday: {
                 required: 'Please enter birthday'
+            },
+        }
+    });
+
+    $('#contact-form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 3,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            subject: {
+                required: true,
+                minlength: 3,
+            },
+            message: {
+                required: true,
+                minlength: 5
+            },
+
+        },
+        messages: {
+            name: {
+                required: 'Please enter Name.',
+                minlength: 'Name is too short , please enter minimum {0} characters .',
+
+            },
+            email: {
+                required: 'Please enter email.',
+                email: 'Please enter true email.',
+            },
+            subject: {
+                required: 'Please enter subject.',
+                minlength: 'Subject is too short , please enter minimum {0} characters .',
+            },
+
+            message: {
+                required: 'Please enter message',
+                minlength: 'message is too short , please enter minimum {0} characters .'
             },
         }
     });

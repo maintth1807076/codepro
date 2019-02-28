@@ -48,77 +48,12 @@
 </head>
 <body >
 
-<div id="header">
-    <nav class="navbar navbar-expand-sm fixed-top ">
-        <a class="navbar-brand logo" href="/client/home"><img src="/resources/img/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"><i class="fa fa-bars white-text" aria-hidden="true"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <div class="menu">
-                <ul class=" nav navbar-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/client/home"><i class="fas fa-home "></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Disk
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="/client/disk" >CD & DVD</a>
-                            <a class="dropdown-item" href="/client/movie" >Movie</a>
-                            <a class="dropdown-item" href="/client/band" >Band</a>
-                            <a class="dropdown-item" href="/client/soloperformer" >Solo</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
-
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="/client/magazine">
-                            Magazine
-                        </a>
-
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="/client/book">
-                            Book
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/client/contact" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/client/about" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-user-circle"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registerModal" >Sign up</a>
-                            <a class="dropdown-item" href="#"   data-toggle="modal" data-target="#loginModal">Sing in</a>
-
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> <!--nav end-->
-</div> <!--header end-->
-
-
-
+<% include include/navbar.ejs%>
 
 <div id="pcoded" class="pcoded">
 
     <div class="pcoded-main-container">
-
+        <% include include/search.ejs%>
         <div class="pcoded-content">
 
             <div class="main-body">
@@ -149,14 +84,14 @@
                                             <div class="row">
                                                 <div>
                                                     <div class="col-lg-12">
-                                                        <span class="txt-muted d-inline-block">Mã sản phẩm: <a href="#!"> PRT145 </a> </span>
-                                                        <span class="f-right">Trạng thái : <a href="#!"> Còn sản phẩm </a> </span>
+                                                        <span class="txt-muted d-inline-block">Product Code: <a href="#!"> PRT145 </a> </span>
+                                                        <span class="f-right">Availablity : <a href="#!"> In Stock </a> </span>
                                                     </div>
                                                     <div class="col-lg-12">
-                                                        <h4 class="pro-desc">Forbes Việt Nam - Số 68</h4>
+                                                        <h4 class="pro-desc">Forbes Viet Nam</h4>
                                                     </div>
                                                     <div class="col-lg-12">
-                                                        <span class="txt-muted"> Thể loại : Tạp chí </span>
+                                                        <span class="txt-muted"> Brand : Magazine </span>
                                                     </div>
                                                     <div class="stars stars-example-css m-t-15 detail-stars col-lg-12">
                                                         <select id="product-view" class="rating-star" name="rating" autocomplete="off">
@@ -170,12 +105,12 @@
                                                     <div class="col-lg-12">
                                                         <span class="text-primary product-price">45.000 ₫</span> <span class="done-task txt-muted"></span>
                                                         <hr>
-                                                        <p>Nhà phát hành:  Forbes Vietnam</p>
-                                                        <p>Ngày phát hành:  08/01/2019</p>
-                                                        <p>Số trang:  162</p>
-                                                        <p>Định dạng:  Bìa mềm </p>
+                                                        <p> Publisher: Forbes Vietnam </p>
+                                                        <p> Release date: 08/01/2019 </p>
+                                                        <p> Number of pages: 162 </p>
+                                                        <p> Format: Paperback </p>
                                                         <hr>
-                                                        <h6 class="f-16 f-w-600 m-t-10 m-b-10">Số lượng</h6>
+                                                        <h6 class="f-16 f-w-600 m-t-10 m-b-10">Quantity</h6>
                                                     </div>
                                                     <div class="col-xl-3 col-sm-12">
                                                         <div class="p-l-0 m-b-25">
@@ -196,7 +131,7 @@
                                                     </div>
                                                     <div class="col-lg-12 col-sm-12 mob-product-btn">
                                                         <button type="button" class="btn btn-primary waves-effect waves-light m-r-20">
-                                                            <i class="icofont icofont-cart-alt f-16"></i><span class="m-l-10">Thêm vào giỏ hàng</span>
+                                                            <i class="icofont icofont-cart-alt f-16"></i><span class="m-l-10">ADD TO CART</span>
                                                         </button>
                                                         <button type="button" class="btn btn-outline-primary waves-effect waves-light m-r-20" data-toggle="tooltip" title="Add to wishlist">
                                                             <i class="icofont icofont-heart-alt f-16 m-0"></i>
@@ -218,11 +153,11 @@
                     <div class="card product-detail-page">
                         <ul class="nav nav-tabs md-tabs tab-timeline" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active f-18 p-b-0" data-toggle="tab" href="#description" role="tab">Miêu tả</a>
+                                <a class="nav-link active f-18 p-b-0" data-toggle="tab" href="#description" role="tab">Description</a>
                                 <div class="slide"></div>
                             </li>
                             <li class="nav-item m-b-0">
-                                <a class="nav-link f-18 p-b-0" data-toggle="tab" href="#review" role="tab">Đánh Giá</a>
+                                <a class="nav-link f-18 p-b-0" data-toggle="tab" href="#review" role="tab">Review</a>
                                 <div class="slide"></div>
                             </li>
 
@@ -235,15 +170,13 @@
 
                             <div class="tab-content bg-white">
                                 <div class="tab-pane active" id="description" role="tabpanel">
-                                    <p>Ba mối quan tâm 2019</p>
-                                    <p>Minh Phú trở lại sàn niêm yết với thực lực dựa vào công nghệ</p>
-                                    <p>Cơ hội các hiệp định thương mại tự do cũng tạo ra thách thức mới</p>
-                                    <p>Ví sao các quỹ nước ngoài nhắm vào doanh nghiệp khởi nghiệp tại Việt Nam</p>
-                                    <p>Danh sách 40 doanh nhân đang dùng tài sản của mình làm việc thiện</p>
+                                    <p> Three concerns 2019 </p>
+                                    <p> Minh Phu returned to the listing floor with a technology-based capability </p>
+                                    <p> Opportunities for free trade agreements also create new challenges </p>
+                                    <p> For example, foreign funds target startups in Vietnam </p>
+                                    <p> List of 40 entrepreneurs who are using their assets to do good </p>
                                 </div>
                                 <div class="tab-pane" id="review" role="tabpanel">
-                                    <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>-->
-                                    <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>-->
                                 </div>
 
                             </div>
@@ -256,202 +189,13 @@
     </div>
 </div>
 
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="form-header blue-gradient">
-                    <h3 class="modal-title"><i class="fa fa-lock" id="loginModalLabel"></i> Login:</h3>
-                </div>
+<!--sign up-sign in-->
+<% include include/reg-log.ejs %>
 
-                <button type="button" id="btn-show-modal" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="" id="loginForm" name="login-form">
-                    <div class="form-inline">
-                        <i class="fa fa-envelope prefix"></i> &nbsp;
-                        <label for="loginInputEmail">Email address</label>
-                        <input type="text" name="email" class="form-control" id="loginInputEmail"
-                               aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.
-                        </small>
-                    </div>
-                    <div class="form-inline">
-                        <i class="fa fa-lock prefix"></i>&nbsp;
-                        <label for="loginInputPassword1">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="password" name="password" class="form-control" id="loginInputPassword1"
-                               placeholder="Password">
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="Check">
-                        <label class="form-check-label" for="Check">Remember me</label>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="options">
-                            <span class="grey-text">Not a member? </span><a href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
-                            <span class="grey-text">Forgot </span><a href="#">Password?</a>
-                        </div>
-                        <button type="button" class="btn" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" id="btn-submit" value="submit">Sign In</button>
-                    </div>
 
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+<!--Include Footer-->
+<% include include/footer.ejs%>
 
-<!-- -Modal register--->
-<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="form-header blue-gradient ">
-                    <h3 class="modal-title"><i class="fa fa-user" id="registerModalLabel"></i> Register:</h3>
-                </div>
-                <button type="button" id="btn-show-modal2" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="/admin/customer/save" id="registerForm" name="register-form" method="post"  enctype="multipart/form-data">
-                    <div class="form-inline">
-                        <i class="fa fa-user prefix"></i>&nbsp;
-                        <label for="registerInputusername">Username</label>
-                        <input type="text" name="userName" class="form-control" id="registerInputusername"
-                               aria-describedby="emailHelp" placeholder="Username">
-                    </div>
-
-                    <div class="form-inline">
-                        <i class="fas fa-phone-square"></i>&nbsp;
-                        <label for="registerInputPhone">Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="text" name="phone" class="form-control" id="registerInputPhone"
-                               placeholder="Phone">
-                    </div>
-                    <div class="form-group">
-                        <i class="fas fa-address-card"></i>&nbsp;
-                        <label for="registerInputAddress">Address</label>
-                        <textarea name="address" id="registerInputAddress" cols="50" rows="5"></textarea>
-                    </div>
-                    <div class="form-inline">
-                        <i class="fas fa-address-card"></i>&nbsp;
-                        <label for="registerInputAvatar">Avatar</label>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="file" name="avatar" class="form-control" id="registerInputAvatar"
-                               placeholder="Avatar">
-                    </div>
-                    <div class="form-inline">
-                        <i class="fa fa-envelope prefix"></i>&nbsp;
-                        <label for="InputEmail2">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="email" name="email" class="form-control" id="InputEmail2"
-                               aria-describedby="email2" placeholder="Enter email">
-                        <small id="email2" class="form-text text-muted">We'll never share your email with anyone
-                            else.
-                        </small>
-                    </div>
-                    <div class="form-inline">
-                        <i class="fa fa-lock prefix"></i>&nbsp;
-                        <label for="InputPassword2">Password</label>
-                        <input type="password" name="password" class="form-control" id="InputPassword2"
-                               placeholder="Password">
-                    </div>
-
-                    <div class="form-inline">
-                        <i class="far fa-calendar-alt"></i>&nbsp;
-                        <label for="inputBirthday">Birthday</label>&nbsp;&nbsp;&nbsp;
-                        <input type="date" class="form-group" id="inputBirthday" name="birthday">
-                    </div>
-
-                    <div class="form-inline">
-                        <label>&nbsp;</label>
-                        <button type="button" class="btn" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" id="btn-Submit" value="submit">Sign Up</button>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div id="boxchat">
-    <div  id="chat-head">
-        Trò chuyện với chúng tôi
-        <span id="closechat">&times;</span>
-    </div>
-    <div id="chat-message">
-    </div>
-    <div id="chat-area">
-        <form>
-            <input placeholder="Nhập tin nhắn" >
-
-            <img src="https://cdn2.iconfinder.com/data/icons/mini-icon-set-communication/91/Communication_10-512.png">
-        </form>
-    </div>
-</div>
-<div id="footer">
-    <div class="ontop">
-        <i class="far fa-arrow-alt-circle-up fa-2x"></i>
-    </div>
-    <div class="chatnow">
-        <div id="openchat"><img src="https://icons-for-free.com/free-icons/png/512/1891020.png" alt="" style="width:65px;"></div>
-    </div>
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h4>Connect With Us</h4>
-                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <div class="links">
-                        <ul class="list-unstyled">
-                            <li class="fb"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
-                                              title="Like Us on FB">
-                                    <i class="fab fa-facebook fa-2x"></i><span class="ml-2">Facebook</span></a></li>
-                            <li class="inst"><a class="d-flex align-items-center pl-0" href="#"
-                                                title="Follow Us on Inst" target="_blank">
-                                    <i class="fab fa-instagram fa-2x"></i><span class="ml-2">Instagram</span></a></li>
-                            <li class="ytb"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
-                                               title="Subcribe Us on YTB">
-                                    <i class="fab fa-youtube fa-2x"></i><span class="ml-2">Youtube</span></a></li>
-                            <li class="email"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
-                                                 title=" ">
-                                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span
-                                            class="ml-2">Email</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <h4>Support</h4>
-                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="/client/contact">Contact Us</a></li>
-                        <li><a href="/client/about">About us</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <h4>Privacy</h4>
-                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms Of Service</a></li>
-                        <li><a href="#">Supplier Code of Conduct</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <img src="/resources/img/logo2.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p style="color: white">Copyright © 2019 Rhythm House. All rights reserved.</p>
-    </div>
-</div> <!--footer end-->
 
 
 <script type="text/javascript" src="/bower_components/jquery/js/jquery.min.js"></script>
