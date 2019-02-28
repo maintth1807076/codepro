@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,25 +7,26 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Solo performer CD</title>
+    <title>Movie</title>
 
-    <link rel="stylesheet" href="/css/DVD.css">
     <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <!-- Font Awesome -->
+
     <link type="text/html" rel="stylesheet" href="/vendor/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
-</head>
 
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/DVD.css">
+
+</head>
 <body>
 <div id="header">
     <nav class="navbar navbar-expand-sm fixed-top ">
         <a class="navbar-brand logo" href="/client/home"><img src="/resources/img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <span class="navbar-toggler-icon"><i class="fa fa-bars white-text" aria-hidden="true"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <div class="menu">
@@ -53,7 +55,7 @@
                         </a>
 
                     </li>
-                    <li class="nav-item dropdown" >
+                    <li class="nav-item dropdown">
                         <a href="/client/book" class="nav-link">
                             Book
                         </a>
@@ -68,13 +70,14 @@
                         <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user-circle"></i>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
-                            <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registerModal" >Sign up</a>
+                            <a class="dropdown-item" href="#"   data-toggle="modal" data-target="#loginModal">Sing in</a>
+
                         </div>
                     </li>
                 </ul>
@@ -83,10 +86,11 @@
     </nav> <!--nav end-->
 </div>
 
-<div class="searchby">
-    <div class="input-group col-lg-offset-3 col-lg-offset-3 col-lg-6 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-        <input class="bv-productsearch-inputfield form-control" type="text" placeholder="CD, DVD, Book, Liveshow,..." value="">
-        <span class="input-group-btn">
+<div class="searchby ">
+    <div class="row justify-content-md-center">
+        <div class="input-group col-md-8 col-sm-12">
+            <input class="bv-productsearch-inputfield form-control" type="text" placeholder="CD, DVD, Book, Liveshow,..." value="">
+            <span class="input-group-btn">
             <button class="bv-productsearch-searchbutton btn ">
                 <div class="bv-productsearch-seachbutton-title">
                     <i class="fas fa-search "></i>
@@ -94,18 +98,18 @@
                 </div>
             </button>
         </span>
+        </div>
     </div>
 </div>
 
 <div class="main">
     <div class="inner-page container">
         <section class="main-clearfix">
-            <h1 class="page-title">Solo performer</h1>
+            <h1 class="page-title">Solo</h1>
             <hr>
             <div class="just-in-box ">
                 <div class="just-in-tab1">
                     <div class="filter-item">
-
                         <div class="select-container">
                             <select class="browser-default custom-select">
                                 <option selected>Sort by</option>
@@ -119,7 +123,6 @@
                         </div>
                     </div>
                     <div class="filter-item">
-
                         <select class="browser-default custom-select">
                             <option selected>Price</option>
                             <option value="1"> < 50.000 ₫ </option>
@@ -127,156 +130,156 @@
                             <option value="3"> > 100.000 ₫ </option>
                         </select>
                     </div>
-
                     <div class="filter-item">
                         <input class="form-control" type="text" placeholder="Search" aria-label="Search">
                     </div>
+
                     <div class="filter-item">
                         <label>&nbsp; </label>
-                        <button class="search"><i class="fas fa-search"> </i></button>
+                        <button class="search"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <hr>
+
     <div class="clear"></div>
     <div class="hot-disk">
         <div class="container">
-
             <div class="list-hot-disk">
                 <div class="row text-center">
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/4/3/0/c/430c6fa6eb7452bdfe4a2dab957f16bd.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/4/3/0/c/430c6fa6eb7452bdfe4a2dab957f16bd.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Change</h4></a>
-                                <div class="artist">
-                                    <small>Charlie Puth</small>
-                                </div>
-                                <div class="m-b-10">
-                                    <label class="label label-success">3.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">8 Ratings &amp; 3 Reviews</a>
-                                </div>
-                                <span class="prod-price">
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Change</h4></a>
+                                    <div class="artist">
+                                        <small>Charlie Puth</small>
+                                    </div>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">3.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">8 Ratings &amp; 3 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
                                     50.000 ₫
                                 </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/covers/2/9/29bc40786d1b937b379f0c3c60f7bfb5_1292900076.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/covers/2/9/29bc40786d1b937b379f0c3c60f7bfb5_1292900076.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Heartbreaker</h4></a>
-                                <div class="artist">
-                                    <small>G-Dragon</small>
-                                </div>
-                                <div class="m-b-10">
-                                    <label class="label label-success">3.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">5 Ratings &amp; 2 Reviews</a>
-                                </div>
-                                <span class="prod-price">
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Heartbreaker</h4></a>
+                                    <div class="artist">
+                                        <small>G-Dragon</small>
+                                    </div>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">3.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">5 Ratings &amp; 2 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
                                     50.000 ₫
                                 </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-light">
-                                <img class="card-img-top img-fluid"
-                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/4/0/6/b/406b5324276ed23168cfc11822039372.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
                                 </div>
                             </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Đúng Người Đúng Thời Điểm
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/4/0/6/b/406b5324276ed23168cfc11822039372.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Đúng Người Đúng Thời Điểm
                                         </h4></a>
-                                <div class="artist">
-                                    <small>Thanh Hưng</small>
-                                </div>
-                                <div class="m-b-10">
-                                    <label class="label label-success">4.0
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">19 Ratings &amp; 4 Reviews</a>
-                                </div>
-                                <span class="prod-price">
+                                    <div class="artist">
+                                        <small>Thanh Hưng</small>
+                                    </div>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">4.0
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">19 Ratings &amp; 4 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
                                     50.000 ₫
                                 </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="view overlay zoom rgba-red-strong">
-                                <img class="card-img-top img-fluid"
-                                     src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/2/0/a/e/20ae5611049d6da461dded359241ee20.jpg"
-                                     alt="">
-                                <div class="mask flex-center waves-effect waves-light">
-                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-strong">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/2/0/a/e/20ae5611049d6da461dded359241ee20.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>SOLO </h4></a>
-                                <div class="artist">
-                                    <small>JENNIE</small>
-                                </div>
-                                <div class="m-b-10">
-                                    <label class="label label-success">4.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">24 Ratings &amp; 8 Reviews</a>
-                                </div>
-                                <span class="prod-price">
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>SOLO </h4></a>
+                                    <div class="artist">
+                                        <small>JENNIE</small>
+                                    </div>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">4.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">24 Ratings &amp; 8 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
                                     60.000 ₫
                                 </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             <div class="box-bottom clearfix">
                 <div class="page-number">
                     <a href="#" class="button prev "><i class="fas fa-angle-double-left"></i></a>
@@ -423,12 +426,11 @@
 </div>
 
 <div id="boxchat">
-    <div  class="purple-gradient" id="chat-head">
-        Trò chuyện với chúng tôi.
+    <div  id="chat-head">
+        Trò chuyện với chúng tôi
         <span id="closechat">&times;</span>
     </div>
     <div id="chat-message">
-        Chúng tôi sẽ trả lời ngay khi nhận được tin nhắn.
     </div>
     <div id="chat-area">
         <form>
@@ -443,7 +445,7 @@
         <i class="far fa-arrow-alt-circle-up fa-2x"></i>
     </div>
     <div class="chatnow">
-        <div id="openchat"><i class="far fa-comment"></i> Chat online</div>
+        <div id="openchat"><img src="https://icons-for-free.com/free-icons/png/512/1891020.png" alt="" style="width:65px;"></div>
     </div>
     <div class="footer-top">
         <div class="container">
@@ -453,34 +455,23 @@
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <div class="links">
                         <ul class="list-unstyled">
-                            <li class="fb">
-                                <a class="d-flex align-items-center pl-0" href="#" target="_blank" title="Like Us on FB">
-                                    <i class="fab fa-facebook fa-2x"></i>
-                                    <span class="ml-2">Facebook</span>
-                                </a>
-                            </li>
-                            <li class="inst">
-                                <a class="d-flex align-items-center pl-0" href="#" title="Follow Us on Inst" target="_blank">
-                                    <i class="fab fa-instagram fa-2x"></i>
-                                    <span class="ml-2">Instagram</span>
-                                </a>
-                            </li>
-                            <li class="ytb">
-                                <a class="d-flex align-items-center pl-0" href="#" target="_blank" title="Subcribe Us on YTB">
-                                    <i class="fab fa-youtube fa-2x"></i>
-                                    <span class="ml-2">Youtube</span>
-                                </a>
-                            </li>
-                            <li class="email">
-                                <a class="d-flex align-items-center pl-0" href="#" target="_blank" title=" ">
-                                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                                    <span class="ml-2">Email</span>
-                                </a>
-                            </li>
+                            <li class="fb"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
+                                              title="Like Us on FB">
+                                    <i class="fab fa-facebook fa-2x"></i><span class="ml-2">Facebook</span></a></li>
+                            <li class="inst"><a class="d-flex align-items-center pl-0" href="#"
+                                                title="Follow Us on Inst" target="_blank">
+                                    <i class="fab fa-instagram fa-2x"></i><span class="ml-2">Instagram</span></a></li>
+                            <li class="ytb"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
+                                               title="Subcribe Us on YTB">
+                                    <i class="fab fa-youtube fa-2x"></i><span class="ml-2">Youtube</span></a></li>
+                            <li class="email"><a class="d-flex align-items-center pl-0" href="#" target="_blank"
+                                                 title=" ">
+                                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span
+                                            class="ml-2">Email</span></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <h4>Support</h4>
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
@@ -489,7 +480,7 @@
                         <li><a href="/client/about">About us</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <h4>Privacy</h4>
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
@@ -498,19 +489,18 @@
                         <li><a href="#">Supplier Code of Conduct</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <img src="/resources/img/logo2.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="pull purple-gradient">
+    <div class="footer-bottom">
         <p style="color: white">Copyright © 2019 Rhythm House. All rights reserved.</p>
     </div>
-</div>
-
-
 </div> <!--footer end-->
+
+
 <script src="/vendor/js/jquery-3.3.1.min.js"></script>
 <script src="/vendor/js/bootstrap.min.js"></script>
 <script src="/vendor/js/mdb.min.js"></script>
@@ -518,6 +508,6 @@
 <script src="/resources/js/validate.js"></script>
 <script src="/resources/js/myjs.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
+<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>-->
 </body>
 </html>

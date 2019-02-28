@@ -3,12 +3,103 @@
     padding-bottom: 40px;
 }
 
-body {
-    font-family: Roboto, sans-serif;
+
+
+
+.border-Control {
+    background-color: #FFF;
+    width: 980px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
-.navbar {
-    box-shadow: 5px 5px 5px black;
-    background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
+
+
+.reviews {
+    background-color: #FFF;
+    width: 950px;
+    padding: 15px;
+}
+
+h2 {
+    color: #3DB54A;
+}
+
+p {
+    display: block;
+
+}
+
+
+.error {
+    color: red;
+}
+
+.logo img {
+    width: 240px;
+    padding-left: 80px;
+}
+
+
+.searchby {
+    padding-top: 120px;
+    padding-bottom: 10px;
+}
+.input-group {
+    position: relative;
+    display: table;
+
+}
+.input-group .form-control {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.bv-productsearch-inputfield {
+    display: inline;
+    font-size: 16px;
+    height: 45px;
+}
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+
+}
+.bv-productsearch-seachbutton-title {
+    width: 70px;
+}
+.btn:hover {
+    color: #373737;
+    background: #3dac9a;
+    border-color: #3dac9a;
+}
+.btn {
+    background: #3dac9a;
+    border-color: #3dac9a;
+}
+
+
+.nav-link {
+    color: white;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    /*padding-right: 10px;*/
+}
+.item-menu {
+    padding-left: 0;
+    border: 5px;
+}
+
+.vieweye {
+    color: white;
 }
 
 .btn-search {
@@ -16,40 +107,6 @@ body {
     color: white;
     border: none;
 }
-
-
-
-
-.menu ul li .register{
-    font-size: 16px;
-}
-.menu ul li .login{
-    font-size: 16px;
-}
-.logo img {
-    width: 240px;
-    padding-left: 80px;
-}
-.navbar .nav-link {
-    color: white;
-}
-
-#customer {
-    color: white;
-}
-
-.nav-item {
-    text-transform: uppercase;
-    font-size: 20px;
-    padding-top: 5px;
-    padding-left: 30px;
-
-}
-.item-menu {
-    padding-left: 0;
-    border: 5px;
-}
-
 
 .menu ul li {
     display: block;
@@ -60,12 +117,17 @@ body {
     display: block;
     color: white;
     padding-top: 0;
-
+}
+.menu ul li .register{
+    font-size: 16px;
+}
+.menu ul li .login{
+    font-size: 16px;
 }
 .menu ul li a:hover {
     color: gainsboro;
     opacity: 0.8;
-    /*box-shadow: 5px 5px 5px darkviolet;*/
+
 }
 .menu ul li > .item-menu {
     display: none;
@@ -93,19 +155,106 @@ body {
     display: block;
     color: white;
     font-size: 20px;
-    padding-top: 0;
+    padding-top: 0px;
 }
 
-.border-Control {
-    background-color: #FFF;
-    width: 980px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
+.navbar {
+    box-shadow: 5px 5px 5px black;
+    /*height: 100px;*/
+    background-image: url("/resources/img/background6.jpeg");
 }
 
-.error {
-    color: red;
+
+
+
+
+
+
+
+
+#customer {
+    color: white;
 }
+
+a:hover {
+    text-decoration: none!important;
+}
+
+/*item*/
+.prod-info {
+    background: #fff;
+    padding: 30px 0 20px;
+}
+
+
+.prod-info h4 {
+    font-size: 20px;
+    height: 50px;
+    color: #404e67;
+    margin-bottom: 10px;
+}
+
+
+
+.label {
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: 5px;
+    font-weight: 400;
+    color: #fff!important;
+}
+
+.label-success {
+    background: -webkit-gradient(linear,left top,right top,from(#0ac282),to(#0df3a3));
+    background: linear-gradient(to right,#0ac282,#0df3a3);
+}
+
+.prod-info .prod-price {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.prod-info .prod-price .old-price {
+    color: #919aa3;
+    text-decoration: line-through;
+    font-size: 50%;
+}
+
+
+
+.btn.btn-icon {
+    border-radius: 25%;
+    width: 40px;
+    line-height: 30px;
+    height: 40px;
+    padding: 3px;
+    text-align: center;
+}
+
+.btn-success {
+    background-color: #0ac282;
+    border-color: #0ac282;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+}
+
+.btn-primary {
+    background-color: #01a9ac;
+    border-color: #01a9ac;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+}
+
+
+
+
+
 
 .modal-footer button {
     height: 40px;
@@ -115,8 +264,8 @@ body {
     text-align: center;
 }
 
-.form-inline {
-    padding-bottom: 20px;
+.form-inline  {
+    padding-bottom: 15px;
 }
 
 .form-inline label {
@@ -127,23 +276,21 @@ body {
     margin-left: 65px;
     color: black;
 }
-
-.reviews {
-    background-color: #FFF;
-    width: 950px;
-    padding: 15px;
+/*content*/
+.content p {
+    padding-top: 7px;
+}
+.title-content {
+    text-align: left;
+    padding-bottom: 5px;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
-h2 {
-    color: #3DB54A;
+
+.name-disk {
+    padding-top: 2px;
 }
 
-p {
-    display: block;
-
-}
-
-/*footer*/
 #footer {
     padding-top: 10px;
 }
@@ -157,10 +304,7 @@ p {
 #footer li {
     margin: 5px;
 }
-.pull {
-    padding: 15px 0 4px;
-    text-align: center;
-}
+
 .footer-top a {
     color: white;
 }
@@ -172,75 +316,17 @@ p {
 .pagetop i {
     padding-right: 10px;
 }
-
-/*boxchat*/
-.ontop {
-    display:none; bottom: 8%; right: 5px; cursor: pointer;  position: fixed; z-index: 1000;
-    color: #3dac9a;
-
-}
-.chatnow {
-    border: 1px solid ;
-    position: fixed;
-    bottom: 0;
-    color: white;
-    right: 40px;
-    background-color: #3dac9a;
-    cursor: pointer;
-}
-#chat-head {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding: 8px 0;
-    border-bottom: 1px solid black;
-}
-#chat-message {
-    height: 150px;
-}
-#chat-area {
-    border-top: 1px solid black;
-    background-color: #ffeadb;
-}
-#chat-area input {
-    border: none;
-    width: 180px;
-    padding-bottom: 5px;
-    margin-left: 10px;
-}
-#chat-area img {
-    width: 50px;
-}
-
-#boxchat {
-    border: 2px solid white;
-    border-radius: 5px;
-    display: none;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    right: 40px;
-    width: 250px;
-    overflow: auto;
-    background-color: white;
-}
-#closechat {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-#closechat:hover,
-#closechat:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 /*footer end*/
+/* Responsive */
 
 [class*="col-"] {
     width: 100%;
+}
+.footer-bottom{
+    background-size: cover;
+    background-image: url("/resources/img/background6.jpeg");
+    padding: 15px 0 4px;
+    text-align: center;
 }
 @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -272,3 +358,74 @@ p {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 }
+.lentop {display:none; bottom: 10%; right: 10px; cursor: pointer;  position: fixed; z-index: 1000;}
+.chatnow {
+    border: 1px solid #9E9E9E;
+    border-radius: 35px;
+    position: fixed;
+    bottom: 8px;
+    right: 45px;
+    background-color: white;
+}
+#chat-head {
+    background-color:#31af91;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #9E9E9E;
+}
+#chat-message {
+    height: 150px;
+}
+#chat-area {
+    border-top: 1px solid #9E9E9E;
+    background-color: #78929238;
+}
+#chat-area input {
+    border: none;
+    width: 180px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+#chat-area img {
+    width: 50px;
+}
+
+#boxchat {
+    border: 2px solid #9E9E9E;
+    border-radius: 8px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 45px;
+    width: 270px;
+    overflow: auto;
+    background-color: white;
+
+}
+.ontop {
+    display: none;
+    bottom: 8%;
+    right: 5px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    color: #3dac9a;
+}
+#closechat {
+    color: #d9dfe0fa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right:10px;
+}
+
+#closechat:hover,
+#closechat:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+

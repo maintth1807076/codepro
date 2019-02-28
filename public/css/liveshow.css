@@ -1,12 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
-
+    /*font-size: 20px;*/
 }
 
 .logo img {
     width: 240px;
     padding-left: 80px;
 }
+
 
 .searchby {
     padding-top: 120px;
@@ -15,7 +16,7 @@ body {
 .input-group {
     position: relative;
     display: table;
-    margin-left: 420px;
+
 }
 .input-group .form-control {
     position: relative;
@@ -57,24 +58,25 @@ body {
 #customer {
     color: white;
 }
-.vieweye{
+
+.vieweye {
     color: white;
 }
 
 .nav-item {
     text-transform: uppercase;
     font-size: 20px;
-    padding-top: 5px;
-    padding-left: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
     /*padding-right: 10px;*/
 }
+
 .item-menu {
     padding-left: 0;
     border: 5px;
 }
 
 
-/**/
 .error {
     color: red;
 }
@@ -84,6 +86,7 @@ body {
     color: white;
     border: none;
 }
+
 .menu ul li {
     display: block;
     position: relative;
@@ -137,15 +140,39 @@ body {
 .navbar {
     box-shadow: 5px 5px 5px black;
     /*height: 100px;*/
-    background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
+    width: 100%;
+    background-image: url("/resources/img/background6.jpeg");
 }
-/*banner*/
+/*item*/
+.prod-info {
+    background: #fff;
+    padding: 30px 0 20px;
+}
+
 
 .prod-info h4 {
-    font-size: 23px;
+    font-size: 20px;
     height: 50px;
     color: #404e67;
-    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.label {
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: 5px;
+    font-weight: 400;
+    color: #fff!important;
+}
+
+.label-success {
+    background: -webkit-gradient(linear,left top,right top,from(#0ac282),to(#0df3a3));
+    background: linear-gradient(to right,#0ac282,#0df3a3);
 }
 
 .prod-info .prod-price {
@@ -154,60 +181,158 @@ body {
     margin-bottom: 10px;
 }
 
-h2 {
-    font-size: 32px;
-    text-align: center;
-    font-weight: 300;
-}
-
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee;
+.prod-info .prod-price .old-price {
+    color: #919aa3;
+    text-decoration: line-through;
+    font-size: 50%;
 }
 
 
-.modal-footer button {
+
+.btn.btn-icon {
+    border-radius: 25%;
+    width: 40px;
+    line-height: 30px;
     height: 40px;
-    color: black;
-    width: 130px;
-    font-size: 11px;
+    padding: 3px;
     text-align: center;
 }
 
+.btn-success {
+    background-color: #0ac282;
+    border-color: #0ac282;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+}
+
+.btn-primary {
+    background-color: #01a9ac;
+    border-color: #01a9ac;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+}
+
+.hot-disk {
+    /*background-image: url("/resources/img/background1.jpg");*/
+    /*background-position: left;*/
+    padding: 20px 0;
+}
+.hot-disk .mask p {
+    color: cyan;
+    font-size: 20px;
+}
+.name-disk {
+    padding-top: 2px;
+}
+.hot-disk .card {
+    /*margin: 5px;*/
+    margin-bottom: 30px;
+}
+
+
+#footer {
+    padding-top: 10px;
+}
+#footer img {
+    width: 200px;
+}
+#footer h4 {
+    color: white;
+    padding-top: 15px;
+}
+#footer li {
+    margin: 5px;
+}
+.footer-top a {
+    color: white;
+}
+
+.pull {
+    padding: 15px 0 4px;
+    text-align: center;
+}
+.footer-top {
+    background-image: url("/resources/img/background2.jpg");
+    background-position: bottom;
+}
+.pagetop i {
+    padding-right: 10px;
+}
+
+.footer-bottom{
+    background-size: cover;
+    background-image: url("/resources/img/background6.jpeg");
+    padding: 15px 0 4px;
+    text-align: center;
+}
 
 /**/
+/**/
+
+.nav a i {
+    padding-right: 8px;
+}
+
+.navbar-brand i {
+    padding-right: 8px;
+    padding-left: 10px;
+}
+
+
+label{
+    padding-top: 5px;
+}
 
 .just-in-tab1 .filter-item {
     display: inline-flex;
     padding-left: 10px;
-    /*float: left;*/
+    margin-bottom: 50px;
 }
 
 
-.box-bottom {
-    margin-top: 10px;
-}
-.page-number {
-    float: right;
+.go{
+    background: #00e765;
+    color: white;
+    width: 100px;
+    height: 31px;
+    border-radius: 7px;
 }
 
-.page-number .prev {
-    margin-left: 10px;
-    width: 20px;
-
+.view-more {
+    font-size: 15px;
 }
 
 .hidden-link{
     color: black;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 16px;
 }
 
 a:hover {
     text-decoration: none!important;
+}
+
+
+
+
+.box-bottom {
+    margin-top: 10px;
+}
+/*.page-number {*/
+/*float: right;*/
+/*}*/
+
+/*.page-number .prev {*/
+/*margin-left: 10px;*/
+/*width: 20px;*/
+/*}*/
+
+.dataTables_paginate .pagination {
+    float: right;
 }
 
 /*modal*/
@@ -223,116 +348,54 @@ a:hover {
     margin-left: 65px;
     color: black;
 }
-/*content*/
-.content p {
-    padding-top: 7px;
-}
-.title-content {
-    text-align: left;
-    padding-bottom: 5px;
-    font-family: 'Hammersmith One', sans-serif;
-}
-.hot-disk {
-    /*background-image: url("/img/background1.jpg");*/
-    /*background-position: left;*/
-    padding: 20px 0;
-}
-.hot-disk .mask p {
-    color: cyan;
-    font-size: 20px;
-}
-.name-disk {
-    padding-top: 2px;
-}
-.hot-disk .card {
-    margin: 5px;
-}
 
-
-.hot-ticket {
-    background-image: url("/resources/img/background2.jpg");
-    padding: 20px 0;
-}
-.hot-ticket img {
-    height: 300px;
-}
-.hot-ticket .card {
-    margin: 10px;
-}
-.hot-ticket h2 {
-    color: white;
-}
-h2 a {
-    font-size: 20px;
-}
-.hot-contest {
-    background-image: url("/resources/img/background3.jpg");
-    background-position: right;
-    padding: 20px 0;
-}
-.hot-contest img {
-    width: 100%;
-    box-shadow: 5px 5px 5px darkviolet;
-    border-radius: 10px;
-}
-/*footer*/
-.footer-top a {
-    color: white;
-}
-
-#footer {
-    padding-top: 10px;
-}
-#footer img {
-    width: 200px;
-}
-#footer h4 {
-    color: white;
-    padding-top: 15px;
-}
-#footer li {
-    margin: 5px;
-}
-.pull {
-    padding: 15px 0 4px;
+.modal-footer button {
+    height: 40px;
+    color: black;
+    width: 130px;
+    font-size: 11px;
     text-align: center;
 }
-.footer-top {
-    background-image: url("/resources/img/background2.jpg");
-    background-position: bottom;
+
+.search {
+    color:white;
+    border-radius:5px;
+    width: 36px;
+    height: 33px;
+    background: #3dac9a;
+    border-color: #3dac9a;
 }
-.pagetop i {
-    padding-right: 10px;
-}
-/*footer end*/
-/*boxchat*/
-.ontop {
-    display:none; bottom: 8%; right: 5px; cursor: pointer;  position: fixed; z-index: 1000;
-    color: #3dac9a;
+.search:hover{
+    color: #373737;
+    background: #3dac9a;
+    border-color: #3dac9a;
 
 }
+
+/*boxchat*/
+.lentop {display:none; bottom: 10%; right: 10px; cursor: pointer;  position: fixed; z-index: 1000;}
 .chatnow {
-    border: 1px solid ;
+    border: 1px solid #9E9E9E;
+    border-radius: 35px;
     position: fixed;
-    bottom: 0;
-    color: white;
-    right: 40px;
-    background-color: #3dac9a;
-    cursor: pointer;
+    bottom: 8px;
+    right: 45px;
+    background-color: white;
 }
 #chat-head {
+    background-color:#31af91;
     color: white;
     font-size: 20px;
     text-align: center;
     padding: 8px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #9E9E9E;
 }
 #chat-message {
     height: 150px;
 }
 #chat-area {
-    border-top: 1px solid black;
-    background-color: #ffeadb;
+    border-top: 1px solid #9E9E9E;
+    background-color: #78929238;
 }
 #chat-area input {
     border: none;
@@ -345,22 +408,33 @@ h2 a {
 }
 
 #boxchat {
-    border: 2px solid white;
-    border-radius: 5px;
+    border: 2px solid #9E9E9E;
+    border-radius: 8px;
     display: none;
     position: fixed;
     z-index: 1;
     bottom: 0;
-    right: 40px;
-    width: 250px;
+    right: 45px;
+    width: 270px;
     overflow: auto;
     background-color: white;
+
+}
+.ontop {
+    display: none;
+    bottom: 8%;
+    right: 5px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    color: #3dac9a;
 }
 #closechat {
-    color: #aaaaaa;
+    color: #d9dfe0fa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-right:10px;
 }
 
 #closechat:hover,
@@ -370,7 +444,7 @@ h2 a {
     cursor: pointer;
 }
 
-/* Responsive */
+/*Responsive*/
 [class*="col-"] {
     width: 100%;
 }
@@ -403,9 +477,4 @@ h2 a {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-}
-
-.search {
-    width: 36px;
-    height: 33px;
 }

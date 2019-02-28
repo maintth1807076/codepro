@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-sm fixed-top ">
             <a class="navbar-brand logo" href="/client/home"><img src="/resources/img/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                <span class="navbar-toggler-icon"><i class="fa fa-bars white-text" aria-hidden="true"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <div class="menu">
@@ -69,13 +69,14 @@
                             <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user-circle"></i>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
-                                <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registerModal" >Sign up</a>
+                                <a class="dropdown-item" href="#"   data-toggle="modal" data-target="#loginModal">Sing in</a>
+
                             </div>
                         </li>
                     </ul>
@@ -84,10 +85,11 @@
         </nav> <!--nav end-->
     </div>
 
-    <div class="searchby">
-        <div class="input-group col-lg-offset-3 col-lg-offset-3 col-lg-6 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-            <input class="bv-productsearch-inputfield form-control" type="text" placeholder="CD, DVD, Book, Liveshow,..." value="">
-            <span class="input-group-btn">
+    <div class="searchby ">
+        <div class="row justify-content-md-center">
+            <div class="input-group col-md-8 col-sm-12">
+                <input class="bv-productsearch-inputfield form-control" type="text" placeholder="CD, DVD, Book, Liveshow,..." value="">
+                <span class="input-group-btn">
             <button class="bv-productsearch-searchbutton btn ">
                 <div class="bv-productsearch-seachbutton-title">
                     <i class="fas fa-search "></i>
@@ -95,6 +97,7 @@
                 </div>
             </button>
         </span>
+            </div>
         </div>
     </div>
 
@@ -138,13 +141,13 @@
                 </div>
             </section>
         </div>
-        <hr>
+
         <div class="clear"></div>
         <div class="hot-disk">
             <div class="container">
                 <div class="list-hot-disk">
                     <div class="row text-center">
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                                 <div class="view overlay zoom rgba-red-light">
                                     <img class="card-img-top img-fluid"
@@ -173,7 +176,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                                 <div class="view overlay zoom rgba-red-light">
                                     <img class="card-img-top img-fluid"
@@ -202,7 +205,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                                 <div class="view overlay zoom rgba-red-light">
                                     <img class="card-img-top img-fluid"
@@ -231,7 +234,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                                 <div class="view overlay zoom rgba-red-strong">
                                     <img class="card-img-top img-fluid"
@@ -260,7 +263,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                                 <div class="view overlay zoom rgba-red-light">
                                     <img class="card-img-top img-fluid"
@@ -289,7 +292,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
                                 <div class="view overlay zoom rgba-red-light">
                                     <img class="card-img-top img-fluid"
@@ -466,12 +469,11 @@
     </div>
 
     <div id="boxchat">
-        <div  class="purple-gradient" id="chat-head">
-            Trò chuyện với chúng tôi.
+        <div  id="chat-head">
+            Trò chuyện với chúng tôi
             <span id="closechat">&times;</span>
         </div>
         <div id="chat-message">
-            Chúng tôi sẽ trả lời ngay khi nhận được tin nhắn.
         </div>
         <div id="chat-area">
             <form>
@@ -486,7 +488,7 @@
             <i class="far fa-arrow-alt-circle-up fa-2x"></i>
         </div>
         <div class="chatnow">
-            <div id="openchat"><i class="far fa-comment"></i> Chat online</div>
+            <div id="openchat"><img src="https://icons-for-free.com/free-icons/png/512/1891020.png" alt="" style="width:65px;"></div>
         </div>
         <div class="footer-top">
             <div class="container">
@@ -512,7 +514,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-3">
                         <h4>Support</h4>
                         <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                         <ul class="list-unstyled">
@@ -521,7 +523,7 @@
                             <li><a href="/client/about">About us</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-3">
                         <h4>Privacy</h4>
                         <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                         <ul class="list-unstyled">
@@ -530,16 +532,16 @@
                             <li><a href="#">Supplier Code of Conduct</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-3">
                         <img src="/resources/img/logo2.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="pull purple-gradient">
+        <div class="footer-bottom">
             <p style="color: white">Copyright © 2019 Rhythm House. All rights reserved.</p>
         </div>
-    </div>
+    </div> <!--footer end-->
 
 
     <script src="/vendor/js/jquery-3.3.1.min.js"></script>
