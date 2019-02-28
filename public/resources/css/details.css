@@ -6,8 +6,13 @@ body {
 .navbar {
     box-shadow: 5px 5px 5px black;
     width: 100%;
-    background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
+    background-image: url("/resources/img/background6.jpeg");
+    background-size: cover;
 }
+.navbar-toggler-icon {
+    color: white;
+}
+
 .logo img {
     width: 240px;
     padding-left: 80px;

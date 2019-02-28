@@ -252,6 +252,10 @@ body {
     padding: 15px 0 4px;
     text-align: center;
 }
+
+.navbar-toggler-icon {
+    color: white;
+}
 .footer-top {
     background-image: url("/resources/img/background2.jpg");
     text-align: center;

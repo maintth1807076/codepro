@@ -297,7 +297,14 @@ h2 a {
     font-size: 50%;
 }
 
+.pull {
+    padding: 15px 0 4px;
+    text-align: center;
+}
 
+.navbar-toggler-icon {
+    color: white;
+}
 
 .btn.btn-icon {
     border-radius: 25%;

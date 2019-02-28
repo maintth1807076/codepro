@@ -66,9 +66,8 @@ body {
 .nav-item {
     text-transform: uppercase;
     font-size: 20px;
-    padding-top: 15px;
-    padding-left: 15px;
-    /*padding-right: 10px;*/
+    padding-top: 5px;
+    padding-left: 30px;
 }
 
 .item-menu {
@@ -76,6 +75,9 @@ body {
     border: 5px;
 }
 
+.card img{
+    height: 350px;
+}
 
 .error {
     color: red;
@@ -252,6 +254,10 @@ body {
     padding: 15px 0 4px;
     text-align: center;
 }
+
+.navbar-toggler-icon {
+    color: white;
+}
 .footer-top {
     background-image: url("/resources/img/background2.jpg");
     text-align: center;
@@ -291,13 +297,6 @@ label{
 }
 
 
-.go{
-    background: #00e765;
-    color: white;
-    width: 100px;
-    height: 31px;
-    border-radius: 7px;
-}
 
 .view-more {
     font-size: 15px;
