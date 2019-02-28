@@ -3,19 +3,27 @@
     padding-bottom: 40px;
 }
 
-body {
-    font-family: Roboto, sans-serif;
-}
-.navbar {
-    box-shadow: 5px 5px 5px black;
-    background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
+
+
+
+.border-Control {
+    background-color: #FFF;
+    width: 980px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
 
-.btn-search {
-    background: none;
-    color: white;
-    border: none;
+
+.reviews {
+    background-color: #FFF;
+    width: 950px;
+    padding: 15px;
 }
+
+h2 {
+    color: #3DB54A;
+}
+
 
 .searchby {
     /*padding-top: 120px;*/
@@ -59,36 +67,84 @@ body {
 }
 
 
-.menu ul li .register{
-    font-size: 16px;
+
+.error {
+    color: red;
 }
-.menu ul li .login{
-    font-size: 16px;
-}
+
 .logo img {
     width: 240px;
     padding-left: 80px;
 }
-.navbar .nav-link {
-    color: white;
+
+
+.searchby {
+    padding-top: 120px;
+    padding-bottom: 10px;
+}
+.input-group {
+    position: relative;
+    display: table;
+
+}
+.input-group .form-control {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.bv-productsearch-inputfield {
+    display: inline;
+    font-size: 16px;
+    height: 45px;
+}
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+
+}
+.bv-productsearch-seachbutton-title {
+    width: 70px;
+}
+.btn:hover {
+    color: #373737;
+    background: #3dac9a;
+    border-color: #3dac9a;
+}
+.btn {
+    background: #3dac9a;
+    border-color: #3dac9a;
 }
 
-#customer {
+
+.nav-link {
     color: white;
 }
 
 .nav-item {
     text-transform: uppercase;
     font-size: 20px;
-    padding-top: 5px;
-    padding-left: 30px;
-
+    padding-top: 15px;
+    padding-left: 15px;
+    /*padding-right: 10px;*/
 }
 .item-menu {
     padding-left: 0;
     border: 5px;
 }
 
+.vieweye {
+    color: white;
+}
+
+.btn-search {
+    background: none;
+    color: white;
+    border: none;
+}
 
 .menu ul li {
     display: block;
@@ -99,12 +155,17 @@ body {
     display: block;
     color: white;
     padding-top: 0;
-
+}
+.menu ul li .register{
+    font-size: 16px;
+}
+.menu ul li .login{
+    font-size: 16px;
 }
 .menu ul li a:hover {
     color: gainsboro;
     opacity: 0.8;
-    /*box-shadow: 5px 5px 5px darkviolet;*/
+
 }
 .menu ul li > .item-menu {
     display: none;
@@ -132,19 +193,106 @@ body {
     display: block;
     color: white;
     font-size: 20px;
-    padding-top: 0;
+    padding-top: 0px;
 }
 
-.border-Control {
-    background-color: #FFF;
-    width: 980px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
+.navbar {
+    box-shadow: 5px 5px 5px black;
+    /*height: 100px;*/
+    background-image: url("/resources/img/background6.jpeg");
 }
 
-.error {
-    color: red;
+
+
+
+
+
+
+
+
+#customer {
+    color: white;
 }
+
+a:hover {
+    text-decoration: none!important;
+}
+
+/*item*/
+.prod-info {
+    background: #fff;
+    padding: 30px 0 20px;
+}
+
+
+.prod-info h4 {
+    font-size: 20px;
+    height: 50px;
+    color: #404e67;
+    margin-bottom: 10px;
+}
+
+
+
+.label {
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: 5px;
+    font-weight: 400;
+    color: #fff!important;
+}
+
+.label-success {
+    background: -webkit-gradient(linear,left top,right top,from(#0ac282),to(#0df3a3));
+    background: linear-gradient(to right,#0ac282,#0df3a3);
+}
+
+.prod-info .prod-price {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.prod-info .prod-price .old-price {
+    color: #919aa3;
+    text-decoration: line-through;
+    font-size: 50%;
+}
+
+
+
+.btn.btn-icon {
+    border-radius: 25%;
+    width: 40px;
+    line-height: 30px;
+    height: 40px;
+    padding: 3px;
+    text-align: center;
+}
+
+.btn-success {
+    background-color: #0ac282;
+    border-color: #0ac282;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+}
+
+.btn-primary {
+    background-color: #01a9ac;
+    border-color: #01a9ac;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+}
+
+
+
+
+
 
 .modal-footer button {
     height: 40px;
@@ -154,8 +302,8 @@ body {
     text-align: center;
 }
 
-.form-inline {
-    padding-bottom: 20px;
+.form-inline  {
+    padding-bottom: 15px;
 }
 
 .form-inline label {
@@ -166,23 +314,21 @@ body {
     margin-left: 65px;
     color: black;
 }
-
-.reviews {
-    background-color: #FFF;
-    width: 950px;
-    padding: 15px;
+/*content*/
+.content p {
+    padding-top: 7px;
+}
+.title-content {
+    text-align: left;
+    padding-bottom: 5px;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
-h2 {
-    color: #3DB54A;
+
+.name-disk {
+    padding-top: 2px;
 }
 
-p {
-    display: block;
-
-}
-
-/*footer*/
 #footer {
     padding-top: 10px;
 }
@@ -196,10 +342,7 @@ p {
 #footer li {
     margin: 5px;
 }
-.pull {
-    padding: 15px 0 4px;
-    text-align: center;
-}
+
 .footer-top a {
     color: white;
 }
@@ -212,8 +355,19 @@ p {
 .pagetop i {
     padding-right: 10px;
 }
+/*footer end*/
+/* Responsive */
+
 
 /*boxchat*/
+
+
+.footer-bottom{
+    background-size: cover;
+    background-image: url("/resources/img/background6.jpeg");
+    padding: 15px 0 4px;
+    text-align: center;
+}
 
 .chatnow {
     border: 1px solid #9E9E9E;
@@ -284,4 +438,4 @@ p {
     text-decoration: none;
     cursor: pointer;
 }
-/*footer end*/
+

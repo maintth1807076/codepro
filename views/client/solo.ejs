@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,34 +7,34 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Solo performer CD</title>
+    <title>Movie</title>
 
-    <link rel="stylesheet" href="/css/DVD.css">
     <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <!-- Font Awesome -->
+
     <link type="text/html" rel="stylesheet" href="/vendor/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
+    <link rel="stylesheet" href="/css/DVD.css">
+
 </head>
-
 <body>
-<% include include/navbar.ejs%>
 
+<% include include/navbar.ejs%>
 
 
 <div class="main">
     <% include include/search.ejs%>
     <div class="inner-page container">
         <section class="main-clearfix">
-            <h1 class="page-title">Solo performer</h1>
+            <h1 class="page-title">Solo</h1>
             <hr>
             <div class="just-in-box ">
                 <div class="just-in-tab1">
                     <div class="filter-item">
-
                         <div class="select-container">
                             <select class="browser-default custom-select">
                                 <option selected>Sort by</option>
@@ -47,7 +48,6 @@
                         </div>
                     </div>
                     <div class="filter-item">
-
                         <select class="browser-default custom-select">
                             <option selected>Price</option>
                             <option value="1"> < 50.000 ₫ </option>
@@ -55,25 +55,25 @@
                             <option value="3"> > 100.000 ₫ </option>
                         </select>
                     </div>
-
                     <div class="filter-item">
                         <input class="form-control" type="text" placeholder="Search" aria-label="Search">
                     </div>
+
                     <div class="filter-item">
                         <label>&nbsp; </label>
-                        <button class="search"><i class="fas fa-search"> </i></button>
+                        <button class="search"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <hr>
+
     <div class="clear"></div>
     <div class="hot-disk">
         <div class="container">
-
             <div class="list-hot-disk">
                 <div class="row text-center">
+
                     <div class="col-sm-6 col-md-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
@@ -99,10 +99,23 @@
                                         <i class="fa fa-star"></i>
                                     </label>
                                     <a class="text-muted f-w-600">8 Ratings &amp; 3 Reviews</a>
+
                                 </div>
-                                <span class="prod-price">
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Change</h4></a>
+                                    <div class="artist">
+                                        <small>Charlie Puth</small>
+                                    </div>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">3.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">8 Ratings &amp; 3 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
                                     50.000 ₫
                                 </span>
+
                             </div>
                         </div>
                     </div>
@@ -119,24 +132,43 @@
                                     <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
                                         <i class="fas fa-eye"></i>
                                     </button>
+
                                 </div>
-                            </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>Heartbreaker</h4></a>
-                                <div class="artist">
-                                    <small>G-Dragon</small>
-                                </div>
-                                <div class="m-b-10">
-                                    <label class="label label-success">3.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">5 Ratings &amp; 2 Reviews</a>
-                                </div>
-                                <span class="prod-price">
-                                    50.000 ₫
-                                </span>
                             </div>
                         </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/covers/2/9/29bc40786d1b937b379f0c3c60f7bfb5_1292900076.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Heartbreaker</h4></a>
+                                    <div class="artist">
+                                        <small>G-Dragon</small>
+                                    </div>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">3.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">5 Ratings &amp; 2 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
+                                    50.000 ₫
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-sm-6 col-md-3">
                         <div class="card">
@@ -184,26 +216,45 @@
                                     <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
                                         <i class="fas fa-eye"></i>
                                     </button>
+
                                 </div>
                             </div>
-                            <div class="prod-info">
-                                <a href="#!" class="txt-muted"><h4>SOLO </h4></a>
-                                <div class="artist">
-                                    <small>JENNIE</small>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-strong">
+                                    <img class="card-img-top img-fluid"
+                                         src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/2/0/a/e/20ae5611049d6da461dded359241ee20.jpg"
+                                         alt="">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="m-b-10">
-                                    <label class="label label-success">4.5
-                                        <i class="fa fa-star"></i>
-                                    </label>
-                                    <a class="text-muted f-w-600">24 Ratings &amp; 8 Reviews</a>
-                                </div>
-                                <span class="prod-price">
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>SOLO </h4></a>
+                                    <div class="artist">
+                                        <small>JENNIE</small>
+                                    </div>
+                                    <div class="m-b-10">
+                                        <label class="label label-success">4.5
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                        <a class="text-muted f-w-600">24 Ratings &amp; 8 Reviews</a>
+                                    </div>
+                                    <span class="prod-price">
                                     60.000 ₫
                                 </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-5"></div>
@@ -240,8 +291,6 @@
 <!--Include Footer-->
 <% include include/footer.ejs%>
 
-
-</div> <!--footer end-->
 <script src="/vendor/js/jquery-3.3.1.min.js"></script>
 <script src="/vendor/js/bootstrap.min.js"></script>
 <script src="/vendor/js/mdb.min.js"></script>
@@ -249,6 +298,6 @@
 <script src="/resources/js/validate.js"></script>
 <script src="/resources/js/myjs.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
+<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>-->
 </body>
 </html>

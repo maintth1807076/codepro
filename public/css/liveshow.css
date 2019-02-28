@@ -1,12 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
-
+    /*font-size: 20px;*/
 }
 
 .logo img {
     width: 240px;
     padding-left: 80px;
 }
+
 
 .searchby {
     padding-top: 120px;
@@ -57,24 +58,25 @@ body {
 #customer {
     color: white;
 }
-.vieweye{
+
+.vieweye {
     color: white;
 }
 
 .nav-item {
     text-transform: uppercase;
     font-size: 20px;
-    padding-top: 5px;
-    padding-left: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
     /*padding-right: 10px;*/
 }
+
 .item-menu {
     padding-left: 0;
     border: 5px;
 }
 
 
-/**/
 .error {
     color: red;
 }
@@ -84,6 +86,7 @@ body {
     color: white;
     border: none;
 }
+
 .menu ul li {
     display: block;
     position: relative;
@@ -138,14 +141,41 @@ body {
     box-shadow: 5px 5px 5px black;
     width: 100%;
     background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
+
+    width: 100%;
+    background-image: url("/resources/img/background6.jpeg");
+
 }
-/*banner*/
+/*item*/
+.prod-info {
+    background: #fff;
+    padding: 30px 0 20px;
+}
+
 
 .prod-info h4 {
-    font-size: 23px;
+    font-size: 20px;
     height: 50px;
     color: #404e67;
-    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.label {
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: 5px;
+    font-weight: 400;
+    color: #fff!important;
+}
+
+.label-success {
+    background: -webkit-gradient(linear,left top,right top,from(#0ac282),to(#0df3a3));
+    background: linear-gradient(to right,#0ac282,#0df3a3);
 }
 
 .prod-info .prod-price {
@@ -154,77 +184,37 @@ body {
     margin-bottom: 10px;
 }
 
-h2 {
-    font-size: 32px;
-    text-align: center;
-    font-weight: 300;
-}
-
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee;
-}
-
-
-.modal-footer button {
-    height: 40px;
-    color: black;
-    width: 130px;
-    font-size: 11px;
-    text-align: center;
-}
-
-
-/**/
-
-.just-in-tab1 .filter-item {
-    display: inline-flex;
-    padding-left: 10px;
-    /*float: left;*/
-}
 
 .dataTables_paginate .pagination {
     float: right;
     margin-top: 20px;
 }
-.hidden-link{
-    color: black;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 16px;
-}
+
 
 a:hover {
     text-decoration: none!important;
+
 }
 
-/*modal*/
-.form-inline  {
-    padding-bottom: 20px;
+.btn-success {
+    background-color: #0ac282;
+    border-color: #0ac282;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
 }
 
-.form-inline label {
-    margin-right: 20px;
+.btn-primary {
+    background-color: #01a9ac;
+    border-color: #01a9ac;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
 }
 
-.modal-body .form-inline button {
-    margin-left: 65px;
-    color: black;
-}
-/*content*/
-.content p {
-    padding-top: 7px;
-}
-.title-content {
-    text-align: left;
-    padding-bottom: 5px;
-    font-family: 'Hammersmith One', sans-serif;
-}
 .hot-disk {
-    /*background-image: url("/img/background1.jpg");*/
-    /*background-position: left;*/
     padding: 20px 0;
 }
 .hot-disk .mask p {
@@ -235,8 +225,10 @@ a:hover {
     padding-top: 2px;
 }
 .hot-disk .card {
-    margin: 5px;
+    /*margin: 5px;*/
+    margin-bottom: 30px;
 }
+
 
 
 .hot-ticket {
@@ -283,6 +275,10 @@ h2 a {
 #footer li {
     margin: 5px;
 }
+.footer-top a {
+    color: white;
+}
+
 .pull {
     padding: 15px 0 4px;
     text-align: center;
@@ -294,8 +290,6 @@ h2 a {
 .pagetop i {
     padding-right: 10px;
 }
-/*footer end*/
-/*boxchat*/
 
 .chatnow {
     border: 1px solid #9E9E9E;
@@ -366,6 +360,7 @@ h2 a {
     text-decoration: none;
     cursor: pointer;
 }
+
 
 
 .search {

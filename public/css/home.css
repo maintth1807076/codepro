@@ -19,7 +19,6 @@ body {
 .input-group {
     position: relative;
     display: table;
-    /*margin-left: 420px;*/
 }
 .input-group .form-control {
     position: relative;
@@ -134,9 +133,12 @@ body {
 
 .navbar {
     box-shadow: 5px 5px 5px black;
-    /*height: 100px;*/
     width: 100%;
     background: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
+
+    background-image: url("/resources/img/background6.jpeg");
+    background-size: cover;
+
 }
 /*banner*/
 
@@ -383,10 +385,7 @@ h2 a {
 .footer-top a {
     color: white;
 }
-.pull {
-    padding: 15px 0 4px;
-    text-align: center;
-}
+
 .footer-top {
     background-image: url("/resources/img/background2.jpg");
     /*background-position: bottom;*/
@@ -401,7 +400,6 @@ h2 a {
 }
 
 
-/*boxchat*/
 .chatnow {
     border: 1px solid #9E9E9E;
     border-radius: 35px;
@@ -473,8 +471,6 @@ h2 a {
 }
 
 
-/*footer end*/
-/* Responsive */
 
 
 
