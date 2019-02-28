@@ -16,7 +16,7 @@ body {
 .input-group {
     position: relative;
     display: table;
-    margin-left: 420px;
+
 }
 .input-group .form-control {
     position: relative;
@@ -58,15 +58,16 @@ body {
 #customer {
     color: white;
 }
-.vieweye{
+
+.vieweye {
     color: white;
 }
 
 .nav-item {
     text-transform: uppercase;
     font-size: 20px;
-    padding-top: 5px;
-    padding-left: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
     /*padding-right: 10px;*/
 }
 
@@ -75,11 +76,6 @@ body {
     border: 5px;
 }
 
-
-
-.card img{
-    height: 350px;
-}
 
 .error {
     color: red;
@@ -144,7 +140,8 @@ body {
 .navbar {
     box-shadow: 5px 5px 5px black;
     /*height: 100px;*/
-    background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
+    width: 100%;
+    background-image: url("/resources/img/background6.jpeg");
 }
 /*item*/
 .prod-info {
@@ -266,8 +263,14 @@ body {
     padding-right: 10px;
 }
 
+.footer-bottom{
+    background-size: cover;
+    background-image: url("/resources/img/background6.jpeg");
+    padding: 15px 0 4px;
+    text-align: center;
+}
 
-
+/**/
 /**/
 
 .nav a i {
@@ -287,9 +290,17 @@ label{
 .just-in-tab1 .filter-item {
     display: inline-flex;
     padding-left: 10px;
+    margin-bottom: 50px;
 }
 
 
+.go{
+    background: #00e765;
+    color: white;
+    width: 100px;
+    height: 31px;
+    border-radius: 7px;
+}
 
 .view-more {
     font-size: 15px;
@@ -311,16 +322,18 @@ a:hover {
 .box-bottom {
     margin-top: 10px;
 }
-.page-number {
+/*.page-number {*/
+/*float: right;*/
+/*}*/
+
+/*.page-number .prev {*/
+/*margin-left: 10px;*/
+/*width: 20px;*/
+/*}*/
+
+.dataTables_paginate .pagination {
     float: right;
 }
-
-.page-number .prev {
-    margin-left: 10px;
-    width: 20px;
-}
-
-
 
 /*modal*/
 .form-inline  {
@@ -345,38 +358,43 @@ a:hover {
 }
 
 .search {
+    color:white;
+    border-radius:5px;
     width: 36px;
     height: 33px;
+    background: #3dac9a;
+    border-color: #3dac9a;
 }
+.search:hover{
+    color: #373737;
+    background: #3dac9a;
+    border-color: #3dac9a;
 
+}
 /*boxchat*/
-.ontop {
-    display:none; bottom: 8%; right: 5px; cursor: pointer;  position: fixed; z-index: 1000;
-    color: #3dac9a;
-
-}
+.lentop {display:none; bottom: 10%; right: 10px; cursor: pointer;  position: fixed; z-index: 1000;}
 .chatnow {
-    border: 1px solid ;
+    border: 1px solid #9E9E9E;
+    border-radius: 35px;
     position: fixed;
-    bottom: 0;
-    color: white;
-    right: 40px;
-    background-color: #3dac9a;
-    cursor: pointer;
+    bottom: 8px;
+    right: 45px;
+    background-color: white;
 }
 #chat-head {
+    background-color:#31af91;
     color: white;
     font-size: 20px;
     text-align: center;
     padding: 8px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #9E9E9E;
 }
 #chat-message {
     height: 150px;
 }
 #chat-area {
-    border-top: 1px solid black;
-    background-color: #ffeadb;
+    border-top: 1px solid #9E9E9E;
+    background-color: #78929238;
 }
 #chat-area input {
     border: none;
@@ -389,22 +407,33 @@ a:hover {
 }
 
 #boxchat {
-    border: 2px solid white;
-    border-radius: 5px;
+    border: 2px solid #9E9E9E;
+    border-radius: 8px;
     display: none;
     position: fixed;
     z-index: 1;
     bottom: 0;
-    right: 40px;
-    width: 250px;
+    right: 45px;
+    width: 270px;
     overflow: auto;
     background-color: white;
+
+}
+.ontop {
+    display: none;
+    bottom: 8%;
+    right: 5px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    color: #3dac9a;
 }
 #closechat {
-    color: #aaaaaa;
+    color: #d9dfe0fa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-right:10px;
 }
 
 #closechat:hover,

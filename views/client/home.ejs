@@ -1,28 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rhythm House</title>
-    <!--<link href="../node_modules/bootstrap/dist/css/bootstrap.css/bootstrap.min.css" rel="stylesheet">-->
+    <title>CD</title>
+
     <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
-    <link href="/vendor/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/vendor/css/mdb.min.css">
+    <!-- Font Awesome -->
+    <link type="text/html" rel="stylesheet" href="/vendor/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="/vendor/css/mdb.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="/css/home.css">
-
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
+
 </head>
-<body >
+<body>
 <div id="header">
     <nav class="navbar navbar-expand-sm fixed-top ">
         <a class="navbar-brand logo" href="/client/home"><img src="/resources/img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <span class="navbar-toggler-icon"><i class="fa fa-bars   white-text  " aria-hidden="true"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <div class="menu">
@@ -66,32 +68,35 @@
                         <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
                     <!--<li class="nav-item">-->
-                        <!--<div class="form-inline">-->
-                            <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
-                            <!--<a href="#" class="nav-link" id="search">-->
-                                <!--<button class="btn-search"><i class="fas fa-search"></i></button>-->
-                            <!--</a>-->
+                    <!--<div class="form-inline">-->
+                    <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+                    <!--<a href="#" class="nav-link" id="search">-->
+                    <!--<button class="btn-search"><i class="fas fa-search"></i></button>-->
+                    <!--</a>-->
 
-                        <!--</div>-->
+                    <!--</div>-->
                     <!--</li>-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user-circle"></i>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
-                            <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registerModal" >Sign up</a>
+                            <a class="dropdown-item" href="#"   data-toggle="modal" data-target="#loginModal">Sing in</a>
+
                         </div>
                     </li>
+
                 </ul>
             </div>
         </div>
     </nav> <!--nav end-->
 </div> <!--header end-->
-<div class="searchby">
-    <div class="input-group col-lg-offset-3 col-lg-offset-3 col-lg-6 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-        <input class="bv-productsearch-inputfield form-control" type="text" placeholder="CD, DVD, Book, Liveshow,..." value="">
-        <span class="input-group-btn">
+<div class="searchby ">
+    <div class="row justify-content-md-center">
+        <div class="input-group col-md-8 col-sm-12">
+            <input class="bv-productsearch-inputfield form-control" type="text" placeholder="CD, DVD, Book, Liveshow,..." value="">
+            <span class="input-group-btn">
             <button class="bv-productsearch-searchbutton btn ">
                 <div class="bv-productsearch-seachbutton-title">
                     <i class="fas fa-search "></i>
@@ -99,7 +104,9 @@
                 </div>
             </button>
         </span>
+        </div>
     </div>
+
 </div>
 <div class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -147,17 +154,15 @@
             <hr>
             <div class="carousel-nav-container">
                 <nav class="carousel-nav">
-                    <a class="carousel-link btn btn-primary" href="/client/CD">CD</a>
-                    <a class="carousel-link btn btn-primary" href="/client/DVD">DVD</a>
+                    <a class="carousel-link btn" href="/client/CD">CD</a>
+                    <a class="carousel-link btn " href="/client/DVD">DVD</a>
                 </nav>
                 <div class="clear"></div>
             </div>
             <div class="list-hot-disk">
                 <div class="row text-center">
 
-
-
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -188,7 +193,7 @@
                     </div>
 
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -217,7 +222,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-strong">
                                 <img class="card-img-top img-fluid"
@@ -246,7 +251,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -285,8 +290,8 @@
             <hr>
             <div class="carousel-nav-container">
                 <nav class="carousel-nav">
-                    <a class="carousel-link btn btn-primary" href="/client/CD">CD</a>
-                    <a class="carousel-link btn btn-primary" href="/client/DVD">DVD</a>
+                    <a class="carousel-link btn" href="/client/CD">CD</a>
+                    <a class="carousel-link btn " href="/client/DVD">DVD</a>
 
                 </nav>
                 <div class="clear"></div>
@@ -294,7 +299,7 @@
             <div class="list-hot-disk">
                 <div class="row text-center">
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -323,7 +328,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -352,7 +357,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -381,7 +386,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-strong">
                                 <img class="card-img-top img-fluid"
@@ -420,15 +425,15 @@
             <hr>
             <div class="carousel-nav-container">
                 <nav class="carousel-nav">
-                    <a class="carousel-link btn btn-primary" href="/client/clearance-cd">CD</a>
-                    <a class="carousel-link btn btn-primary" href="/client/clearance-dvd">DVD</a>
+                    <a class="carousel-link btn " href="/client/clearance-cd">CD</a>
+                    <a class="carousel-link btn " href="/client/clearance-dvd">DVD</a>
                 </nav>
                 <div class="clear"></div>
             </div>
             <div class="list-hot-disk">
                 <div class="row text-center">
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -460,7 +465,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -492,7 +497,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-strong">
                                 <img class="card-img-top img-fluid"
@@ -524,7 +529,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -559,107 +564,111 @@
 
                 </div>
             </div>
-        </div>
-    </div> <!--hot-disk-->
-    <div class="hot-ticket">
-        <h2 class="wow slideInLeft slow">NEW LIVESHOW </h2>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-thumbnail"
-                                 src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
-                            <div class="mask flex-center waves-effect waves-light">
-                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
-                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                   <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
 
-                        <div class="prod-info">
-                            <a href="#!" class="txt-muted"><h4>Justin Bieber</h4></a>
-                            <span class="prod-price">
+    <!--hot-disk-->
+
+            <div class="hot-ticket">
+                <h2 class="wow slideInLeft slow">NEW LIVESHOW </h2>
+                <hr>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-thumbnail"
+                                         src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Justin Bieber</h4></a>
+                                    <span class="prod-price">
                                         100.000 ₫
                             </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-thumbnail"
-                                 src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
-                                 alt="Card image">
-                            <div class="mask flex-center waves-effect waves-light">
-                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
-                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <a class="vieweye" href="/client/detail-liveshow"><i class="fas fa-eye"></i></a>
-                                </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="prod-info">
-                            <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
-                            <span class="prod-price">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-thumbnail"
+                                         src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
+                                         alt="Card image">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <a class="vieweye" href="/client/detail-liveshow"><i class="fas fa-eye"></i></a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
+                                    <span class="prod-price">
                                         70.000 ₫
                             </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-thumbnail"
-                                 src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
-                                 alt="Card image">
-                            <div class="mask flex-center waves-effect waves-light">
-                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
-                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-eye"></i>
-                                </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="prod-info">
-                            <a href="#!" class="txt-muted"><h4>Dj Tay James</h4></a>
-                            <span class="prod-price">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-thumbnail"
+                                         src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
+                                         alt="Card image">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>Dj Tay James</h4></a>
+                                    <span class="prod-price">
                                         70.000 ₫
                             </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-thumbnail"
-                                 src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
-                            <div class="mask flex-center waves-effect waves-light">
-                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
-                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-eye"></i>
-                                </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="prod-info">
-                            <a href="#!" class="txt-muted"><h4>BillBoard</h4></a>
-                            <span class="prod-price">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="view overlay zoom rgba-red-light">
+                                    <img class="card-img-top img-thumbnail"
+                                         src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
+                                    <div class="mask flex-center waves-effect waves-light">
+                                        <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#!" class="txt-muted"><h4>BillBoard</h4></a>
+                                    <span class="prod-price">
                                         120.000 ₫
                             </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
+        </div>
+</div>
 </div>
 
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
@@ -830,7 +839,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <h4>Support</h4>
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
@@ -839,7 +848,7 @@
                         <li><a href="/client/about">About us</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <h4>Privacy</h4>
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
@@ -848,13 +857,13 @@
                         <li><a href="#">Supplier Code of Conduct</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <img src="/resources/img/logo2.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="pull purple-gradient">
+    <div class="footer-bottom">
         <p style="color: white">Copyright © 2019 Rhythm House. All rights reserved.</p>
     </div>
 </div> <!--footer end-->

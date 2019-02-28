@@ -1,49 +1,30 @@
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo img {
+    width: 240px;
+    padding-left: 80px;
+}
+.nav-link {
+    color: white;
+}
+
 .content {
     padding-top: 120px;
     padding-bottom: 20px;
 }
 
-body {
-    font-family: Roboto, sans-serif;
-}
-.navbar {
-    box-shadow: 5px 5px 5px black;
-    background-image: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
-}
-.logo img {
-    width: 240px;
-    padding-left: 80px;
-}
-.navbar .nav-link {
-    color: white;
-}
-.title {
-    height: 50px;
-}
-.nav-item {
-    text-transform: uppercase;
-    font-size: 20px;
-    padding-top: 5px;
-    padding-left: 30px;
-    /*padding-right: 10px;*/
+h2 {
+    color: #3DB54A;
 }
 
-#customer {
-    color: white;
-}
-.item-menu {
-    padding-left: 0;
-    border: 5px;
-}
+p {
+    display: block;
 
-.error {
-    color: red;
-}
-
-.btn-search {
-    background: none;
-    color: white;
-    border: none;
 }
 
 .form-inline {
@@ -59,20 +40,70 @@ body {
     color: black;
 }
 
-.modal-footer button {
-    height: 40px;
-    color: black;
-    width: 130px;
-    font-size: 11px;
+
+.wrap {
+    max-width: 100%;
+    margin: 0 auto;
     text-align: center;
 }
 
-.menu ul li .register{
-    font-size: 16px;
+.wrap .panel {
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    line-height: 1.5;
+    text-align: center;
 }
-.menu ul li .login{
-    font-size: 16px;
+.wrap .panel-right {
+    text-align: left;
+    display: inline-block;
+    width: 20%;
+    line-height: 1.5;
 }
+
+
+.searchby {
+    padding-top: 120px;
+    padding-bottom: 10px;
+}
+.input-group {
+    position: relative;
+    display: table;}
+.input-group .form-control {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+
+
+
+.nav-item {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+
+}
+
+.item-menu {
+    padding-left: 0;
+    border: 5px;
+}
+
+.vieweye {
+    color: white;
+}
+
+
+
+
+.btn-search {
+    background: none;
+    color: white;
+    border: none;
+}
+
 .menu ul li {
     display: block;
     position: relative;
@@ -83,10 +114,16 @@ body {
     color: white;
     padding-top: 0;
 }
+.menu ul li .register{
+    font-size: 16px;
+}
+.menu ul li .login{
+    font-size: 16px;
+}
 .menu ul li a:hover {
     color: gainsboro;
     opacity: 0.8;
-    /*box-shadow: 5px 5px 5px darkviolet;*/
+
 }
 .menu ul li > .item-menu {
     display: none;
@@ -114,35 +151,142 @@ body {
     display: block;
     color: white;
     font-size: 20px;
-    padding-top: 0;
+    padding-top: 0px;
+}
+
+.navbar {
+    box-shadow: 5px 5px 5px black;
+    /*height: 100px;*/
+    background-image: url("/resources/img/background6.jpeg");
+    background-size: cover;
 }
 
 
-.wrap {
-    max-width: 100%;
-    margin: 0 auto;
+
+.carousel-link {
+    border-left: 1px solid #999;
+    float: right;
+    font-size: 13px;
+    height: 25px;
+    line-height: 22px;
+    padding: 2px 5px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100px;
+    color: black;
+}
+
+.carousel-nav-container {
+    padding-bottom: 20px;
+}
+
+.btn-gradient-secondary {
+    background: #e5e5e5;
+}
+.carousel-nav a:hover {
+    background: #4CBE9F;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+
+
+.modal-footer button {
+    height: 40px;
+    color: black;
+    width: 130px;
+    font-size: 11px;
     text-align: center;
 }
 
-.wrap .panel {
-    display: inline-block;
-    vertical-align: top;
-    width: 80%;
-    line-height: 1.5;
+
+.clear {
+    clear: both;
+}
+
+.error {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+
+/*modal*/
+.form-inline  {
+    padding-bottom: 20px;
+}
+
+.form-inline label {
+    margin-right: 20px;
+}
+
+.modal-body .form-inline button {
+    margin-left: 65px;
+    color: black;
+}
+/*content*/
+.content p {
+    padding-top: 7px;
+}
+.title-content {
+    text-align: left;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.label {
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: 5px;
+    font-weight: 400;
+    color: #fff!important;
+}
+
+.label-success {
+    background: -webkit-gradient(linear,left top,right top,from(#0ac282),to(#0df3a3));
+    background: linear-gradient(to right,#0ac282,#0df3a3);
+}
+
+
+
+.btn.btn-icon {
+    border-radius: 25%;
+    width: 40px;
+    line-height: 30px;
+    height: 40px;
+    padding: 3px;
     text-align: center;
 }
 
-/*.wrap .panel-right {*/
-    /*text-align: left;*/
-    /*display: inline-block;*/
-    /*width: 20%;*/
-    /*line-height: 1.5;*/
-/*}*/
-
-.footer-top a {
-    color: white;
+.btn-success {
+    background-color: #0ac282;
+    border-color: #0ac282;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
 }
 
+.btn-primary {
+    background-color: #01a9ac;
+    border-color: #01a9ac;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+}
+
+
+/*footer*/
 #footer {
     padding-top: 10px;
 }
@@ -156,10 +300,11 @@ body {
 #footer li {
     margin: 5px;
 }
-.pull {
-    padding: 15px 0 4px;
-    text-align: center;
+
+.footer-top a {
+    color: white;
 }
+
 .footer-top {
     background-image: url("/resources/img/background2.jpg");
     background-position: bottom;
@@ -167,75 +312,17 @@ body {
 .pagetop i {
     padding-right: 10px;
 }
-
-/*boxchat*/
-.ontop {
-    display:none; bottom: 8%; right: 5px; cursor: pointer;  position: fixed; z-index: 1000;
-    color: #3dac9a;
-
-}
-.chatnow {
-    border: 1px solid ;
-    position: fixed;
-    bottom: 0;
-    color: white;
-    right: 40px;
-    background-color: #3dac9a;
-    cursor: pointer;
-}
-#chat-head {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding: 8px 0;
-    border-bottom: 1px solid black;
-}
-#chat-message {
-    height: 150px;
-}
-#chat-area {
-    border-top: 1px solid black;
-    background-color: #ffeadb;
-}
-#chat-area input {
-    border: none;
-    width: 180px;
-    padding-bottom: 5px;
-    margin-left: 10px;
-}
-#chat-area img {
-    width: 50px;
-}
-
-#boxchat {
-    border: 2px solid white;
-    border-radius: 5px;
-    display: none;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    right: 40px;
-    width: 250px;
-    overflow: auto;
-    background-color: white;
-}
-#closechat {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-#closechat:hover,
-#closechat:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 /*footer end*/
+/* Responsive */
+
 [class*="col-"] {
     width: 100%;
+}
+.footer-bottom{
+    background-size: cover;
+    background-image: url("/resources/img/background6.jpeg");
+    padding: 15px 0 4px;
+    text-align: center;
 }
 @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -267,3 +354,78 @@ body {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 }
+.lentop {display:none; bottom: 10%; right: 10px; cursor: pointer;  position: fixed; z-index: 1000;}
+.chatnow {
+    border: 1px solid #9E9E9E;
+    border-radius: 35px;
+    position: fixed;
+    bottom: 8px;
+    right: 45px;
+    background-color: white;
+}
+#chat-head {
+    background-color:#31af91;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #9E9E9E;
+}
+#chat-message {
+    height: 150px;
+}
+#chat-area {
+    border-top: 1px solid #9E9E9E;
+    background-color: #78929238;
+}
+#chat-area input {
+    border: none;
+    width: 180px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+#chat-area img {
+    width: 50px;
+}
+
+#boxchat {
+    border: 2px solid #9E9E9E;
+    border-radius: 8px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 45px;
+    width: 270px;
+    overflow: auto;
+    background-color: white;
+
+}
+.ontop {
+    display: none;
+    bottom: 8%;
+    right: 5px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    color: #3dac9a;
+}
+#closechat {
+    color: #d9dfe0fa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right:10px;
+}
+
+#closechat:hover,
+#closechat:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.content {
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+

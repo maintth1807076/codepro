@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About</title>
-
+    <title>Rhythm House</title>
+    <!--<link href="../node_modules/bootstrap/dist/css/bootstrap.css/bootstrap.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
-    <link type="text/html" href="/vendor/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/vendor/css/fontawesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
@@ -16,21 +16,20 @@
     <link rel="stylesheet" href="/css/about.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 </head>
-<body>
+<body >
 <div id="header">
     <nav class="navbar navbar-expand-sm fixed-top ">
         <a class="navbar-brand logo" href="/client/home"><img src="/resources/img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <span class="navbar-toggler-icon"><i class="fa fa-bars white-text " aria-hidden="true"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <div class="menu">
                 <ul class=" nav navbar-right">
                     <li class="nav-item">
                         <a class="nav-link" href="/client/home"><i class="fas fa-home "></i></a>
-                    </li>
                     <li class="nav-item">
-                        <a class=" dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Disk
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -40,18 +39,19 @@
                             <a class="dropdown-item" href="/client/soloperformer" >Solo</a>
                         </div>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/client/magazine">
+                        <a href="/client/magazine" class="nav-link">
                             Magazine
                         </a>
 
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/client/book">
+                        <a href="/client/book" class="nav-link">
                             Book
                         </a>
                     </li>
@@ -64,24 +64,15 @@
                     <li class="nav-item">
                         <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
-                    <!--<li class="nav-item">-->
-                        <!--&lt;!&ndash;<a href="#" class="nav-link" id="search">&ndash;&gt;-->
-                        <!--<div class="form-inline">-->
-                            <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
-                            <!--<a href="#" class="nav-link" id="search">-->
-                                <!--<button class="btn-search"><i class="fas fa-search"></i></button>-->
-                            <!--</a>-->
 
-                        <!--</div>-->
-                        <!--&lt;!&ndash;</a>&ndash;&gt;-->
-                    <!--</li>-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user-circle"></i>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
-                            <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registerModal" >Sign up</a>
+                            <a class="dropdown-item" href="#"   data-toggle="modal" data-target="#loginModal">Sing in</a>
+
                         </div>
                     </li>
                 </ul>
@@ -262,12 +253,11 @@
     </div>
 </div>
 <div id="boxchat">
-    <div  class="purple-gradient" id="chat-head">
-        Trò chuyện với chúng tôi.
+    <div  id="chat-head">
+        Trò chuyện với chúng tôi
         <span id="closechat">&times;</span>
     </div>
     <div id="chat-message">
-        Chúng tôi sẽ trả lời ngay khi nhận được tin nhắn.
     </div>
     <div id="chat-area">
         <form>
@@ -282,7 +272,7 @@
         <i class="far fa-arrow-alt-circle-up fa-2x"></i>
     </div>
     <div class="chatnow">
-        <div id="openchat"><i class="far fa-comment"></i> Chat online</div>
+        <div id="openchat"><img src="https://icons-for-free.com/free-icons/png/512/1891020.png" alt="" style="width:65px;"></div>
     </div>
     <div class="footer-top">
         <div class="container">
@@ -308,7 +298,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <h4>Support</h4>
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
@@ -317,7 +307,7 @@
                         <li><a href="/client/about">About us</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <h4>Privacy</h4>
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
@@ -326,25 +316,27 @@
                         <li><a href="#">Supplier Code of Conduct</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <img src="/resources/img/logo2.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="pull purple-gradient">
+    <div class="footer-bottom">
         <p style="color: white">Copyright © 2019 Rhythm House. All rights reserved.</p>
     </div>
 </div> <!--footer end-->
 
-<script src="/vendor/js/jquery-3.3.1.min.js"></script>
+<script src="/vendor/js/jquery.min.js"></script>
 <script src="/vendor/js/bootstrap.min.js"></script>
 <script src="/vendor/js/mdb.min.js"></script>
 <script src="/vendor/js/jquery.validate.min.js"></script>
 <script src="/resources/js/validate.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="/resources/js/myjs.js"></script>
+
 </body>
+</html>
 
 
 
