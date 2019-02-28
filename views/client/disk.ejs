@@ -28,9 +28,8 @@
                 <ul class=" nav navbar-right">
                     <li class="nav-item">
                         <a class="nav-link" href="/client/home"><i class="fas fa-home "></i></a>
-                    </li>
                     <li class="nav-item">
-                        <a class=" dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Disk
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -40,6 +39,7 @@
                             <a class="dropdown-item" href="/client/soloperformer" >Solo</a>
                         </div>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
 
@@ -65,13 +65,14 @@
                         <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle"   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user-circle"></i>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
-                            <a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registerModal" >Sign up</a>
+                            <a class="dropdown-item" href="#"   data-toggle="modal" data-target="#loginModal">Sing in</a>
+
                         </div>
                     </li>
                 </ul>
@@ -104,17 +105,17 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100"
-                     src="/resources/img/slide11.png"
+                     src="/resources/img/slide1.png"
                      alt="First slide">
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                     src="/resources/img/slide12.png"
+                     src="/resources/img/slide2.jpeg"
                      alt="Second slide">
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                     src="/resources/img/slide_13.png"
+                     src="/resources/img/slide3.jpeg"
                      alt="Third slide">
             </div>
         </div>
@@ -138,7 +139,7 @@
 
             <div class="list-hot-disk">
                 <div class="row text-center">
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -167,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -196,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -228,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -272,7 +273,7 @@
             </h2>
             <div class="list-hot-disk">
                 <div class="row text-center">
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -301,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -330,7 +331,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -360,7 +361,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
                                 <img class="card-img-top img-fluid"
@@ -520,12 +521,11 @@
 </div>
 
 <div id="boxchat">
-    <div  class="purple-gradient" id="chat-head">
-        Trò chuyện với chúng tôi.
+    <div  id="chat-head">
+        Trò chuyện với chúng tôi
         <span id="closechat">&times;</span>
     </div>
     <div id="chat-message">
-        Chúng tôi sẽ trả lời ngay khi nhận được tin nhắn.
     </div>
     <div id="chat-area">
         <form>
@@ -540,7 +540,7 @@
         <i class="far fa-arrow-alt-circle-up fa-2x"></i>
     </div>
     <div class="chatnow">
-        <div id="openchat"><i class="far fa-comment"></i> Chat online</div>
+        <div id="openchat"><img src="https://icons-for-free.com/free-icons/png/512/1891020.png" alt="" style="width:65px;"></div>
     </div>
     <div class="footer-top">
         <div class="container">
@@ -566,7 +566,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <h4>Support</h4>
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
@@ -575,7 +575,7 @@
                         <li><a href="/client/about">About us</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <h4>Privacy</h4>
                     <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <ul class="list-unstyled">
@@ -584,23 +584,24 @@
                         <li><a href="#">Supplier Code of Conduct</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <img src="/resources/img/logo2.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="pull purple-gradient">
+    <div class="footer-bottom">
         <p style="color: white">Copyright © 2019 Rhythm House. All rights reserved.</p>
     </div>
 </div> <!--footer end-->
+
 <script src="/vendor/js/jquery.min.js"></script>
 <script src="/vendor/js/bootstrap.min.js"></script>
 <script src="/vendor/js/mdb.min.js"></script>
 <script src="/vendor/js/jquery.validate.min.js"></script>
 <script src="/resources/js/validate.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="/resources/js/myjs.js"></script>
+
 </body>
 </html>
