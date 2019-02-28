@@ -308,16 +308,8 @@ a:hover {
 
 
 
-.box-bottom {
-    margin-top: 10px;
-}
-.page-number {
+.dataTables_paginate .pagination {
     float: right;
-}
-
-.page-number .prev {
-    margin-left: 10px;
-    width: 20px;
 }
 
 

@@ -150,7 +150,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     width: 100px;
-    color: black;
+    color: #FFFFFF;
 }
 
 .carousel-nav-container {
@@ -162,7 +162,7 @@ body {
 }
 .carousel-nav a:hover {
     background: #4CBE9F;
-    color: #FFFFFF;
+    color: black;
 }
 
 h2 {
@@ -325,7 +325,7 @@ h2 a {
 
 .hot-contest {
     background-image: url("/resources/img/background3.jpg");
-    background-position: right;
+    /*background-position: right;*/
     padding: 20px 0;
 }
 .hot-contest img {
@@ -333,6 +333,37 @@ h2 a {
     box-shadow: 5px 5px 5px darkviolet;
     border-radius: 10px;
 }
+
+.p-new a {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    padding: 8px 13px;
+    line-height: 1;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 2px 0 0 2px;
+    background: #2dcee3;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.p-sale a {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    height: 40px;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    background-color: #ff5252;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 11px 4px;
+}
+
 /*footer*/
 #footer {
     padding-top: 10px;
@@ -476,17 +507,4 @@ h2 a {
 
 
 
-.p-new a {
-    position: absolute;
-    top: 15px;
-    right: 0;
-    padding: 8px 13px;
-    line-height: 1;
-    font-size: 13px;
-    text-transform: uppercase;
-    border-radius: 2px 0 0 2px;
-    background: #2dcee3;
-    color: #fff;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
+

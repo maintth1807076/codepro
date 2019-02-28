@@ -185,20 +185,10 @@ hr {
     /*float: left;*/
 }
 
-
-.box-bottom {
-    margin-top: 10px;
-}
-.page-number {
+.dataTables_paginate .pagination {
     float: right;
+    margin-top: 20px;
 }
-
-.page-number .prev {
-    margin-left: 10px;
-    width: 20px;
-
-}
-
 .hidden-link{
     color: black;
     display: inline-block;
