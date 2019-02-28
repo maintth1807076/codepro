@@ -241,15 +241,15 @@ a:hover {
 .name-disk {
     padding-top: 2px;
 }
-.hot-disk .card {
+.hot-disk .card, .hot-magazine .card {
     margin-bottom: 30px;
 }
 .hot-ticket {
 
     padding: 20px 0;
 }
-.hot-ticket img {
-    height: 300px;
+.hot-ticket img, .hot-magazine img{
+    height: 350px;
 }
 .hot-ticket .card {
     margin: 10px;
@@ -427,9 +427,8 @@ h2 a {
 #chat-head {
     background-color:#31af91;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
-    padding: 8px 0;
     border-bottom: 1px solid #9E9E9E;
 }
 #chat-message {
@@ -471,12 +470,11 @@ h2 a {
     z-index: 1000;
     color: #3dac9a;
 }
-#closechat {
+#closechat span {
     color: #d9dfe0fa;
-    float: right;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
-    margin-right:10px;
+    padding-left: 5px;
 }
 
 #closechat:hover,
