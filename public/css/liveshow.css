@@ -49,6 +49,18 @@ body {
     border-color: #3dac9a;
 }
 
+label {
+    padding-top: 5px;
+}
+
+.search {
+    color:white;
+    border-radius:5px;
+    width: 36px;
+    height: 33px;
+    background: #3dac9a;
+    border-color: #3dac9a;
+}
 
 .nav-link {
     color: white;
@@ -248,7 +260,7 @@ a:hover {
     padding: 20px 0;
 }
 .hot-ticket img {
-    height: 300px;
+    height: 250px;
 }
 .hot-ticket .card {
     margin: 10px;
@@ -371,8 +383,3 @@ h2 a {
     cursor: pointer;
 }
 
-
-.search {
-    width: 36px;
-    height: 33px;
-}

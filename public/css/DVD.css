@@ -124,8 +124,8 @@ body {
     color: white;
 }
 
-.dropdown>.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
+.dropdown > .dropdown-toggle:active {
+
     pointer-events: none;
 }
 

@@ -94,13 +94,14 @@ body {
 .menu ul li .register{
     font-size: 16px;
 }
+
+
 .menu ul li .login{
     font-size: 16px;
 }
 .menu ul li a:hover {
     color: gainsboro;
     opacity: 0.8;
-
 }
 .menu ul li > .item-menu {
     display: none;
@@ -128,14 +129,12 @@ body {
     display: block;
     color: white;
     font-size: 20px;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .navbar {
     box-shadow: 5px 5px 5px black;
     width: 100%;
-    background: url("https://crosstabs.org/wp-content/uploads/2018/06/dj-banner-background-new-low-polygon-vector-background-banner-backgrounds-stock-of-dj-banner-background.jpg");
-
     background-image: url("/resources/img/background6.jpeg");
     background-size: cover;
 
@@ -167,11 +166,6 @@ body {
     color: black;
 }
 
-h2 {
-    font-size: 32px;
-    text-align: center;
-    font-weight: 300;
-}
 
 hr {
     height: 2px;
@@ -213,15 +207,8 @@ a:hover {
     margin-left: 65px;
     color: black;
 }
-/*content*/
-.content p {
-    padding-top: 7px;
-}
-.title-content {
-    text-align: left;
-    padding-top: 10px;
-    font-weight: bold;
-}
+
+
 .hot-disk {
     background-position: left;
     padding: 20px 0;
@@ -230,9 +217,7 @@ a:hover {
     color: cyan;
     font-size: 20px;
 }
-.name-disk {
-    padding-top: 2px;
-}
+
 .hot-disk .card {
     margin-bottom: 30px;
 }
@@ -241,13 +226,14 @@ a:hover {
     padding: 20px 0;
 }
 .hot-ticket img {
-    height: 300px;
+    height: 250px;
 }
 .hot-ticket .card {
     margin: 10px;
 }
 .hot-ticket h2 {
     color: white;
+    text-align: center;
 }
 h2 a {
     font-size: 20px;
