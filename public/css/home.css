@@ -319,16 +319,16 @@ h2 a {
     transition: all ease-in .3s;
 }
 
-.hot-contest {
-    background-image: url("/resources/img/background3.jpg");
-    /*background-position: right;*/
-    padding: 20px 0;
-}
-.hot-contest img {
-    width: 100%;
-    box-shadow: 5px 5px 5px darkviolet;
-    border-radius: 10px;
-}
+/*.hot-contest {*/
+    /*background-image: url("/resources/img/background3.jpg");*/
+    /*!*background-position: right;*!*/
+    /*padding: 20px 0;*/
+/*}*/
+/*.hot-contest img {*/
+    /*width: 100%;*/
+    /*box-shadow: 5px 5px 5px darkviolet;*/
+    /*border-radius: 10px;*/
+/*}*/
 
 .p-new a {
     position: absolute;
@@ -381,11 +381,10 @@ h2 a {
 
 .footer-top {
     background-image: url("/resources/img/background2.jpg");
+    background-size: auto;
     /*background-position: bottom;*/
     text-align: center;
 }
-
-
 
 
 .pagetop i {

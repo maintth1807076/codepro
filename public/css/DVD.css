@@ -214,8 +214,6 @@ body {
 }
 
 .hot-disk {
-    /*background-image: url("/resources/img/background1.jpg");*/
-    /*background-position: left;*/
     padding: 20px 0;
 }
 .hot-disk .mask p {
@@ -226,7 +224,6 @@ body {
     padding-top: 2px;
 }
 .hot-disk .card {
-    /*margin: 5px;*/
     margin-bottom: 30px;
 }
 
@@ -284,9 +281,9 @@ body {
 }
 
 
-label{
-    padding-top: 5px;
-}
+/*label{*/
+    /*padding-top: 5px;*/
+/*}*/
 
 .just-in-tab1 .filter-item {
     display: inline-flex;
@@ -337,7 +334,7 @@ a:hover {
     color:white;
     border-radius:5px;
     width: 36px;
-    height: 33px;
+    height: 37px;
     background: #3dac9a;
     border-color: #3dac9a;
 }
