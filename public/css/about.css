@@ -1,3 +1,9 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .content {
     padding-top: 100px;
     padding-bottom: 40px;
@@ -26,13 +32,12 @@ h2 {
 
 
 .searchby {
-    /*padding-top: 120px;*/
+    padding-top: 120px;
     padding-bottom: 10px;
 }
 .input-group {
     position: relative;
     display: table;
-    /*margin-left: 420px;*/
 }
 .input-group .form-control {
     position: relative;
@@ -78,10 +83,6 @@ h2 {
 }
 
 
-.pull {
-    padding: 15px 0 4px;
-    text-align: center;
-}
 
 .navbar-toggler-icon {
     color: white;
@@ -162,20 +163,16 @@ h2 {
     font-size: 20px;
     padding-top: 0px;
 }
+.dropdown-item:hover{
+    background-color:#d8d7d4db;
+}
 
 .navbar {
     box-shadow: 5px 5px 5px black;
-    /*height: 100px;*/
+    width: 100%;
     background-image: url("/resources/img/background6.jpeg");
+    background-size: cover;
 }
-
-
-
-
-
-
-
-
 
 #customer {
     color: white;
@@ -256,7 +253,9 @@ a:hover {
     transition: all ease-in .3s;
 }
 
-
+hr {
+    height: 2px;
+}
 
 
 
@@ -329,11 +328,12 @@ a:hover {
 /*boxchat*/
 
 
-.footer-bottom{
+.pull{
     background-size: cover;
-    background-image: url("/resources/img/background6.jpeg");
+    background-image: url("/resources/img/background1.jpeg");
     padding: 15px 0 4px;
     text-align: center;
+    color: white;
 }
 
 .chatnow {

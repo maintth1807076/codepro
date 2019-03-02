@@ -131,6 +131,9 @@ body {
     font-size: 20px;
     padding-top: 0;
 }
+.dropdown-item:hover{
+    background-color:#d8d7d4db;
+}
 
 .navbar {
     box-shadow: 5px 5px 5px black;
@@ -283,9 +286,12 @@ h2 a {
     font-size: 50%;
 }
 
-.pull {
+.pull{
+    background-size: cover;
+    background-image: url("/resources/img/background1.jpeg");
     padding: 15px 0 4px;
     text-align: center;
+    color: white;
 }
 
 .navbar-toggler-icon {
