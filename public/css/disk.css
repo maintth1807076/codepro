@@ -278,10 +278,10 @@ a:hover {
 #footer {
     padding-top: 10px;
 }
-#footer img {
+.footer-top img {
     width: 200px;
 }
-#footer h4 {
+.footer-top h4 {
     color: white;
     padding-top: 15px;
 }

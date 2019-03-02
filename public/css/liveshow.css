@@ -179,7 +179,12 @@ h2 {
 }
 
 
-
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
 
 .modal-footer button {
     height: 40px;
@@ -261,16 +266,7 @@ a:hover {
 h2 a {
     font-size: 20px;
 }
-/*.hot-contest {*/
-    /*background-image: url("/resources/img/background3.jpg");*/
 
-    /*padding: 20px 0;*/
-/*}*/
-/*.hot-contest img {*/
-    /*width: 100%;*/
-    /*box-shadow: 5px 5px 5px darkviolet;*/
-    /*border-radius: 10px;*/
-/*}*/
 /*footer*/
 .footer-top a {
     color: white;
@@ -279,10 +275,10 @@ h2 a {
 #footer {
     padding-top: 10px;
 }
-#footer img {
+.footer-top img {
     width: 200px;
 }
-#footer h4 {
+.footer-top h4 {
     color: white;
     padding-top: 15px;
 }

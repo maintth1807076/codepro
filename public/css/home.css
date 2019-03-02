@@ -319,16 +319,7 @@ h2 a {
     transition: all ease-in .3s;
 }
 
-/*.hot-contest {*/
-    /*background-image: url("/resources/img/background3.jpg");*/
-    /*!*background-position: right;*!*/
-    /*padding: 20px 0;*/
-/*}*/
-/*.hot-contest img {*/
-    /*width: 100%;*/
-    /*box-shadow: 5px 5px 5px darkviolet;*/
-    /*border-radius: 10px;*/
-/*}*/
+
 
 .p-new a {
     position: absolute;
@@ -364,10 +355,10 @@ h2 a {
 #footer {
     padding-top: 10px;
 }
-#footer img {
+.footer-top img {
     width: 200px;
 }
-#footer h4 {
+.footer-top h4 {
     color: white;
     padding-top: 15px;
 }
