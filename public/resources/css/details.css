@@ -384,3 +384,10 @@ h2:after {
         width: 65%;
     }
 }
+.pull{
+    background-size: cover;
+    background-image: url("/resources/img/background1.jpeg");
+    padding: 15px 0 4px;
+    text-align: center;
+    color: white;
+}
