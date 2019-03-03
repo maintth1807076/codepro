@@ -14,15 +14,9 @@
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="/css/home.css">
-
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 </head>
 <body >
-
 <% include include/navbar.ejs%>
-
-
-
 <div class="container">
     <% include include/search.ejs%>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -64,15 +58,10 @@
         </a>
     </div> <!--banner end-->
 </div>
-
-
-
 <div class="content">
     <div class="hot-disk">
-        <div class="container">
-            <h2 class="title-content animated slideInLeft slow">TOP SELLERS
-
-            </h2>
+        <div class="container part">
+            <h2 class="title-content animated slideInLeft slow">TOP SELLERS</h2>
             <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
             <div class="carousel-nav-container">
                 <nav class="carousel-nav">
@@ -113,8 +102,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="col-sm-6 col-md-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
@@ -205,22 +192,19 @@
 
                 </div>
             </div>
-
-            <h2 class="title-content animated slideInLeft slow">NEW RELEASES
-
-            </h2>
+        </div><!--top seller end-->
+        <div class="container part">
+            <h2 class="title-content animated slideInLeft slow">NEW RELEASES</h2>
             <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
             <div class="carousel-nav-container">
                 <nav class="carousel-nav">
                     <a class="carousel-link btn " href="/client/CD">CD</a>
                     <a class="carousel-link btn " href="/client/DVD">DVD</a>
-
                 </nav>
                 <div class="clear"></div>
             </div>
             <div class="list-hot-disk">
                 <div class="row text-center">
-
                     <div class="col-sm-6 col-md-3">
                         <div class="card">
                             <div class="view overlay zoom rgba-red-light">
@@ -341,13 +325,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
-            <h2 class="title-content animated slideInLeft slow">CLEARANCE
-
-            </h2>
+        </div><!--new release end-->
+        <div class="container part">
+            <h2 class="title-content animated slideInLeft slow">CLEARANCE</h2>
             <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
             <div class="carousel-nav-container">
                 <nav class="carousel-nav">
@@ -494,100 +476,103 @@
 
                 </div>
             </div>
-        </div>
+        </div><!--clerance end-->
     </div> <!--hot-disk-->
     <div class="hot-ticket">
-        <h2 class="wow slideInLeft slow">NEW LIVESHOW </h2>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-thumbnail"
-                                 src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
-                            <div class="mask flex-center waves-effect waves-light">
-                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
-                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-eye"></i>
-                                </button>
+        <div class="container part">
+            <h2 class="title-content animated slideInLeft slow">NEW LIVESHOW </h2>
+            <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-thumbnail"
+                                     src="https://znews-photo.zadn.vn/w660/Uploaded/rdsis/2013_09_27/jus1.jpg" alt="Card image">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="prod-info">
-                            <a href="#!" class="txt-muted"><h4>Justin Bieber</h4></a>
-                            <span class="prod-price">
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Justin Bieber</h4></a>
+                                <span class="prod-price">
                                         <i class="fas fa-dollar-sign"></i> 10
                             </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-thumbnail"
-                                 src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
-                                 alt="Card image">
-                            <div class="mask flex-center waves-effect waves-light">
-                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
-                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <a class="vieweye" href="/client/detail-liveshow"><i class="fas fa-eye"></i></a>
-                                </button>
                             </div>
                         </div>
-                        <div class="prod-info">
-                            <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
-                            <span class="prod-price">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-thumbnail"
+                                     src="https://assets.capitalfm.com/2018/03/kygos-london-tour-date-1516965641.png"
+                                     alt="Card image">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <a class="vieweye" href="/client/detail-liveshow"><i class="fas fa-eye"></i></a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Kygo</h4></a>
+                                <span class="prod-price">
                                         <i class="fas fa-dollar-sign"></i> 10
                             </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-thumbnail"
-                                 src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
-                                 alt="Card image">
-                            <div class="mask flex-center waves-effect waves-light">
-                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
-                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-eye"></i>
-                                </button>
                             </div>
                         </div>
-                        <div class="prod-info">
-                            <a href="#!" class="txt-muted"><h4>Dj Tay James</h4></a>
-                            <span class="prod-price">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-thumbnail"
+                                     src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/liv/5135/2/flyer/dj-tay-james.jpg"
+                                     alt="Card image">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>Dj Tay James</h4></a>
+                                <span class="prod-price">
                                         <i class="fas fa-dollar-sign"></i> 8
                             </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="card">
-                        <div class="view overlay zoom rgba-red-light">
-                            <img class="card-img-top img-thumbnail img-responsive"
-                                 src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
-                            <div class="mask flex-center waves-effect waves-light">
-                                <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
-                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
-                                    <i class="fas fa-eye"></i>
-                                </button>
                             </div>
                         </div>
-                        <div class="prod-info">
-                            <a href="#!" class="txt-muted"><h4>BillBoard</h4></a>
-                            <span class="prod-price">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="view overlay zoom rgba-red-light">
+                                <img class="card-img-top img-thumbnail img-responsive"
+                                     src="https://i.axs.com/2018/02/32782-optimized_5a7a16de77558.jpg" alt="Card image">
+                                <div class="mask flex-center waves-effect waves-light">
+                                    <button type="button" class="btn btn-success btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light m-r-15 hvr-bounce-in option-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <a href="#!" class="txt-muted"><h4>BillBoard</h4></a>
+                                <span class="prod-price">
                                         <i class="fas fa-dollar-sign"></i> 12
                             </span>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -405,4 +405,7 @@ hr {
     text-decoration: none;
     cursor: pointer;
 }
+hr {
+    height: 2px;
+}
 
