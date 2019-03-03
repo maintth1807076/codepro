@@ -16,6 +16,7 @@
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/home.css">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
 
 </head>
@@ -25,7 +26,7 @@
 <div class=" container">
     <% include include/search.ejs%>
     <table id="cart" class="table table-hover table-condensed" >
-        <thead class="col-sm-8">
+        <thead class="col-md-8 col-sm-10">
         <tr  class="">
             <th >Image</th>
             <th >Name</th>
@@ -75,7 +76,7 @@
             <td colspan="2" class="hidden-xs"> </td>
             <td class="hidden-xs text-center"><strong >Total price: 5<i class="fas fa-dollar-sign"></i></strong>
             </td>
-            <td><a href="#" class="btn btn-primary btn-block">Pay<i class="fa fa-angle-right"></i></a>
+            <td><a href="/client/pay" class="btn btn-primary btn-block">Pay<i class="fa fa-angle-right"></i></a>
             </td>
         </tr>
         </tfoot>
