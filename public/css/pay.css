@@ -1,0 +1,23 @@
+.content {
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+.panel {
+    margin: 20px 0;
+    border: 1px solid #9e9d9d;
+    border-radius: 5px;
+}
+.panel-heading {
+    border-bottom: 1px solid #9e9d9d;
+    background-color: #3f5985;
+    color:white;
+    padding-top:3px;
+}
+.panel-heading h3{
+    margin-left:8px;
+    font-size:25px;
+}
+.panel-body{
+    margin-left:8px;
+    margin-top:10px
+}

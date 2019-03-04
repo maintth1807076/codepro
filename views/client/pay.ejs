@@ -6,182 +6,52 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CD</title>
-
+    <title>Pay</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/css/mdb.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/vendor/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/pay.css">
 </head>
 <body>
-<div id="header">
-    <nav class="navbar navbar-expand-sm fixed-top purple-gradient">
-        <a class="navbar-brand logo" href="/client/home"><img src="/resources/img/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <div class="menu">
-                <ul class=" nav navbar-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/client/home"><i class="fas fa-home "></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/client/disk" id="disk">Disk</a>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/client/ticket" id="ticket">Liveshow</a>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/client/magazine" id="magazine">Magazine</a>
-
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/client/book" id="book">Book</a>
-
-                    </li>
-                    <li class="nav-item">
-                        <a href="/client/contact" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/client/about" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" id="search"><i class="fas fa-search"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/client/cart" class="nav-link" id="selling-cart"><i class="fas fa-cart-plus"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/client/customer" id="customer"><i class="fas fa-user-circle"></i></a>
-                        <ul class="item-menu">
-                            <li><a class=" register nav-link" href="#" data-toggle="modal" data-target="#registerModal">Sign
-                                    In</a></li>
-                            <li><a class="login nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign
-                                    Up</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> <!--nav end-->
-</div>
-<div class="container">
-    <div class="row">
-        <div class="container">
-        </div>
-        <div id="content" class=" col-sm-12 col-xs-12 col-md-12">
-            <form method="post" action="" name="checkout_form" id="checkout_form" enctype="multipart/form-data" class="form-horizontal">
-                <div class="col-sm-8">
-                    <div class="panel panel-default">
+<% include include/navbar.ejs%>
+<div class="content">
+    <div class="container">
+        <form method="post" action="" name="checkout_form" id="checkout_form" enctype="multipart/form-data"
+              class="form-horizontal">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <div class="panel">
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                Địa chỉ nhận hàng
+                                Delivery address
                             </h3>
                         </div>
                         <div class="panel-body"> <!-- Apply for VN -->
-                            <div class="form-group required">
-                                <label class="control-label col-md-2" for="input-firstname">Tên đầy đủ</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="firstname" id="input-firstname" value="" placeholder="Ví dụ: Nguyễn Văn A" class="form-control">
-                                </div>
-                            </div>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group required">
-                                        <label class="control-label col-sm-4" for="input-email">Email</label>
-                                        <div class="col-sm-8">
-                                            <input type="email" name="email" id="input-email" value="" placeholder="contact@yourdomain.com" class="form-control">
+                                        <div class="row">
+                                            <label class="control-label col-sm-2" for="input-firstname">Full name</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="firstname" id="input-firstname" value=""
+                                                       placeholder="Enter name" class="form-control">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group required">
-                                        <label class="control-label col-sm-4" for="input-telephone">Điện thoại</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" name="telephone" id="input-telephone" value="" placeholder="Ví dụ: 01234567890" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-
-                                <div class="col-sm-6">
-                                    <div class="form-group required">
-                                        <label class="control-label col-md-4" for="input-zoneid">Tỉnh / TP</label>
-                                        <div class="col-md-8">
-                                        <span id="load-ajax-zone">
-                                            <select name="zone_id" id="input-zoneid" onchange="getWard()" class="form-control">
-                                                <option value="3751">An Giang</option>
-                                                <option value="3756">Bà Rịa - Vũng Tàu</option>
-                                                <option value="3752">Bắc Giang</option>
-                                                <option value="3753">Bắc Kạn</option>
-                                                <option value="3754">Bạc Liêu</option>
-                                                <option value="3755">Bắc Ninh</option>
-                                                <option value="3757">Bến Tre</option>
-                                                <option value="3759">Bình Dương</option>
-                                                <option value="3760">Bình Phước</option>
-                                                <option value="3761">Bình Thuận</option>
-                                                <option value="3758">Bình Định</option>
-                                                <option value="3762">Cà Mau</option>
-                                                <option value="3763">Cần Thơ</option>
-                                                <option value="3764">Cao Bằng</option>
-                                                <option value="3771">Gia Lai</option>
-                                                <option value="3772">Hà Giang</option>
-                                                <option value="3775">Hà Nam</option>
-                                                <option value="3776">Hà Nội</option>
-                                                <option value="3778">Hà Tĩnh</option>
-                                                <option value="3773">Hải Dương</option>
-                                                <option value="3774">Hải Phòng</option>
-                                                <option value="3781">Hậu Giang</option>
-                                                <option value="3779">Hòa Bình</option>
-                                                <option value="3782">Hưng Yên</option>
-                                                <option value="4236">Khánh Hòa</option>
-                                                <option value="4237">Kiên Giang</option>
-                                                <option value="4238">Kon Tum</option>
-                                                <option value="4239">Lai Châu</option>
-                                                <option value="4242">Lâm Đồng</option>
-                                                <option value="4241">Lạng Sơn</option>
-                                                <option value="4240">Lào Cai</option>
-                                                <option value="4243">Long An</option>
-                                                <option value="4244">Nam Định</option>
-                                                <option value="4245">Nghệ An</option>
-                                                <option value="4246">Ninh Bình</option>
-                                                <option value="4247">Ninh Thuận</option>
-                                                <option value="4248">Phú Thọ</option>
-                                                <option value="4249">Phú Yên</option>
-                                                <option value="4250">Quảng Bình</option>
-                                                <option value="4251">Quảng Nam</option>
-                                                <option value="4252">Quảng Ngãi</option>
-                                                <option value="4253">Quảng Ninh</option>
-                                                <option value="4254">Quảng Trị</option>
-                                                <option value="4255">Sóc Trăng</option>
-                                                <option value="4256">Sơn La</option>
-                                                <option value="4257">Tây Ninh</option>
-                                                <option value="4258">Thái Bình</option>
-                                                <option value="4259">Thái Nguyên</option>
-                                                <option value="4260">Thanh Hóa</option>
-                                                <option value="4261">Thừa Thiên Huế</option>
-                                                <option value="4262">Tiền Giang</option>
-                                                <option value="3780">TP.Hồ Chí Minh</option>
-                                                <option value="4263">Trà Vinh</option>
-                                                <option value="4264">Tuyên Quang</option>
-                                                <option value="4265">Vĩnh Long</option>
-                                                <option value="4266">Vĩnh Phúc</option>
-                                                <option value="4267">Yên Bái</option>
-                                                <option value="3767">Đà Nẵng</option>
-                                                <option value="3765">Đăk Lăk</option>
-                                                <option value="3766">Đăk Nông</option>
-                                                <option value="3768">Điện Biên</option>
-                                                <option value="3769">Đồng Nai</option>
-                                                <option value="3770">Đồng Tháp</option>
-                                            </select>
-                                        </span>
+                                        <div class="row">
+                                            <label class="control-label col-sm-2" for="input-email">Email</label>
+                                            <div class="col-sm-8">
+                                                <input type="email" name="email" id="input-email" value=""
+                                                       placeholder="Enter email" class="form-control">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -189,357 +59,328 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group required">
-                                        <label class="control-label col-md-4" for="input-address">Quận / Huyện</label>
-                                        <div class="col-sm-8">
-                                        <span id="load-ajax-ward">
-                                            <select name="ward_id" onchange="loadListShipping()" id="input-wardid" class="form-control">
-                                                <option value="3">An Phú</option>
-                                                <option value="2">Châu Đốc</option>
-                                                <option value="6">Châu Phú</option>
-                                                <option value="9">Châu Thành</option>
-                                                <option value="10">Chợ Mới</option>
-                                                <option value="1">Long Xuyên</option>
-                                                <option value="5">Phú Tân</option>
-                                                <option value="4">Tân Châu</option>
-                                                <option value="11">Thoại Sơn</option>
-                                                <option value="7">Tịnh Biên</option>
-                                                <option value="8">Tri Tôn</option>
-                                            </select>
-                                        </span>
+                                        <div class="row">
+                                            <label class="control-label col-sm-2" for="input-country">Country</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="country" id="input-country" value=""
+                                                       placeholder="Enter country" class="form-control">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group required">
-                                        <label class="control-label col-md-4" for="input-address">Địa chỉ chi tiết</label>
-                                        <div class="col-sm-8"> <input type="text" name="address_1" value="" id="input-address" placeholder="Ví dụ: Số 247, Cầu Giấy, Q. Cầu Giấy" class="form-control">
+                                        <div class="row">
+                                            <label class="control-label col-sm-2" for="input-city">City</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="city" id="input-city" value=""
+                                                       placeholder="Enter city" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <div class="row">
+                                            <label class="control-label col-sm-2" for="input-telephone">Phone</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="telephone" id="input-telephone" value=""
+                                                       placeholder="Enter telephone" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <div class="row">
+                                            <label class="control-label col-sm-2" for="input-address">Address</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="address" id="input-address" value=""
+                                                       placeholder="Enter address" class="form-control">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-md-2" for="input-zoneid" id="label-zone">Lời nhắn</label>
+                                <label class="control-label col-md-2" for="input-zoneid" id="label-zone">Message
+                                </label>
                                 <div class="col-sm-10">
-                                    <textarea name="comment" id="input-comment" rows="3" class="form-control" placeholder="Ví dụ: Chuyển hàng ngoài giờ hành chính"></textarea>
+                                    <textarea name="comment" id="input-comment" rows="3" class="form-control"
+                                              placeholder=""></textarea>
                                 </div>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                    <div class="adr-oms checkbox">
-                                        <input type="checkbox" name="same_info_as_buyer_toggle" id="is-delivery-address" onclick="showHideDeliveryAddress()" checked="">
-                                        <label for="is-delivery-address">
-                                            <strong>Địa chỉ nhận hàng và thanh toán giống nhau</strong>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="is-delivery-address">
+                                        <label class="form-check-label" for="is-delivery-address">
+                                            <strong>The delivery address and payment are the same</strong>
                                         </label>
                                     </div>
                                 </div>
                             </div>
-                            <div id="container-form-address-ship" style="display: none;">
-                                <h4>Thông tin thanh toán</h4> <!-- Apply for VN -->
-                                <div class="form-group required">
-                                    <label class="control-label col-md-2" for="input-payment-firstname">Tên đầy đủ</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" name="payment_firstname" id="input-payment-firstname" value="" placeholder="Ví dụ: Nguyễn Văn A" class="form-control"> </div> </div>
-                                <div class="form-group required">
-                                    <label class="control-label col-md-2" for="input-payment-telephone">Điện thoại</label>
-                                    <div class="col-md-4">
-                                        <input type="text" name="payment_telephone" id="input-payment-telephone" value="" placeholder="Ví dụ: 01234567890" class="form-control">
-                                    </div>
-                                    <label class="control-label col-md-2" for="input-payment-email">Email</label>
-                                    <div class="col-md-4">
-                                        <input type="email" name="payment_email" id="input-payment-email" value="" placeholder="contact@yourdomain.com" class="form-control"> </div>
-                                </div>
-                                <div class="form-group required">
-
-                                    <label class="control-label col-md-2" for="input-payment-zoneid" id="label-payment-zone">Tỉnh / TP</label>
-                                    <div class="col-md-4">
-                                    <span id="load-ajax-payment-zone">
-                                        <select name="payment_zone_id" id="input-payment-zoneid" class="form-control">
-                                            <option value="3751">An Giang</option>
-                                            <option value="3756">Bà Rịa - Vũng Tàu</option>
-                                            <option value="3752">Bắc Giang</option>
-                                            <option value="3753">Bắc Kạn</option>
-                                            <option value="3754">Bạc Liêu</option>
-                                            <option value="3755">Bắc Ninh</option>
-                                            <option value="3757">Bến Tre</option>
-                                            <option value="3759">Bình Dương</option>
-                                            <option value="3760">Bình Phước</option>
-                                            <option value="3761">Bình Thuận</option>
-                                            <option value="3758">Bình Định</option>
-                                            <option value="3762">Cà Mau</option>
-                                            <option value="3763">Cần Thơ</option><
-                                            option value="3764">Cao Bằng</option>
-                                            <option value="3771">Gia Lai</option>
-                                            <option value="3772">Hà Giang</option>
-                                            <option value="3775">Hà Nam</option>
-                                            <option value="3776">Hà Nội</option>
-                                            <option value="3778">Hà Tĩnh</option>
-                                            <option value="3773">Hải Dương</option>
-                                            <option value="3774">Hải Phòng</option>
-                                            <option value="3781">Hậu Giang</option>
-                                            <option value="3779">Hòa Bình</option>
-                                            <option value="3782">Hưng Yên</option>
-                                            <option value="4236">Khánh Hòa</option>
-                                            <option value="4237">Kiên Giang</option>
-                                            <option value="4238">Kon Tum</option>
-                                            <option value="4239">Lai Châu</option>
-                                            <option value="4242">Lâm Đồng</option>
-                                            <option value="4241">Lạng Sơn</option>
-                                            <option value="4240">Lào Cai</option>
-                                            <option value="4243">Long An</option>
-                                            <option value="4244">Nam Định</option>
-                                            <option value="4245">Nghệ An</option>
-                                            <option value="4246">Ninh Bình</option>
-                                            <option value="4247">Ninh Thuận</option>
-                                            <option value="4248">Phú Thọ</option>
-                                            <option value="4249">Phú Yên</option>
-                                            <option value="4250">Quảng Bình</option>
-                                            <option value="4251">Quảng Nam</option>
-                                            <option value="4252">Quảng Ngãi</option>
-                                            <option value="4253">Quảng Ninh</option>
-                                            <option value="4254">Quảng Trị</option>
-                                            <option value="4255">Sóc Trăng</option>
-                                            <option value="4256">Sơn La</option>
-                                            <option value="4257">Tây Ninh</option>
-                                            <option value="4258">Thái Bình</option>
-                                            <option value="4259">Thái Nguyên</option>
-                                            <option value="4260">Thanh Hóa</option>
-                                            <option value="4261">Thừa Thiên Huế</option>
-                                            <option value="4262">Tiền Giang</option>
-                                            <option value="3780">TP.Hồ Chí Minh</option>
-                                            <option value="4263">Trà Vinh</option>
-                                            <option value="4264">Tuyên Quang</option>
-                                            <option value="4265">Vĩnh Long</option>
-                                            <option value="4266">Vĩnh Phúc</option>
-                                            <option value="4267">Yên Bái</option>
-                                            <option value="3767">Đà Nẵng</option>
-                                            <option value="3765">Đăk Lăk</option>
-                                            <option value="3766">Đăk Nông</option>
-                                            <option value="3768">Điện Biên</option>
-                                            <option value="3769">Đồng Nai</option>
-                                            <option value="3770">Đồng Tháp</option>
-                                        </select>
-                                    </span>
-                                    </div>
-                                </div>
-                                <div class="form-group required">
-                                    <label class="control-label col-md-2" for="input-payment-address">Địa chỉ chi tiết</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" name="payment_address_1" value="" id="input-payment-address" placeholder="Ví dụ: Số 247, Cầu Giấy, Q. Cầu Giấy" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="adr-oms checkbox">
-                                            <input type="checkbox" name="update_address" id="update-address" checked="">&nbsp;&nbsp;
-                                            <label for="update-address">Cập nhật thông tin trên làm địa chỉ hiện tại của tôi</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
+                    <div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
 
-                                Phương thức thanh toán
-                            </h3>
-                        </div>
-                        <div class="panel-body" id="form_payment_method"> <div class="group">
-                                <div class="adr-oms radio select-method">
-                                    <input type="radio" id="payment-method-bank_transfer" name="payment_method" value="bank_transfer">
-                                    <label for="payment-method-bank_transfer"> <div class="adr-oms payment-method">
-
-                                            <div class="description">
-                                                <div class="title">Chuyển khoản</div>
-                                                <div class="subtitle">Sử dụng thẻ ATM hoặc dịch vụ Internet Banking để tiến hành chuyển khoản cho chúng tôi</div>
-                                                <div class="tkz-selection-info"></div>
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <div class="payment-method-toggle box-installment installment-disabled" id="payment-method-info-bank_transfer" style="display: none;">
-                                        <div class="disabled-cod-body">
-                                            <p>Thông tin ngân hàng Ngân hàng TMCP Ngoại thương Việt Nam - Vietcombank&nbsp;</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                    Payment methods
+                                </h3>
                             </div>
-                            <div class="group">
-                                <div class="adr-oms radio select-method">
-                                    <input type="radio" id="payment-method-cod" name="payment_method" value="cod">
-                                    <label for="payment-method-cod">
-                                        <div class="adr-oms payment-method">
+                            <div class="panel-body" id="form_payment_method">
+                                <div class="group">
+                                    <div class="adr-oms radio select-method">
+                                        <input type="radio" id="payment-method-bank_transfer" name="payment_method"
+                                               value="bank_transfer">
+                                        <label for="payment-method-bank_transfer">
+                                            <div class="adr-oms payment-method">
 
-                                            <div class="description">
-                                                <div class="title">Thu tiền tại nhà (COD)</div>
-                                                <div class="subtitle">Khách hàng thanh toán bằng tiền mặt cho nhân viên giao hàng khi sản phẩm được chuyển tới địa chỉ nhận hàng</div>
-                                                <div class="tkz-selection-info">
+                                                <div class="description">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="is-delivery-transfer">
+                                                        <label class="form-check-label" for="is-delivery-transfer">
+                                                            <strong> Transfer</strong>
+                                                        </label>
+                                                    </div>
+                                                    <div class="subtitle" style="margin-left: 15px;">Use an ATM card or Internet Banking service to conduct a transfer to us</div>
 
+                                                    <div class="tkz-selection-info"></div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </label>
+                                        </label>
+                                        <!--<div class="payment-method-toggle box-installment installment-disabled"-->
+                                             <!--id="payment-method-info-bank_transfer" style="display: none;">-->
+                                            <!--<div class="disabled-cod-body">-->
+                                                <!--<p>Thông tin ngân hàng Ngân hàng TMCP Ngoại thương Việt Nam - -->
+                                                    <!--Vietcombank&nbsp;</p>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="adr-oms radio select-method">
+                                        <input type="radio" id="payment-method-cod" name="payment_method" value="cod">
+                                        <label for="payment-method-cod">
+                                            <div class="adr-oms payment-method">
+
+                                                <div class="description">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="is-delivery-cod">
+                                                        <label class="form-check-label" for="is-delivery-cod">
+                                                            <strong>Collect money at home (COD)</strong>
+                                                        </label>
+                                                    </div>
+                                                    <div class="subtitle" style="margin-left: 15px;" >The customer pays in cash to the delivery staff when the product is delivered to the delivery address</div>
+                                                    <div class="tkz-selection-info">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                <div class="adr-oms checkbox">
-                                    <input type="checkbox" name="invoice" id="request-invoice" onclick="showHideInvoice();">
-                                    <label for="request-invoice">Yêu cầu xuất hoá đơn GTGT</label>
+                    <div>
+                        <div class="panel panel-default">
+                            <!--<div class="panel-heading">-->
+                                <div class="panel-title">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="is-delivery-request">
+                                        <label class="form-check-label" for="is-delivery-request">
+                                            <strong>Request to issue VAT invoice</strong>
+                                        </label>
+                                    </div>
                                 </div>
-                            </h3>
-                        </div>
-                        <div class="panel-body" id="container-form-invoice" style="display: none;">
-                            <div class="form-group">
-                                <label class="control-label col-md-2" for="input-taxcode">Mã số thuế</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="tax_code" id="input-taxcode" value="" placeholder="Ví dụ: 398473094385" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-2" for="input-company">Tên công ty</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="company" id="input-company" value="" placeholder="Ví dụ: Công ty Cổ phần ASIA" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-2" for="input-company-address">Địa chỉ công ty</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="company_address" id="input-company-address" value="" placeholder="Ví dụ: 247 Cầu Giấy, Hà Nội, P. Dịch Vọng, Q. Cầu Giấy, TP. Hà Nội" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <i>Lưu ý: Giá trị hóa đơn không bao gồm giá trị của Mã giảm giá</i>
-                                </div>
-                            </div>
+                            <!--</div>-->
+                            <!--<div class="panel-body" id="container-form-invoice" style="display: none;">-->
+                                <!--<div class="form-group">-->
+                                    <!--<label class="control-label col-md-2" for="input-taxcode">Mã số thuế</label>-->
+                                    <!--<div class="col-sm-10">-->
+                                        <!--<input type="text" name="tax_code" id="input-taxcode" value=""-->
+                                               <!--placeholder="Ví dụ: 398473094385" class="form-control">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="form-group">-->
+                                    <!--<label class="control-label col-md-2" for="input-company">Tên công ty</label>-->
+                                    <!--<div class="col-sm-10">-->
+                                        <!--<input type="text" name="company" id="input-company" value=""-->
+                                               <!--placeholder="Ví dụ: Công ty Cổ phần ASIA" class="form-control">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="form-group">-->
+                                    <!--<label class="control-label col-md-2" for="input-company-address">Địa chỉ công-->
+                                        <!--ty</label>-->
+                                    <!--<div class="col-sm-10">-->
+                                        <!--<input type="text" name="company_address" id="input-company-address" value=""-->
+                                               <!--placeholder="Ví dụ: 247 Cầu Giấy, Hà Nội, P. Dịch Vọng, Q. Cầu Giấy, TP. Hà Nội"-->
+                                               <!--class="form-control">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="form-group">-->
+                                    <!--<div class="col-sm-12">-->
+                                        <!--<i>Lưu ý: Giá trị hóa đơn không bao gồm giá trị của Mã giảm giá</i>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default"> <div class="panel-heading">
-                            <h3 class="panel-title">
+                <div class="col-md-4 col-sm-12">
+                    <div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
 
-                                Đơn hàng (2 sản phẩm)
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <table class="adr-oms table table_order_items">
-                                <tbody id="orderItem">
-                                <tr class="group-type-1 item-child-0">
-                                    <td>
-                                        <div class="table_order_items-cell-thumbnail">
-                                            <div class="thumbnail" style="width: fit-content;margin-left: 100px;">
-                                                <a target="_blank" rel="noopener" href="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/7/9/8/f/798f31114a9881399db28c1b0d5757ed.jpg" title="resize">
-                                                    <img src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/7/9/8/f/798f31114a9881399db28c1b0d5757ed.jpg" alt="resize" width="84">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="table_order_items-cell-detail">
-                                            <div class="table_order_items-cell-title" style="text-align: center;">
-                                                <div class="table_order_items_product_name">
-                                                    <a target="_blank" rel="noopener" href="#" title="resize">
-                                                        <span class="title" style="font-size: 16px;">resize</span>
+                                  Order(2 product)
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+                                <table class="adr-oms table table_order_items">
+                                    <tbody id="orderItem">
+                                    <tr class="group-type-1 item-child-0">
+                                        <td>
+                                            <div class="table_order_items-cell-thumbnail">
+                                                <div class="thumbnail" style="width: fit-content;margin-left: 100px;">
+                                                    <a target="_blank" rel="noopener"
+                                                       href="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/7/9/8/f/798f31114a9881399db28c1b0d5757ed.jpg"
+                                                       title="resize">
+                                                        <img src="https://photo-resize-zmp3.zadn.vn/w240h240_jpeg/cover/7/9/8/f/798f31114a9881399db28c1b0d5757ed.jpg"
+                                                             alt="resize" width="84">
                                                     </a>
                                                 </div>
                                             </div>
+                                            <div class="table_order_items-cell-detail">
+                                                <div class="table_order_items-cell-title" style="text-align: center;">
+                                                    <div class="table_order_items_product_name">
+                                                        <a target="_blank" rel="noopener" href="#" title="resize">
+                                                            <span class="title" style="font-size: 16px;">resize</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table_order_items-cell-price"
+                                                 style="text-align: center; font-size: 16px;">
+                                                <div class="tt-price">50,000đ</div>
+                                                <div class="quantity">x2</div>
+                                                <div class="tt-price">100,000đ</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    Transport
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                    <span id="ajax-load-shipping-method">
+                                        <div>
+                                            <strong>Calculate later</strong>
                                         </div>
-                                        <div class="table_order_items-cell-price" style="text-align: center; font-size: 16px;">
-                                            <div class="tt-price">50,000đ</div>
-                                            <div class="quantity">x2</div>
-                                            <div class="tt-price">100,000đ</div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="is-delivery-transport">
+                                        <label class="form-check-label" for="is-delivery-transport">
+                                           Shipping fee is charged when processing orders
+                                        </label>
+                                    </div>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+
+                                    Use discount code
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <span id="show_notice_coupon"></span>
+                                        <div class="input-group">
+                                            <input type="text" name="coupon" value="" placeholder="Enter the discount code"
+                                                   id="input-coupon" class="form-control" style="height: 48px;">
+                                            <span class="input-group-btn">
+                                           <input class="btn btn-primary" type="button" value="Apply"
+                                                  id="button-coupon" data-loading-text="Applying">
+                                        </span>
                                         </div>
+                                        <span id="load-input-hidden"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="panel panel-default" id="ajax-load-total">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td class="text-left" style="font-size: 16px;">Into money</td>
+                                    <td class="text-right" style="font-size: 16px; font-weight: bold;">100,000đ</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left" style="font-size: 16px;">Shipping fee is charged when processing orders</td>
+                                    <td class="text-right" style="font-size: 16px; font-weight: bold;">0đ</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left" style="font-size: 16px;">Total</td>
+                                    <td class="text-right" style="color: #D60C0C; font-size: 16px; font-weight: bold;">
+                                        100,000đ
                                     </td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                Vận chuyển
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <span id="ajax-load-shipping-method">
-                                        <div>
-                                            <strong>Tính sau</strong>
-                                        </div>
-                                        <div class="radio">
-                                            <label style="font-weight: inherit;">
-                                                <input type="radio" name="shipping_method" onclick="updateFee()" value="postpaid.postpaid" checked="checked">Phí vận chuyển được tính khi xử lý đơn hàng</label>
-                                        </div>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default"> <div class="panel-heading">
-                            <h3 class="panel-title">
-
-                                Sử dụng mã giảm giá
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <span id="show_notice_coupon"></span>
-                                    <div class="input-group">
-                                        <input type="text" name="coupon" value="" placeholder="Nhập mã giảm giá" id="input-coupon" class="form-control">
-                                        <span class="input-group-btn">
-                                            <input class="btn btn-primary" type="button" value="Áp dụng" id="button-coupon" data-loading-text="Đang áp dụng">
-                                        </span>
-                                    </div>
-                                    <span id="load-input-hidden"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="panel panel-default" id="ajax-load-total">
-                        <table class="table">
-                            <tbody>
-                            <tr>
-                                <td class="text-left" style="font-size: 16px;">Thành tiền</td>
-                                <td class="text-right" style="font-size: 16px; font-weight: bold;">100,000đ</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left" style="font-size: 16px;">Phí vận chuyển được tính khi xử lý đơn hàng</td>
-                                <td class="text-right" style="font-size: 16px; font-weight: bold;">0đ</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left" style="font-size: 16px;">Tổng số</td>
-                                <td class="text-right" style="color: #D60C0C; font-size: 16px; font-weight: bold;">100,000đ</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
                     <div class="text-center">
-                        <a class="btn btn-primary pull-left" href="/client/cart" title="Quay lại giỏ hàng">
+                        <a class="btn btn-primary pull-left" href="/client/cart" title="Back to the shopping cart">
 
-                            Quay lại giỏ hàng
+                            Back to the shopping cart
                         </a>
-                        <button class="btn btn-primary pull-right" type="button" id="submit_form_button" onclick="$('form#checkout_form').submit();">Đặt hàng
+                        <button class="btn btn-primary pull-right" type="button" id="submit_form_button"
+                                onclick="$('form#checkout_form').submit();">Order
 
                         </button>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div class="container">
-        </div>
+            </div>
+
+        </form>
     </div>
 </div>
+<!--sign up-sign in-->
+<% include include/reg-log.ejs %>
+
+<!--Include Footer-->
+<% include include/footer.ejs%>
 <script src="/vendor/js/jquery-3.3.1.min.js"></script>
 <script src="/vendor/js/bootstrap.min.js"></script>
 <script src="vendor/js/mdb.min.js"></script>
+<script src="/vendor/js/jquery.validate.min.js"></script>
+<script src="/resources/js/validate.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="/resources/js/myjs.js"></script>
 </body>
 </html>
