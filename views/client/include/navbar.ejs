@@ -18,7 +18,7 @@
                             <a class="dropdown-item" href="/client/disk" >CD & DVD</a>
                             <a class="dropdown-item" href="/client/movie" >Movie</a>
                             <a class="dropdown-item" href="/client/band" >Band</a>
-                            <a class="dropdown-item" href="/client/soloperformer" >Solo</a>
+                            <a class="dropdown-item" href="/client/soloperformer" >Solo Performer</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -47,7 +47,7 @@
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a ondblclick="document.getElementById('box-user').style.display='block'" class="nav-link dropdown-toggle"id="customer" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user-circle"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -59,4 +59,35 @@
             </div>
         </div>
     </nav> <!--nav end-->
+    <div id="box-user">
+        <div class="box-content">
+            <div class="box-head">
+                <img src="/resources/img/ex.jpg" alt="">
+                <span class="usernam-box">ChipChip</span>
+                <span onclick="document.getElementById('box-user').style.display='none'" class="box-close">&times;</span>
+            </div>
+            <div class="box-body">
+                <ul class="list-unstyled">
+                    <li>
+                        Change avatar
+                    </li>
+                    <li>
+                        Award Point
+                    </li>
+                    <li>
+                        Discount Code
+                    </li>
+                    <li>
+                        Notification
+                    </li>
+                    <li>
+                        Change password
+                    </li>
+                    <li style="color: #0ac282">
+                        Log Out
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
